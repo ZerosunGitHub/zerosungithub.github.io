@@ -1791,9 +1791,9 @@ img:hover {
   -moz-border-radius: 80px;
   box-shadow: inset 0 -1px 0 #333 sf;
 /* 鼠标经过头像旋转时间 */
-  -webkit-transition: -webkit-transform 1s ease-out;
-  -moz-transition: -moz-transform 1s ease-out;
-  transition: transform 1s ease-out;
+  -webkit-transition: -webkit-transform 3s ease-out;
+  -moz-transition: -moz-transform 3s ease-out;
+  transition: transform 3s ease-out;
 }
 img:hover {
 /* 鼠标经过停止头像旋转 
@@ -1878,7 +1878,7 @@ animation-play-state:paused;*/
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff4b73;
+  background: #55828e;
 }
 .links-of-blogroll {
   font-size: 13px;
