@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2018-08-30T06:41:03.157Z</updated>
+  <updated>2018-09-01T10:30:22.088Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Hello Markdown</title>
-    <link href="https://zerosun.top/2018/08/30/Hello-Markdown/"/>
-    <id>https://zerosun.top/2018/08/30/Hello-Markdown/</id>
-    <published>2018-08-30T06:41:03.157Z</published>
-    <updated>2018-08-30T06:41:03.157Z</updated>
+    <link href="https://zerosun.top/2018/09/01/Hello-Markdown/"/>
+    <id>https://zerosun.top/2018/09/01/Hello-Markdown/</id>
+    <published>2018-09-01T10:30:22.088Z</published>
+    <updated>2018-09-01T10:30:22.088Z</updated>
     
     <summary type="html">
     
@@ -46,16 +46,14 @@
     <link href="https://zerosun.top/2018/08/30/%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7/"/>
     <id>https://zerosun.top/2018/08/30/提问的智慧/</id>
     <published>2018-08-30T05:56:56.000Z</published>
-    <updated>2018-08-30T10:55:45.828Z</updated>
+    <updated>2018-09-01T10:30:20.117Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;提问的智慧&quot;&gt;&lt;a href=&quot;#提问的智慧&quot; class=&quot;headerlink&quot; title=&quot;提问的智慧&quot;&gt;&lt;/a&gt;提问的智慧&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;How To Ask Questions The Smart Way&lt;/strong&gt;&lt;/p&gt;
+      &lt;h1 id=&quot;提问的智慧&quot;&gt;&lt;a href=&quot;#提问的智慧&quot; class=&quot;headerlink&quot; title=&quot;提问的智慧&quot;&gt;&lt;/a&gt;提问的智慧&lt;/h1&gt;&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;How To Ask Questions The Smart Way&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Copyright © 2001,2006,2014 Eric S. Raymond, Rick Moen&lt;/p&gt;
-&lt;p&gt;本指南英文版版权为 Eric S. Raymond, Rick Moen 所有。&lt;/p&gt;
-&lt;p&gt;原文网址：&lt;a href=&quot;http://www.catb.org/~esr/faqs/smart-questions.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.catb.org/~esr/faqs/smart-questions.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Copyleft 2001 by D.H.Grand(nOBODY/Ginux), 2010 by Gasolin, 2015 by Ryan Wu&lt;/p&gt;
-&lt;p&gt;本中文指南是基于原文 3.10 版以及 2010 年由 &lt;a href=&quot;https://github.com/gasolin&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Gasolin&lt;/a&gt; 所翻译版本的最新翻译；&lt;br&gt;
+&lt;p&gt;本指南英文版版权为 Eric S. Raymond, Rick Moen 所有。&lt;br&gt;
     
     </summary>
     
