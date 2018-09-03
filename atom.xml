@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2018-09-01T10:30:22.088Z</updated>
+  <updated>2018-09-03T05:11:43.181Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -17,11 +17,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>以太坊智能合约开发-环境搭建</title>
+    <link href="https://zerosun.top/2018/09/03/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E5%BC%80%E5%8F%91-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>https://zerosun.top/2018/09/03/以太坊智能合约开发-环境搭建/</id>
+    <published>2018-09-03T05:05:13.000Z</published>
+    <updated>2018-09-03T05:11:43.181Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
+    
+    
+      <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello Markdown</title>
-    <link href="https://zerosun.top/2018/09/01/Hello-Markdown/"/>
-    <id>https://zerosun.top/2018/09/01/Hello-Markdown/</id>
-    <published>2018-09-01T10:30:22.088Z</published>
-    <updated>2018-09-01T10:30:22.088Z</updated>
+    <link href="https://zerosun.top/2018/09/03/Hello-Markdown/"/>
+    <id>https://zerosun.top/2018/09/03/Hello-Markdown/</id>
+    <published>2018-09-03T03:38:23.274Z</published>
+    <updated>2018-09-03T03:38:23.274Z</updated>
     
     <summary type="html">
     
@@ -39,6 +57,8 @@
     </summary>
     
     
+      <category term="Markdown" scheme="https://zerosun.top/tags/Markdown/"/>
+    
   </entry>
   
   <entry>
@@ -46,7 +66,7 @@
     <link href="https://zerosun.top/2018/08/30/%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7/"/>
     <id>https://zerosun.top/2018/08/30/提问的智慧/</id>
     <published>2018-08-30T05:56:56.000Z</published>
-    <updated>2018-09-01T10:30:20.117Z</updated>
+    <updated>2018-09-03T05:11:40.775Z</updated>
     
     <summary type="html">
     
