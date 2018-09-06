@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2018-09-06T12:16:31.881Z</updated>
+  <updated>2018-09-06T12:29:07.249Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -17,11 +17,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hello Markdown</title>
+    <link href="https://zerosun.top/2018/09/06/Hello-Markdown/"/>
+    <id>https://zerosun.top/2018/09/06/Hello-Markdown/</id>
+    <published>2018-09-06T12:29:07.249Z</published>
+    <updated>2018-09-06T12:29:07.249Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Markdown-一种轻量级标记语言&quot;&gt;&lt;a href=&quot;#Markdown-一种轻量级标记语言&quot; class=&quot;headerlink&quot; title=&quot;Markdown 一种轻量级标记语言&quot;&gt;&lt;/a&gt;Markdown 一种轻量级标记语言&lt;/h1&gt;&lt;p&gt;Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档”。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。下面参考&lt;a href=&quot;https://zh.wikipedia.org/wiki/Markdown&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Wiki&lt;/a&gt;和&lt;a href=&quot;https://www.zybuluo.com/mdeditor&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;作业部落&lt;/a&gt;，对Markdown的使用进行总结予说明。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Markdown" scheme="https://zerosun.top/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
     <title>区块基础-Hash算法</title>
     <link href="https://zerosun.top/2018/09/06/%E5%8C%BA%E5%9D%97%E5%9F%BA%E7%A1%80-Hash%E7%AE%97%E6%B3%95/"/>
     <id>https://zerosun.top/2018/09/06/区块基础-Hash算法/</id>
     <published>2018-09-06T12:10:33.000Z</published>
-    <updated>2018-09-06T12:16:31.881Z</updated>
+    <updated>2018-09-06T12:29:15.966Z</updated>
     
     <summary type="html">
     
@@ -30,10 +48,10 @@
     
     </summary>
     
-      <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
+      <category term="Blockchain" scheme="https://zerosun.top/categories/Blockchain/"/>
     
     
-      <category term="blockchain" scheme="https://zerosun.top/tags/blockchain/"/>
+      <category term="Blockchain" scheme="https://zerosun.top/tags/Blockchain/"/>
     
       <category term="Hash" scheme="https://zerosun.top/tags/Hash/"/>
     
@@ -44,7 +62,7 @@
     <link href="https://zerosun.top/2018/09/06/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E7%A7%81%E6%9C%89%E9%93%BE%E6%90%AD%E5%BB%BA/"/>
     <id>https://zerosun.top/2018/09/06/以太坊私有链搭建/</id>
     <published>2018-09-06T05:05:13.000Z</published>
-    <updated>2018-09-06T12:14:33.608Z</updated>
+    <updated>2018-09-06T12:20:25.665Z</updated>
     
     <summary type="html">
     
@@ -52,41 +70,14 @@
     
     </summary>
     
-      <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
+      <category term="Blockchain" scheme="https://zerosun.top/categories/Blockchain/"/>
     
+    
+      <category term="Blockchain" scheme="https://zerosun.top/tags/Blockchain/"/>
     
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
       <category term="MIST" scheme="https://zerosun.top/tags/MIST/"/>
-    
-      <category term="blockchain" scheme="https://zerosun.top/tags/blockchain/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello Markdown</title>
-    <link href="https://zerosun.top/2018/09/03/Hello-Markdown/"/>
-    <id>https://zerosun.top/2018/09/03/Hello-Markdown/</id>
-    <published>2018-09-03T03:38:23.274Z</published>
-    <updated>2018-09-03T03:38:23.274Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;欢迎使用-Cmd-Markdown-编辑阅读器&quot;&gt;&lt;a href=&quot;#欢迎使用-Cmd-Markdown-编辑阅读器&quot; class=&quot;headerlink&quot; title=&quot;欢迎使用 Cmd Markdown 编辑阅读器&quot;&gt;&lt;/a&gt;欢迎使用 Cmd Markdown 编辑阅读器&lt;/h1&gt;&lt;hr&gt;
-&lt;p&gt;我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，&lt;strong&gt;Cmd Markdown&lt;/strong&gt; 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;整理知识，学习笔记&lt;/li&gt;
-&lt;li&gt;发布日记，杂文，所见所想&lt;/li&gt;
-&lt;li&gt;撰写发布技术文稿（代码支持）&lt;/li&gt;
-&lt;li&gt;撰写发布学术论文（LaTeX 公式支持）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="Markdown" scheme="https://zerosun.top/tags/Markdown/"/>
     
   </entry>
   
