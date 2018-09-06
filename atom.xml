@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2018-09-06T12:29:07.249Z</updated>
+  <updated>2018-09-06T12:30:43.888Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -15,24 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Hello Markdown</title>
-    <link href="https://zerosun.top/2018/09/06/Hello-Markdown/"/>
-    <id>https://zerosun.top/2018/09/06/Hello-Markdown/</id>
-    <published>2018-09-06T12:29:07.249Z</published>
-    <updated>2018-09-06T12:29:07.249Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Markdown-一种轻量级标记语言&quot;&gt;&lt;a href=&quot;#Markdown-一种轻量级标记语言&quot; class=&quot;headerlink&quot; title=&quot;Markdown 一种轻量级标记语言&quot;&gt;&lt;/a&gt;Markdown 一种轻量级标记语言&lt;/h1&gt;&lt;p&gt;Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档”。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。下面参考&lt;a href=&quot;https://zh.wikipedia.org/wiki/Markdown&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Wiki&lt;/a&gt;和&lt;a href=&quot;https://www.zybuluo.com/mdeditor&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;作业部落&lt;/a&gt;，对Markdown的使用进行总结予说明。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="Markdown" scheme="https://zerosun.top/tags/Markdown/"/>
-    
-  </entry>
   
   <entry>
     <title>区块基础-Hash算法</title>
@@ -62,7 +44,7 @@
     <link href="https://zerosun.top/2018/09/06/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E7%A7%81%E6%9C%89%E9%93%BE%E6%90%AD%E5%BB%BA/"/>
     <id>https://zerosun.top/2018/09/06/以太坊私有链搭建/</id>
     <published>2018-09-06T05:05:13.000Z</published>
-    <updated>2018-09-06T12:44:30.055Z</updated>
+    <updated>2018-09-06T12:47:29.267Z</updated>
     
     <summary type="html">
     
@@ -73,11 +55,29 @@
       <category term="Blockchain" scheme="https://zerosun.top/categories/Blockchain/"/>
     
     
+      <category term="Blockchain" scheme="https://zerosun.top/tags/Blockchain/"/>
+    
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
       <category term="MIST" scheme="https://zerosun.top/tags/MIST/"/>
     
-      <category term="Blockchain" scheme="https://zerosun.top/tags/Blockchain/"/>
+  </entry>
+  
+  <entry>
+    <title>Hello Markdown</title>
+    <link href="https://zerosun.top/2018/08/30/Hello-Markdown/"/>
+    <id>https://zerosun.top/2018/08/30/Hello-Markdown/</id>
+    <published>2018-08-30T11:26:13.000Z</published>
+    <updated>2018-09-06T12:49:01.247Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Markdown-一种轻量级标记语言&quot;&gt;&lt;a href=&quot;#Markdown-一种轻量级标记语言&quot; class=&quot;headerlink&quot; title=&quot;Markdown 一种轻量级标记语言&quot;&gt;&lt;/a&gt;Markdown 一种轻量级标记语言&lt;/h1&gt;&lt;p&gt;Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档”。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。下面参考&lt;a href=&quot;https://zh.wikipedia.org/wiki/Markdown&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Wiki&lt;/a&gt;和&lt;a href=&quot;https://www.zybuluo.com/mdeditor&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;作业部落&lt;/a&gt;，对Markdown的使用进行总结予说明。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Markdown" scheme="https://zerosun.top/tags/Markdown/"/>
     
   </entry>
   
