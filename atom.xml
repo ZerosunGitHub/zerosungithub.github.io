@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2018-09-06T11:26:45.282Z</updated>
+  <updated>2018-09-06T12:16:31.881Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>区块基础-Hash算法</title>
+    <link href="https://zerosun.top/2018/09/06/%E5%8C%BA%E5%9D%97%E5%9F%BA%E7%A1%80-Hash%E7%AE%97%E6%B3%95/"/>
+    <id>https://zerosun.top/2018/09/06/区块基础-Hash算法/</id>
+    <published>2018-09-06T12:10:33.000Z</published>
+    <updated>2018-09-06T12:16:31.881Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;区块基础-Hash算法&quot;&gt;&lt;a href=&quot;#区块基础-Hash算法&quot; class=&quot;headerlink&quot; title=&quot;区块基础-Hash算法&quot;&gt;&lt;/a&gt;区块基础-Hash算法&lt;/h1&gt;&lt;p&gt;hash算法&lt;/p&gt;
+&lt;p&gt;hash算法也称为散列函数算法，在区块链中应用的相当频繁，在说明hash算法之前先明确一个概念。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
+    
+    
+      <category term="blockchain" scheme="https://zerosun.top/tags/blockchain/"/>
+    
+      <category term="Hash" scheme="https://zerosun.top/tags/Hash/"/>
+    
+  </entry>
+  
+  <entry>
     <title>以太坊私有链搭建</title>
     <link href="https://zerosun.top/2018/09/06/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E7%A7%81%E6%9C%89%E9%93%BE%E6%90%AD%E5%BB%BA/"/>
     <id>https://zerosun.top/2018/09/06/以太坊私有链搭建/</id>
     <published>2018-09-06T05:05:13.000Z</published>
-    <updated>2018-09-06T11:26:45.282Z</updated>
+    <updated>2018-09-06T12:14:33.608Z</updated>
     
     <summary type="html">
     
@@ -33,6 +56,10 @@
     
     
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
+    
+      <category term="MIST" scheme="https://zerosun.top/tags/MIST/"/>
+    
+      <category term="blockchain" scheme="https://zerosun.top/tags/blockchain/"/>
     
   </entry>
   
