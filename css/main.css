@@ -2026,7 +2026,7 @@ animation-play-state:paused; */
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1bb826;
+  background: #f988d2;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3181,10 +3181,10 @@ ul.breadcrumb li+li:last-child {
 body {
   background: url("https://source.unsplash.com/random/1920x1080");
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 .main-inner {
-  margin-top: 0px;
-  padding: 25px 25px 25px 25px;
   background: #fff;
-  min-height: 500px;
 }
