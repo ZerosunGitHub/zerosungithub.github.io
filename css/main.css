@@ -2021,7 +2021,7 @@ animation-play-state:paused; */
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #711a74;
+  background: #1c8a58;
 }
 .links-of-author-item {
   text-align: center;
@@ -3183,6 +3183,14 @@ body {
   background-size: cover;
   background-position: center;
 }
-.main-inner {
-  background: #ffefdb;
+.post {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+.content {
+  border-radius: 10px;
+  margin-top: 20px;
 }
