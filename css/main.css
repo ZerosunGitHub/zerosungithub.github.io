@@ -2021,7 +2021,7 @@ animation-play-state:paused; */
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a87545;
+  background: #711a74;
 }
 .links-of-author-item {
   text-align: center;
@@ -3181,8 +3181,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: center;
 }
 .main-inner {
-  background: #fff;
+  background: #ffefdb;
 }
