@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2018-09-11T09:18:52.442Z</updated>
+  <updated>2018-09-12T11:33:18.702Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -17,76 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>区块基础-区块链简介</title>
-    <link href="https://zerosun.top/2018/09/11/%E5%8C%BA%E5%9D%97%E5%9F%BA%E7%A1%80-%E5%8C%BA%E5%9D%97%E9%93%BE%E7%AE%80%E4%BB%8B/"/>
-    <id>https://zerosun.top/2018/09/11/区块基础-区块链简介/</id>
-    <published>2018-09-11T09:06:31.000Z</published>
-    <updated>2018-09-11T09:18:52.442Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;区块链作为目前最为火热的计算机相关技术之一，收到越来越多人的关注，互联网巨头们纷纷入场，区块链创业公司也不停涌现，这里对区块链相关基础知识做一个系统介绍，旨在普及区块链基础知识点。不涉及项目推广投资，单纯的对区块链相关基础知识概念作一个说明讲解。涉及相关内容如理解有误，也请及时指正。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Blockchain" scheme="https://zerosun.top/categories/Blockchain/"/>
-    
-    
-      <category term="Blockchain" scheme="https://zerosun.top/tags/Blockchain/"/>
-    
-      <category term="Hash" scheme="https://zerosun.top/tags/Hash/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>以太坊客户端Geth命令用法</title>
-    <link href="https://zerosun.top/2018/09/07/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E5%AE%A2%E6%88%B7%E7%AB%AFGeth%E5%91%BD%E4%BB%A4%E7%94%A8%E6%B3%95/"/>
-    <id>https://zerosun.top/2018/09/07/以太坊客户端Geth命令用法/</id>
-    <published>2018-09-07T06:49:09.000Z</published>
-    <updated>2018-09-11T05:01:57.278Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="Blockchain" scheme="https://zerosun.top/categories/Blockchain/"/>
-    
-    
-      <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
-    
-      <category term="Blockchain" scheme="https://zerosun.top/tags/Blockchain/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>区块基础-Hash算法</title>
-    <link href="https://zerosun.top/2018/09/06/%E5%8C%BA%E5%9D%97%E5%9F%BA%E7%A1%80-Hash%E7%AE%97%E6%B3%95/"/>
-    <id>https://zerosun.top/2018/09/06/区块基础-Hash算法/</id>
-    <published>2018-09-06T12:10:33.000Z</published>
-    <updated>2018-09-06T12:30:43.888Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;区块链基础-Hash算法&quot;&gt;&lt;a href=&quot;#区块链基础-Hash算法&quot; class=&quot;headerlink&quot; title=&quot;区块链基础-Hash算法&quot;&gt;&lt;/a&gt;区块链基础-Hash算法&lt;/h1&gt;&lt;p&gt;hash算法&lt;/p&gt;
-&lt;p&gt;hash算法也称为散列函数算法，在区块链中应用的相当频繁，在说明hash算法之前先明确一个概念。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Blockchain" scheme="https://zerosun.top/categories/Blockchain/"/>
-    
-    
-      <category term="Blockchain" scheme="https://zerosun.top/tags/Blockchain/"/>
-    
-      <category term="Hash" scheme="https://zerosun.top/tags/Hash/"/>
-    
-  </entry>
-  
-  <entry>
     <title>以太坊私有链搭建</title>
     <link href="https://zerosun.top/2018/09/06/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E7%A7%81%E6%9C%89%E9%93%BE%E6%90%AD%E5%BB%BA/"/>
     <id>https://zerosun.top/2018/09/06/以太坊私有链搭建/</id>
     <published>2018-09-06T05:05:13.000Z</published>
-    <updated>2018-09-12T10:03:53.214Z</updated>
+    <updated>2018-09-12T11:33:18.702Z</updated>
     
     <summary type="html">
     
