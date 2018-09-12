@@ -2021,7 +2021,7 @@ animation-play-state:paused; */
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #577894;
+  background: #47d9ff;
 }
 .links-of-author-item {
   text-align: center;
@@ -3037,7 +3037,7 @@ hr {
   }
 }
 body {
-  background: url("https://source.unsplash.com/random/1920x1080");
+  background: url("https://source.unsplash.com/WLUHO9A_xik/1600x900");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -3050,4 +3050,5 @@ body {
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
   border-radius: 10px;
+  background: rgba(234,234,239,0.88) none repeat scroll !important;
 }
