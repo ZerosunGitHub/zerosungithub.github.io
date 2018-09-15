@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2018-09-12T12:14:34.133Z</updated>
+  <updated>2018-09-15T07:24:43.479Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -17,15 +17,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>以太坊私有链搭建</title>
-    <link href="https://zerosun.top/2018/09/06/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E7%A7%81%E6%9C%89%E9%93%BE%E6%90%AD%E5%BB%BA/"/>
-    <id>https://zerosun.top/2018/09/06/以太坊私有链搭建/</id>
-    <published>2018-09-06T05:05:13.000Z</published>
-    <updated>2018-09-12T12:14:34.133Z</updated>
+    <title>以太坊私有链搭建 for Windows7</title>
+    <link href="https://zerosun.top/2018/09/15/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E7%A7%81%E6%9C%89%E9%93%BE%E6%90%AD%E5%BB%BA-for-Windows7/"/>
+    <id>https://zerosun.top/2018/09/15/以太坊私有链搭建-for-Windows7/</id>
+    <published>2018-09-15T07:24:01.000Z</published>
+    <updated>2018-09-15T07:24:43.479Z</updated>
     
     <summary type="html">
-    
-      &lt;h1 id=&quot;搭建以太坊&quot;&gt;&lt;a href=&quot;#搭建以太坊&quot; class=&quot;headerlink&quot; title=&quot;搭建以太坊&quot;&gt;&lt;/a&gt;搭建以太坊&lt;/h1&gt;&lt;p&gt;参考文档：&lt;br&gt;&lt;a href=&quot;https://github.com/ethereum/go-ethereum&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub以太坊官方项目Go-Ethereum&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://ethereum.mochain.info/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;精通以太坊&lt;/a&gt;&lt;br&gt;
     
     </summary>
     
@@ -34,9 +32,34 @@
     
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
+      <category term="Blockchain" scheme="https://zerosun.top/tags/Blockchain/"/>
+    
       <category term="MIST" scheme="https://zerosun.top/tags/MIST/"/>
     
+  </entry>
+  
+  <entry>
+    <title>以太坊私有链搭建 for Ubuntu1604</title>
+    <link href="https://zerosun.top/2018/09/06/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E7%A7%81%E6%9C%89%E9%93%BE%E6%90%AD%E5%BB%BA-for-Ubuntu1604/"/>
+    <id>https://zerosun.top/2018/09/06/以太坊私有链搭建-for-Ubuntu1604/</id>
+    <published>2018-09-06T05:05:13.000Z</published>
+    <updated>2018-09-15T07:26:05.885Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;#以太坊私有链搭建  &lt;/p&gt;
+&lt;p&gt;参考文档：&lt;br&gt;&lt;a href=&quot;https://github.com/ethereum/go-ethereum&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub以太坊官方项目Go-Ethereum&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://ethereum.mochain.info/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;精通以太坊&lt;/a&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Blockchain" scheme="https://zerosun.top/categories/Blockchain/"/>
+    
+    
+      <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
+    
       <category term="Blockchain" scheme="https://zerosun.top/tags/Blockchain/"/>
+    
+      <category term="MIST" scheme="https://zerosun.top/tags/MIST/"/>
     
   </entry>
   
