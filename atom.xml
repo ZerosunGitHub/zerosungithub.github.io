@@ -44,6 +44,28 @@
   </entry>
   
   <entry>
+    <title>区块基础-区块链简介</title>
+    <link href="https://zerosun.top/2018/09/11/BlockChain-Basis-simple-intro/"/>
+    <id>https://zerosun.top/2018/09/11/BlockChain-Basis-simple-intro/</id>
+    <published>2018-09-11T09:06:31.000Z</published>
+    <updated>2018-09-11T09:18:52.442Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;区块链作为目前最为火热的计算机相关技术之一，收到越来越多人的关注，互联网巨头们纷纷入场，区块链创业公司也不停涌现，这里对区块链相关基础知识做一个系统介绍，旨在普及区块链基础知识点。不涉及项目推广投资，单纯的对区块链相关基础知识概念作一个说明讲解。涉及相关内容如理解有误，也请及时指正。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Blockchain" scheme="https://zerosun.top/categories/Blockchain/"/>
+    
+    
+      <category term="Blockchain" scheme="https://zerosun.top/tags/Blockchain/"/>
+    
+      <category term="Hash" scheme="https://zerosun.top/tags/Hash/"/>
+    
+  </entry>
+  
+  <entry>
     <title>以太坊基础-以太坊私有链搭建</title>
     <link href="https://zerosun.top/2018/09/06/Ethereum-Basis-setup-eth-private-chain/"/>
     <id>https://zerosun.top/2018/09/06/Ethereum-Basis-setup-eth-private-chain/</id>
@@ -61,9 +83,9 @@
     
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
-      <category term="Blockchain" scheme="https://zerosun.top/tags/Blockchain/"/>
-    
       <category term="MIST" scheme="https://zerosun.top/tags/MIST/"/>
+    
+      <category term="Blockchain" scheme="https://zerosun.top/tags/Blockchain/"/>
     
   </entry>
   
