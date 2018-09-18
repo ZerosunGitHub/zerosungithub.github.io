@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2018-09-18T07:57:23.679Z</updated>
+  <updated>2018-09-18T08:01:44.752Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="https://zerosun.top/2018/09/18/Ethereum-SmartContract-setup-env/"/>
     <id>https://zerosun.top/2018/09/18/Ethereum-SmartContract-setup-env/</id>
     <published>2018-09-18T07:55:54.000Z</published>
-    <updated>2018-09-18T07:57:23.679Z</updated>
+    <updated>2018-09-18T08:01:44.752Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;以太坊智能合约-环境搭建&quot;&gt;&lt;a href=&quot;#以太坊智能合约-环境搭建&quot; class=&quot;headerlink&quot; title=&quot;以太坊智能合约-环境搭建&quot;&gt;&lt;/a&gt;以太坊智能合约-环境搭建&lt;/h1&gt;
+        &lt;h1 id=&quot;智能合约开发环境搭建&quot;&gt;&lt;a href=&quot;#智能合约开发环境搭建&quot; class=&quot;headerlink&quot; title=&quot;智能合约开发环境搭建&quot;&gt;&lt;/a&gt;智能合约开发环境搭建&lt;/h1&gt;
       
     
     </summary>
@@ -44,15 +44,15 @@
   </entry>
   
   <entry>
-    <title>Ethereum Basis以太坊私有链搭建</title>
+    <title>以太坊基础-以太坊私有链搭建</title>
     <link href="https://zerosun.top/2018/09/06/Ethereum-Basis-setup-eth-private-chain/"/>
     <id>https://zerosun.top/2018/09/06/Ethereum-Basis-setup-eth-private-chain/</id>
     <published>2018-09-06T05:05:13.000Z</published>
-    <updated>2018-09-18T07:51:16.358Z</updated>
+    <updated>2018-09-18T08:05:38.784Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Ethereum-Basis以太坊私有链搭建&quot;&gt;&lt;a href=&quot;#Ethereum-Basis以太坊私有链搭建&quot; class=&quot;headerlink&quot; title=&quot;Ethereum Basis以太坊私有链搭建&quot;&gt;&lt;/a&gt;Ethereum Basis以太坊私有链搭建&lt;/h1&gt;&lt;p&gt;参考文档：&lt;br&gt;
+      &lt;h1 id=&quot;以太坊私有链搭建&quot;&gt;&lt;a href=&quot;#以太坊私有链搭建&quot; class=&quot;headerlink&quot; title=&quot;以太坊私有链搭建&quot;&gt;&lt;/a&gt;以太坊私有链搭建&lt;/h1&gt;&lt;p&gt;搭建环境：&lt;br&gt;Ubuntu16.04.1 amd64&lt;br&gt;Vmware Workstation&lt;br&gt;参考：&lt;br&gt;&lt;a href=&quot;https://github.com/ethereum/go-ethereum&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub以太坊官方项目Go-Ethereum&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://ethereum.mochain.info/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;精通以太坊&lt;/a&gt;&lt;br&gt;
     
     </summary>
     
@@ -90,12 +90,11 @@
     <link href="https://zerosun.top/2018/08/30/How-To-Ask-Questions-The-Smart-Way/"/>
     <id>https://zerosun.top/2018/08/30/How-To-Ask-Questions-The-Smart-Way/</id>
     <published>2018-08-30T05:56:56.000Z</published>
-    <updated>2018-09-15T08:05:55.673Z</updated>
+    <updated>2018-09-18T08:04:52.817Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;提问的智慧&quot;&gt;&lt;a href=&quot;#提问的智慧&quot; class=&quot;headerlink&quot; title=&quot;提问的智慧&quot;&gt;&lt;/a&gt;提问的智慧&lt;/h1&gt;&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;How To Ask Questions The Smart Way&lt;/strong&gt;&lt;br&gt;
+      &lt;h1 id=&quot;How-To-Ask-Questions-The-Smart-Way&quot;&gt;&lt;a href=&quot;#How-To-Ask-Questions-The-Smart-Way&quot; class=&quot;headerlink&quot; title=&quot;How To Ask Questions The Smart Way&quot;&gt;&lt;/a&gt;How To Ask Questions The Smart Way&lt;/h1&gt;&lt;p&gt;Copyright © 2001,2006,2014 Eric S. Raymond, Rick Moen&lt;br&gt;本指南英文版版权为 Eric S. Raymond, Rick Moen 所有。&lt;br&gt;
     
     </summary>
     
