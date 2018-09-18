@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2018-09-18T08:01:44.752Z</updated>
+  <updated>2018-09-18T09:37:48.797Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -21,13 +21,14 @@
     <link href="https://zerosun.top/2018/09/18/Ethereum-SmartContract-setup-env/"/>
     <id>https://zerosun.top/2018/09/18/Ethereum-SmartContract-setup-env/</id>
     <published>2018-09-18T07:55:54.000Z</published>
-    <updated>2018-09-18T08:01:44.752Z</updated>
+    <updated>2018-09-18T09:37:48.797Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;智能合约开发环境搭建&quot;&gt;&lt;a href=&quot;#智能合约开发环境搭建&quot; class=&quot;headerlink&quot; title=&quot;智能合约开发环境搭建&quot;&gt;&lt;/a&gt;智能合约开发环境搭建&lt;/h1&gt;
+        &lt;h1 id=&quot;智能合约开发环境搭建&quot;&gt;&lt;a href=&quot;#智能合约开发环境搭建&quot; class=&quot;headerlink&quot; title=&quot;智能合约开发环境搭建&quot;&gt;&lt;/a&gt;智能合约开发环境搭建&lt;/h1&gt;&lt;p&gt;进行智能合约开发环境搭建前，建议自行搭建一遍以太坊私有链  &lt;/p&gt;
+
       
     
     </summary>
@@ -70,7 +71,7 @@
     <link href="https://zerosun.top/2018/09/06/Ethereum-Basis-setup-eth-private-chain/"/>
     <id>https://zerosun.top/2018/09/06/Ethereum-Basis-setup-eth-private-chain/</id>
     <published>2018-09-06T05:05:13.000Z</published>
-    <updated>2018-09-18T08:20:02.447Z</updated>
+    <updated>2018-09-18T09:37:40.927Z</updated>
     
     <summary type="html">
     
