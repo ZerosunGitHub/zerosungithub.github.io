@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2018-09-18T06:29:06.545Z</updated>
+  <updated>2018-09-18T06:51:53.152Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zerosun.top/2018/09/06/set-up-eth-private-chain-for-Ubuntu1604/"/>
     <id>https://zerosun.top/2018/09/06/set-up-eth-private-chain-for-Ubuntu1604/</id>
     <published>2018-09-06T05:05:13.000Z</published>
-    <updated>2018-09-18T06:29:06.545Z</updated>
+    <updated>2018-09-18T06:51:53.152Z</updated>
     
     <summary type="html">
     
@@ -34,9 +34,9 @@
     
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
-      <category term="MIST" scheme="https://zerosun.top/tags/MIST/"/>
-    
       <category term="Blockchain" scheme="https://zerosun.top/tags/Blockchain/"/>
+    
+      <category term="MIST" scheme="https://zerosun.top/tags/MIST/"/>
     
   </entry>
   
