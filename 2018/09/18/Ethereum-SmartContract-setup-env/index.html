@@ -129,7 +129,7 @@
 <meta property="og:site_name" content="北岸冷若冰霜">
 <meta property="og:description" content="智能合约开发环境搭建进行智能合约开发环境搭建前，建议自行搭建一遍以太坊私有链">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-18T10:13:51.591Z">
+<meta property="og:updated_time" content="2018-09-18T10:40:23.788Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="以太坊智能合约-环境搭建">
 <meta name="twitter:description" content="智能合约开发环境搭建进行智能合约开发环境搭建前，建议自行搭建一遍以太坊私有链">
@@ -449,7 +449,7 @@
                 
               
 
-              <time title="创建时间：2018-09-18 15:55:54 / 修改时间：18:13:51" itemprop="dateCreated datePublished" datetime="2018-09-18T15:55:54+08:00">2018-09-18</time>
+              <time title="创建时间：2018-09-18 15:55:54 / 修改时间：18:40:23" itemprop="dateCreated datePublished" datetime="2018-09-18T15:55:54+08:00">2018-09-18</time>
             
 
             
@@ -507,7 +507,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">785</span>
+                <span title="本文字数">3.5k</span>
               
 
               
@@ -521,7 +521,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">1 分钟</span>
+                <span title="阅读时长">3 分钟</span>
               
             </div>
           
@@ -544,10 +544,12 @@
         <h1 id="智能合约开发环境搭建"><a href="#智能合约开发环境搭建" class="headerlink" title="智能合约开发环境搭建"></a>智能合约开发环境搭建</h1><p>进行智能合约开发环境搭建前，建议自行搭建一遍以太坊私有链<br><a id="more"></a><br>官方链接：<br><a href="https://github.com/ethereum/remix-ide" target="_blank" rel="noopener">REMIX-IDE GitHub</a><br><a href="https://github.com/ethereum/remix-ide/releases" target="_blank" rel="noopener">remix-ide</a><br>参考链接：<br><a href="http://blog.luoyuanhang.com/2018/07/10/starting-on-ethereum-smart-contract-env/" target="_blank" rel="noopener">以太坊智能合约开发 - 环境搭建</a>  </p>
 <h2 id="Remix"><a href="#Remix" class="headerlink" title="Remix"></a>Remix</h2><p>Remix is a browser-based compiler and IDE that enables users to build Ethereum contracts with Solidity language and to debug transactions</p>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="Install-npm-and-node-js"><a href="#Install-npm-and-node-js" class="headerlink" title="Install npm and node.js"></a>Install npm and node.js</h3><p>安装nmp和nodejd请参考另一篇文章  </p>
-<h3 id="Install-Remix-ide"><a href="#Install-Remix-ide" class="headerlink" title="Install Remix-ide"></a>Install Remix-ide</h3><p>Remix-ide has been published as an npm module:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g remix-ide</span><br></pre></td></tr></table></figure></p>
-<p>切换为国内的源，没有安装成功<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure></p>
+<h3 id="npm-Install"><a href="#npm-Install" class="headerlink" title="npm Install"></a>npm Install</h3><p>Remix-ide has been published as an npm module:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g remix-ide</span><br></pre></td></tr></table></figure></p>
+<p>切换为国内的源，没有安装成功</p>
+<h3 id="source-code-Install"><a href="#source-code-Install" class="headerlink" title="source code Install"></a>source code Install</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
 <p>clone the github repository(wget need to be installed first) :<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/ethereum/remix-ide.git</span><br><span class="line">$ <span class="built_in">cd</span> remix-ide</span><br><span class="line">$ npm install <span class="comment">#很久</span></span><br><span class="line">$ npm run setupremix  <span class="comment"># this will clone https://github.com/ethereum/remix for you and link it to remix-ide. Only execute this step if you want to contribute on Remix development</span></span><br><span class="line">$ npm start</span><br></pre></td></tr></table></figure></p>
-
+<p>现在可以通过<br>Run 浏览器访问 <a href="http://127.0.0.1:8080" target="_blank" rel="noopener">http://127.0.0.1:8080</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">&gt; remix-ide@0.7.2 start /home/sun/remix-ide</span><br><span class="line">&gt; npm-run-all -lpr serve watch onchange remixd</span><br><span class="line"></span><br><span class="line">[serve   ]</span><br><span class="line">[serve   ] &gt; remix-ide@0.7.2 serve /home/sun/remix-ide</span><br><span class="line">[serve   ] &gt; execr --silent http-server .</span><br><span class="line">[serve   ]</span><br><span class="line">[watch   ]</span><br><span class="line">[watch   ] &gt; remix-ide@0.7.2 watch /home/sun/remix-ide</span><br><span class="line">[watch   ] &gt; watchify src/index.js -dv -p browserify-reload -o build/app.js --exclude solc</span><br><span class="line">[watch   ]</span><br><span class="line">[onchange]</span><br><span class="line">[onchange] &gt; remix-ide@0.7.2 onchange /home/sun/remix-ide</span><br><span class="line">[onchange] &gt; onchange build/app.js -- npm-run-all lint</span><br><span class="line">[onchange]</span><br><span class="line">[remixd  ]</span><br><span class="line">[remixd  ] &gt; remix-ide@0.7.2 remixd /home/sun/remix-ide</span><br><span class="line">[remixd  ] &gt; ./node_modules/remixd/bin/remixd -s ./contracts</span><br><span class="line">[remixd  ]</span><br><span class="line">[watch   ] WS server listening on  33703</span><br><span class="line">[remixd  ] example: --dev-path /home/devchains/chain1 --mist --geth --frontend /home/frontend --frontend-port 8084 --auto-mine</span><br><span class="line">[remixd  ] Usage: remixd -s &lt;shared folder&gt;</span><br><span class="line">[remixd  ]</span><br><span class="line">[remixd  ] Provide a two ways connection between the <span class="built_in">local</span> computer and Remix IDE</span><br><span class="line">[remixd  ]</span><br><span class="line">[remixd  ] Options:</span><br><span class="line">[remixd  ]</span><br><span class="line">[remixd  ]   -s, --shared-folder &lt;path&gt;            Folder to share with Remix IDE</span><br><span class="line">[remixd  ]   -m, --mist                            start mist</span><br><span class="line">[remixd  ]   -g, --geth                            start geth</span><br><span class="line">[remixd  ]   -p, --dev-path &lt;dev-path&gt;             Folder used by mist/geth to start the development instance</span><br><span class="line">[remixd  ]   -f, --frontend &lt;front-end&gt;            Folder that should be served by remixd</span><br><span class="line">[remixd  ]   -p, --frontend-port &lt;front-end-port&gt;  Http port used by the frontend (default 8082)</span><br><span class="line">[remixd  ]   -a, --auto-mine                       mine pending transactions</span><br><span class="line">[remixd  ]   -r, --rpc &lt;cors-domains&gt;              start rpc server. Values are CORS domain</span><br><span class="line">[remixd  ]   -rp, --rpc-port                       rpc server port (default 8545)</span><br><span class="line">[remixd  ]   --profiler                            start profiler service</span><br><span class="line">[remixd  ]   -h, --<span class="built_in">help</span>                            output usage information</span><br><span class="line">[remixd  ] [WARN] Any application that runs on your computer can potentially <span class="built_in">read</span> from and write to all files <span class="keyword">in</span> the directory.</span><br><span class="line">[remixd  ] [WARN] Symbolinc links are not forwarded to Remix IDE</span><br><span class="line">[remixd  ]</span><br><span class="line">[remixd  ] [WARN] Symbolic link modification not allowed : ./contracts | /home/sun/remix-ide/contracts</span><br><span class="line">[remixd  ] Tue Sep 18 2018 19:23:38 GMT+0900 (KST) Remixd is listening on 127.0.0.1:65520</span><br><span class="line">[watch   ] NOW ASKING FOR CLIENT TO RELOAD</span><br><span class="line">[watch   ] 24493914 bytes written to build/app.js (27.32 seconds) at 19:24:04</span><br><span class="line">[onchange]</span><br><span class="line">[onchange] &gt; remix-ide@0.7.2 lint /home/sun/remix-ide</span><br><span class="line">[onchange] &gt; standard | notify-error</span><br><span class="line">[onchange]</span><br></pre></td></tr></table></figure></p>
+<h2 id="一个简单的智能合约"><a href="#一个简单的智能合约" class="headerlink" title="一个简单的智能合约"></a>一个简单的智能合约</h2><h2 id="部署一个ERC20的合约"><a href="#部署一个ERC20的合约" class="headerlink" title="部署一个ERC20的合约"></a>部署一个ERC20的合约</h2>
       
     </div>
 
@@ -845,7 +847,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#智能合约开发环境搭建"><span class="nav-number">1.</span> <span class="nav-text">智能合约开发环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Remix"><span class="nav-number">1.1.</span> <span class="nav-text">Remix</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.2.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-npm-and-node-js"><span class="nav-number">1.2.1.</span> <span class="nav-text">Install npm and node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-Remix-ide"><span class="nav-number">1.2.2.</span> <span class="nav-text">Install Remix-ide</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#智能合约开发环境搭建"><span class="nav-number">1.</span> <span class="nav-text">智能合约开发环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Remix"><span class="nav-number">1.1.</span> <span class="nav-text">Remix</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.2.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-npm-and-node-js"><span class="nav-number">1.2.1.</span> <span class="nav-text">Install npm and node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#npm-Install"><span class="nav-number">1.2.2.</span> <span class="nav-text">npm Install</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#source-code-Install"><span class="nav-number">1.2.3.</span> <span class="nav-text">source code Install</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一个简单的智能合约"><span class="nav-number">1.3.</span> <span class="nav-text">一个简单的智能合约</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署一个ERC20的合约"><span class="nav-number">1.4.</span> <span class="nav-text">部署一个ERC20的合约</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -886,7 +888,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">50k</span>
+    <span title="站点总字数">53k</span>
   
 
   
@@ -897,7 +899,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">45 分钟</span>
+    <span title="站点阅读时长">48 分钟</span>
   
 </div>
 
