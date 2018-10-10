@@ -122,7 +122,7 @@
 
 
   <meta name="description" content="以太坊私有链搭建搭建环境：Ubuntu16.04.1 amd64Vmware Workstation参考：GitHub以太坊官方项目Go-Ethereum精通以太坊Go-Ethereum/wiki">
-<meta name="keywords" content="Ethereum,MIST,Blockchain">
+<meta name="keywords" content="Ethereum,Blockchain,MIST">
 <meta property="og:type" content="article">
 <meta property="og:title" content="以太坊基础-以太坊私有链搭建">
 <meta property="og:url" content="https://zerosun.top/2018/09/06/Ethereum-Basis-setup-eth-private-chain/index.html">
@@ -732,9 +732,9 @@
           
             <a href="/tags/Ethereum/" rel="tag"><i class="fa fa-tag"></i> Ethereum</a>
           
-            <a href="/tags/MIST/" rel="tag"><i class="fa fa-tag"></i> MIST</a>
-          
             <a href="/tags/Blockchain/" rel="tag"><i class="fa fa-tag"></i> Blockchain</a>
+          
+            <a href="/tags/MIST/" rel="tag"><i class="fa fa-tag"></i> MIST</a>
           
         </div>
       
@@ -804,7 +804,8 @@
   
     <div class="comments" id="comments">
       
-        <div id="gitment-container"></div>
+        <div onclick="showGitment()" id="gitment-display-button">点击这里显示评论</div>
+        <div id="gitment-container" style="display:none"></div>
       
     </div>
 
@@ -1174,6 +1175,11 @@
 <!-- END LOCAL -->
 
     
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
 
     
       <script type="text/javascript">
@@ -1196,7 +1202,11 @@
       }
 
       
-      renderGitment();
+      function showGitment(){
+        document.getElementById("gitment-display-button").style.display = "none";
+        document.getElementById("gitment-container").style.display = "block";
+        renderGitment();
+      }
       
       </script>
     
