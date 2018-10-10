@@ -2021,7 +2021,7 @@ animation-play-state:paused; */
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2be705;
+  background: #e242ff;
 }
 .links-of-author-item {
   text-align: center;
@@ -2321,6 +2321,22 @@ animation-play-state:paused; */
     -o-transform: scale(1.1);
     transform: scale(1.1);
   }
+}
+#gitment-display-button {
+  display: inline-block;
+  padding: 0 15px;
+  color: #0a9caf;
+  cursor: pointer;
+  font-size: 14px;
+  border: 1px solid #0a9caf;
+  border-radius: 4px;
+}
+#gitment-display-button:hover {
+  color: #fff;
+  background: #0a9caf;
+}
+#gitment-container a {
+  border-bottom: none;
 }
 .fa {
   font-family: FontAwesome !important;
@@ -3346,4 +3362,23 @@ body {
 }
 .post-body a:hover {
   color: #ff4500;
+}
+.site-meta {
+  background: #29d;
+}
+.post-nav-item a {
+  color: #0593d3;
+  border-bottom: none;
+}
+.post-nav-item a:hover {
+  color: #ff4500;
+}
+.posts-expand article:only-of-type h1 {
+  font-size: 33px;
+}
+.posts-expand .post-body ul li {
+  list-style: disc;
+}
+.post-body .label {
+  font-weight: bold;
 }
