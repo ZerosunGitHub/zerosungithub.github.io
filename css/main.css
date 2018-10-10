@@ -2021,7 +2021,7 @@ animation-play-state:paused; */
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #77ff75;
+  background: #2be705;
 }
 .links-of-author-item {
   text-align: center;
@@ -3337,4 +3337,13 @@ body {
   padding: 30px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+  border-radius: 20px;
+  background: rgba(234,234,239,0.88) none repeat scroll !important;
+}
+.post-body a {
+  color: #0593d3;
+  border-bottom: none;
+}
+.post-body a:hover {
+  color: #ff4500;
 }
