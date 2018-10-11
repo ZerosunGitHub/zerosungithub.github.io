@@ -2,6 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <!-- <loc>https://zerosun.top/link/index.html</loc> -->
+    <loc>https://zerosun.top/link/index.html</loc>
+    
+    <lastmod>2018-10-11T12:27:42.320Z</lastmod>
+    
+  </url>
+  
+  <url>
     <!-- <loc>https://zerosun.top/2018/09/10/BlockChain-Basis-common-vocabulary/</loc> -->
     <loc>https://zerosun.top/2018/09/10/BlockChain-Basis-common-vocabulary/</loc>
     
@@ -14,14 +22,6 @@
     <loc>https://zerosun.top/2018/08/30/Hello-Markdown/</loc>
     
     <lastmod>2018-10-11T03:45:05.758Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <!-- <loc>https://zerosun.top/link/index.html</loc> -->
-    <loc>https://zerosun.top/link/index.html</loc>
-    
-    <lastmod>2018-10-11T03:01:12.841Z</lastmod>
     
   </url>
   
