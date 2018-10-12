@@ -1528,6 +1528,9 @@ pre .javascript .function {
   border-bottom: 1px dashed #999;
   cursor: help;
 }
+.post-symbolscount {
+  display: inline-block;
+}
 .post-meta-divider {
   margin: 0 0.5em;
 }
@@ -2021,7 +2024,7 @@ animation-play-state:paused; */
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b59530;
+  background: #ff30ed;
 }
 .links-of-author-item {
   text-align: center;
