@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2018-10-17T10:03:17.422Z</updated>
+  <updated>2018-09-19T06:57:55.588Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -15,27 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Glitter&amp;Gloss</title>
-    <link href="https://zerosun.top/2018/10/17/GlitterGloss/"/>
-    <id>https://zerosun.top/2018/10/17/GlitterGloss/</id>
-    <published>2018-10-17T09:47:34.000Z</published>
-    <updated>2018-10-17T10:03:17.422Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/JxuEBt_RIRs?rel=0&amp;amp;showinfo=0&quot; frame
-      
-    
-    </summary>
-    
-    
-      <category term="MV" scheme="https://zerosun.top/tags/MV/"/>
-    
-  </entry>
   
   <entry>
     <title>Xmanager远程Ubuntu1604LTS</title>
@@ -182,6 +161,27 @@
     
     
       <category term="HOWTO" scheme="https://zerosun.top/tags/HOWTO/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Glitter&amp;Gloss</title>
+    <link href="https://zerosun.top/2017/03/26/GlitterGloss/"/>
+    <id>https://zerosun.top/2017/03/26/GlitterGloss/</id>
+    <published>2017-03-26T09:47:34.000Z</published>
+    <updated>2018-10-17T10:33:41.932Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/JxuEBt_RIRs?rel=0&amp;amp;showinfo=0&quot; frame
+      
+    
+    </summary>
+    
+    
+      <category term="MV" scheme="https://zerosun.top/tags/MV/"/>
     
   </entry>
   

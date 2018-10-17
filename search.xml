@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Glitter&Gloss]]></title>
-    <url>%2F2018%2F10%2F17%2FGlitterGloss%2F</url>
-    <content type="text"><![CDATA[]]></content>
-      <tags>
-        <tag>MV</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Xmanager远程Ubuntu1604LTS]]></title>
     <url>%2F2018%2F09%2F19%2Fconnect-xmanager2ubuntu1604lts%2F</url>
     <content type="text"><![CDATA[简述：ubuntu1604：xmanager+xdmcp+lightdm+xubuntu(xfce)桌面环境 ubuntu1604具体步骤1.安装gdm3与lightdm1$ sudo apt install gdm -y 会弹出窗口，选择lightdm就好。 2.配置lightdm配置文件需要新建，lightdm.conf and gdm.schemas1$ sudo nano /etc/lightdm/lightdm.conf 粘贴以下内容：1234567[SeatDefaults]greeter-show-manual-login=truexserver-allow-tcp=true[XDMCPServer]Enabled=truePort=177 1$ sudo nano /etc/lightdm/gdm.schemas 粘贴以下内容：12345&lt;schema&gt;&lt;key&gt;xdmcp/Enable&lt;/key&gt;&lt;signature&gt;b&lt;/signature&gt;&lt;default&gt;true&lt;/default&gt;&lt;/schema&gt; 3.安装xubuntu-desktopxubuntu-desktop用的就是xfce，一个轻量级的unix桌面管理环境,消耗资源少，UI也还比较美观。123$ sudo apt-get update$ sudo apt-get upgrade$ sudo apt install xubuntu-desktop -y #时间较久 4.关闭防火墙1234$ sudo ufw disableor$ sudo ufw allow 177either is OK! 5.修改配置Ubuntu文件1$ sudo nano /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf 内容修改后如下：123456789[Seat:*]user-session=ubuntu#user-session=gnome#added by myself[XDMCPServer]enabled=true[SeatDefaults]xserver-allow-tcp=true 6.连接连接时登陆界面右上角选择“Xubuntu Session”主题即可，后附图。]]></content>
@@ -85,6 +77,14 @@
       </categories>
       <tags>
         <tag>HOWTO</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Glitter&Gloss]]></title>
+    <url>%2F2017%2F03%2F26%2FGlitterGloss%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <tags>
+        <tag>MV</tag>
       </tags>
   </entry>
   <entry>
