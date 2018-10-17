@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2018-09-19T06:57:55.588Z</updated>
+  <updated>2018-10-17T10:03:17.422Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Glitter&amp;Gloss</title>
+    <link href="https://zerosun.top/2018/10/17/GlitterGloss/"/>
+    <id>https://zerosun.top/2018/10/17/GlitterGloss/</id>
+    <published>2018-10-17T09:47:34.000Z</published>
+    <updated>2018-10-17T10:03:17.422Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/JxuEBt_RIRs?rel=0&amp;amp;showinfo=0&quot; frame
+      
+    
+    </summary>
+    
+    
+      <category term="MV" scheme="https://zerosun.top/tags/MV/"/>
+    
+  </entry>
   
   <entry>
     <title>Xmanager远程Ubuntu1604LTS</title>
@@ -54,9 +75,9 @@
     
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
-      <category term="Blockchain" scheme="https://zerosun.top/tags/Blockchain/"/>
-    
       <category term="SmartContract" scheme="https://zerosun.top/tags/SmartContract/"/>
+    
+      <category term="Blockchain" scheme="https://zerosun.top/tags/Blockchain/"/>
     
   </entry>
   
@@ -87,7 +108,7 @@
     <link href="https://zerosun.top/2018/09/10/BlockChain-Basis-common-vocabulary/"/>
     <id>https://zerosun.top/2018/09/10/BlockChain-Basis-common-vocabulary/</id>
     <published>2018-09-10T12:45:16.000Z</published>
-    <updated>2018-10-11T04:06:29.015Z</updated>
+    <updated>2018-10-17T10:05:55.248Z</updated>
     
     <summary type="html">
     
@@ -120,9 +141,9 @@
     
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
-      <category term="MIST" scheme="https://zerosun.top/tags/MIST/"/>
-    
       <category term="Blockchain" scheme="https://zerosun.top/tags/Blockchain/"/>
+    
+      <category term="MIST" scheme="https://zerosun.top/tags/MIST/"/>
     
   </entry>
   
