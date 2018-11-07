@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2018-09-19T06:57:55.588Z</updated>
+  <updated>2018-11-07T08:52:19.947Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>booklist-2018</title>
+    <link href="https://zerosun.top/2018/11/07/booklist-2018/"/>
+    <id>https://zerosun.top/2018/11/07/booklist-2018/</id>
+    <published>2018-11-07T08:52:19.000Z</published>
+    <updated>2018-11-07T08:52:19.947Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>repositories-starred-on-github</title>
+    <link href="https://zerosun.top/2018/11/07/repositories-starred-on-github/"/>
+    <id>https://zerosun.top/2018/11/07/repositories-starred-on-github/</id>
+    <published>2018-11-07T08:39:36.000Z</published>
+    <updated>2018-11-07T08:52:41.573Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我在Github上收藏的一些的一些Repositories，GitHub没有对收藏进行分类标签的功能，下面做了一个整理归类，方便以后查阅。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="favorites" scheme="https://zerosun.top/categories/favorites/"/>
+    
+    
+      <category term="Github" scheme="https://zerosun.top/tags/Github/"/>
+    
+  </entry>
   
   <entry>
     <title>Xmanager远程Ubuntu1604LTS</title>
@@ -52,9 +86,9 @@
       <category term="Blockchain" scheme="https://zerosun.top/categories/Blockchain/"/>
     
     
-      <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
-    
       <category term="Blockchain" scheme="https://zerosun.top/tags/Blockchain/"/>
+    
+      <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
       <category term="SmartContract" scheme="https://zerosun.top/tags/SmartContract/"/>
     
@@ -118,11 +152,11 @@
       <category term="Blockchain" scheme="https://zerosun.top/categories/Blockchain/"/>
     
     
+      <category term="Blockchain" scheme="https://zerosun.top/tags/Blockchain/"/>
+    
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
       <category term="MIST" scheme="https://zerosun.top/tags/MIST/"/>
-    
-      <category term="Blockchain" scheme="https://zerosun.top/tags/Blockchain/"/>
     
   </entry>
   
@@ -190,7 +224,7 @@
     <link href="https://zerosun.top/2016/12/31/booklist-2016/"/>
     <id>https://zerosun.top/2016/12/31/booklist-2016/</id>
     <published>2016-12-31T14:58:25.000Z</published>
-    <updated>2018-09-26T05:37:58.014Z</updated>
+    <updated>2018-11-07T08:42:21.435Z</updated>
     
     <summary type="html">
     
@@ -198,8 +232,12 @@
     
     </summary>
     
+      <category term="reading" scheme="https://zerosun.top/categories/reading/"/>
+    
     
       <category term="reading" scheme="https://zerosun.top/tags/reading/"/>
+    
+      <category term="booklist" scheme="https://zerosun.top/tags/booklist/"/>
     
   </entry>
   

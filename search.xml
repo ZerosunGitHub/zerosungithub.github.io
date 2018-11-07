@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[booklist-2018]]></title>
+    <url>%2F2018%2F11%2F07%2Fbooklist-2018%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[repositories-starred-on-github]]></title>
+    <url>%2F2018%2F11%2F07%2Frepositories-starred-on-github%2F</url>
+    <content type="text"><![CDATA[我在Github上收藏的一些的一些Repositories，GitHub没有对收藏进行分类标签的功能，下面做了一个整理归类，方便以后查阅。 ToolsCTFLinux]]></content>
+      <categories>
+        <category>favorites</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Xmanager远程Ubuntu1604LTS]]></title>
     <url>%2F2018%2F09%2F19%2Fconnect-xmanager2ubuntu1604lts%2F</url>
     <content type="text"><![CDATA[简述：ubuntu1604：xmanager+xdmcp+lightdm+xubuntu(xfce)桌面环境 ubuntu1604具体步骤1.安装gdm3与lightdm1$ sudo apt install gdm -y 会弹出窗口，选择lightdm就好。 2.配置lightdm配置文件需要新建，lightdm.conf and gdm.schemas1$ sudo nano /etc/lightdm/lightdm.conf 粘贴以下内容：1234567[SeatDefaults]greeter-show-manual-login=truexserver-allow-tcp=true[XDMCPServer]Enabled=truePort=177 1$ sudo nano /etc/lightdm/gdm.schemas 粘贴以下内容：12345&lt;schema&gt;&lt;key&gt;xdmcp/Enable&lt;/key&gt;&lt;signature&gt;b&lt;/signature&gt;&lt;default&gt;true&lt;/default&gt;&lt;/schema&gt; 3.安装xubuntu-desktopxubuntu-desktop用的就是xfce，一个轻量级的unix桌面管理环境,消耗资源少，UI也还比较美观。123$ sudo apt-get update$ sudo apt-get upgrade$ sudo apt install xubuntu-desktop -y #时间较久 4.关闭防火墙1234$ sudo ufw disableor$ sudo ufw allow 177either is OK! 5.修改配置Ubuntu文件1$ sudo nano /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf 内容修改后如下：123456789[Seat:*]user-session=ubuntu#user-session=gnome#added by myself[XDMCPServer]enabled=true[SeatDefaults]xserver-allow-tcp=true 6.连接连接时登陆界面右上角选择“Xubuntu Session”主题即可，后附图。]]></content>
@@ -19,8 +35,8 @@
         <category>Blockchain</category>
       </categories>
       <tags>
-        <tag>Ethereum</tag>
         <tag>Blockchain</tag>
+        <tag>Ethereum</tag>
         <tag>SmartContract</tag>
       </tags>
   </entry>
@@ -55,9 +71,9 @@
         <category>Blockchain</category>
       </categories>
       <tags>
+        <tag>Blockchain</tag>
         <tag>Ethereum</tag>
         <tag>MIST</tag>
-        <tag>Blockchain</tag>
       </tags>
   </entry>
   <entry>
@@ -91,8 +107,12 @@
     <title><![CDATA[给你分享2016年的书单]]></title>
     <url>%2F2016%2F12%2F31%2Fbooklist-2016%2F</url>
     <content type="text"><![CDATA[第一个年阅读计划，一月一本。流水账表述，便也粗糙，望见谅。 读这些书有什么用？讲真，答不上来 /尴尬脸.jpg。文学爱好？算不上爱好。现在渐渐觉得阅读不要附有功利性的目的。读一本书而已。 额，引用一段话来敷衍吧 “我读过很多书，但后来大部分都被我忘记了，那阅读的意义是什么？答：当我还是个孩子的时候，我吃过很多食物，现在已经记不起来吃过什么了。但可以肯定的是，它们中的一部分已经长成为我的骨头和肉。” 一月《苦难辉煌》 by金一南少将，坐在数图三楼看完的，看完并没有慷慨激昂的感觉，了解一段历史的细节故事。 二月《孤独是生命的礼物》 ，周国平、陈忠实等人的散文选集，朴实，真。 三月《一个人的朝圣》 必须赞啊！必须赞！赞到哭。花了三天时间读完的，第一次有迫切看完又担心看完的一本书的感觉。 四月《在残酷的世界里骄傲的活着》张芮涵 的反正以前没听过这个作者，看书名有点浮夸，和二月那本书一起买的，我也记不得当时为啥一下买了这两本书/笑哭。 五月 《凯尔特的薄暮》叶芝译版，读起来更像诗……奈何一个人随着年龄增长，梦想便不复轻盈。他开始用双手掂量生活，更看重果实而非花朵。 六月《皮囊》 朋友那讨的，朴实、人心、生命。 七月《围城》 从学校背过来的书，感觉到讽刺性质，性格特征明显，其实以前并不了解钱老。 八月《奎妮的情歌》 微博第一次转发抽奖活动，然后就中了。应该是算作《一个人的朝圣》的姐妹篇，而非第二部，以奎妮的口吻来叙述与哈罗德家庭的交集。可以尝试两本同步阅读。 九月《边城》 高中教材节选了部分，终于读了完整版，更想去茶峒小镇了。我想你一定记得这句话：“这个人也许永远不回来了，也许“明天”回来！” 十月《向着光亮那方》好吧，我承认是粉同哥才看的，好朋友没吃晚饭啃面包在内场要得签名. 十一月《我讲个笑话你可别哭啊》笑了哭了 十二月《活着》生活，既然生着，记得活着，热情地活着。 后两篇仓促结尾，爪机，眼疼，待更…后续入手《三体》《S.忒修斯之船》… 于2016年12月31日]]></content>
+      <categories>
+        <category>reading</category>
+      </categories>
       <tags>
         <tag>reading</tag>
+        <tag>booklist</tag>
       </tags>
   </entry>
 </search>
