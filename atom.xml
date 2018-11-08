@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2018-11-07T10:09:01.039Z</updated>
+  <updated>2018-11-08T08:52:59.493Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zerosun.top/2018/11/07/booklist-2018/"/>
     <id>https://zerosun.top/2018/11/07/booklist-2018/</id>
     <published>2018-11-07T08:52:19.000Z</published>
-    <updated>2018-11-07T10:09:01.039Z</updated>
+    <updated>2018-11-08T08:52:59.493Z</updated>
     
     <summary type="html">
     
@@ -30,9 +30,9 @@
       <category term="reading" scheme="https://zerosun.top/categories/reading/"/>
     
     
-      <category term="reading" scheme="https://zerosun.top/tags/reading/"/>
+      <category term="Reading" scheme="https://zerosun.top/tags/Reading/"/>
     
-      <category term="booklist" scheme="https://zerosun.top/tags/booklist/"/>
+      <category term="Booklist" scheme="https://zerosun.top/tags/Booklist/"/>
     
   </entry>
   
@@ -81,7 +81,7 @@
     <link href="https://zerosun.top/2018/09/18/Ethereum-SmartContract-setup-env/"/>
     <id>https://zerosun.top/2018/09/18/Ethereum-SmartContract-setup-env/</id>
     <published>2018-09-18T07:55:54.000Z</published>
-    <updated>2018-09-19T11:47:59.236Z</updated>
+    <updated>2018-11-08T08:54:09.800Z</updated>
     
     <summary type="html">
     
@@ -89,12 +89,12 @@
     
     </summary>
     
-      <category term="Blockchain" scheme="https://zerosun.top/categories/Blockchain/"/>
+      <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
+    
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
-    
-      <category term="Blockchain" scheme="https://zerosun.top/tags/Blockchain/"/>
     
       <category term="SmartContract" scheme="https://zerosun.top/tags/SmartContract/"/>
     
@@ -105,7 +105,7 @@
     <link href="https://zerosun.top/2018/09/11/BlockChain-Basis-simple-intro/"/>
     <id>https://zerosun.top/2018/09/11/BlockChain-Basis-simple-intro/</id>
     <published>2018-09-11T09:06:31.000Z</published>
-    <updated>2018-11-05T02:54:07.860Z</updated>
+    <updated>2018-11-08T08:54:34.061Z</updated>
     
     <summary type="html">
     
@@ -113,10 +113,10 @@
     
     </summary>
     
-      <category term="Blockchain" scheme="https://zerosun.top/categories/Blockchain/"/>
+      <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="Blockchain" scheme="https://zerosun.top/tags/Blockchain/"/>
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
       <category term="Hash" scheme="https://zerosun.top/tags/Hash/"/>
     
@@ -127,7 +127,7 @@
     <link href="https://zerosun.top/2018/09/10/BlockChain-Basis-common-vocabulary/"/>
     <id>https://zerosun.top/2018/09/10/BlockChain-Basis-common-vocabulary/</id>
     <published>2018-09-10T12:45:16.000Z</published>
-    <updated>2018-11-06T05:13:15.857Z</updated>
+    <updated>2018-11-08T08:54:23.932Z</updated>
     
     <summary type="html">
     
@@ -135,10 +135,10 @@
     
     </summary>
     
-      <category term="Blockchain" scheme="https://zerosun.top/categories/Blockchain/"/>
+      <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="Blockchain" scheme="https://zerosun.top/tags/Blockchain/"/>
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
   </entry>
   
@@ -147,7 +147,7 @@
     <link href="https://zerosun.top/2018/09/06/Ethereum-Basis-setup-eth-private-chain/"/>
     <id>https://zerosun.top/2018/09/06/Ethereum-Basis-setup-eth-private-chain/</id>
     <published>2018-09-06T05:05:13.000Z</published>
-    <updated>2018-09-18T10:09:43.361Z</updated>
+    <updated>2018-11-08T08:53:38.486Z</updated>
     
     <summary type="html">
     
@@ -155,7 +155,7 @@
     
     </summary>
     
-      <category term="Blockchain" scheme="https://zerosun.top/categories/Blockchain/"/>
+      <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
@@ -230,7 +230,7 @@
     <link href="https://zerosun.top/2016/12/31/booklist-2016/"/>
     <id>https://zerosun.top/2016/12/31/booklist-2016/</id>
     <published>2016-12-31T14:58:25.000Z</published>
-    <updated>2018-11-07T09:03:45.165Z</updated>
+    <updated>2018-11-08T08:52:06.235Z</updated>
     
     <summary type="html">
     
@@ -241,9 +241,9 @@
       <category term="reading" scheme="https://zerosun.top/categories/reading/"/>
     
     
-      <category term="reading" scheme="https://zerosun.top/tags/reading/"/>
+      <category term="Reading" scheme="https://zerosun.top/tags/Reading/"/>
     
-      <category term="booklist" scheme="https://zerosun.top/tags/booklist/"/>
+      <category term="BookList" scheme="https://zerosun.top/tags/BookList/"/>
     
   </entry>
   
@@ -252,7 +252,7 @@
     <link href="https://zerosun.top/2016/12/11/book2016-BorderTown-by-ShenCongwen-end/"/>
     <id>https://zerosun.top/2016/12/11/book2016-BorderTown-by-ShenCongwen-end/</id>
     <published>2016-12-11T15:31:00.000Z</published>
-    <updated>2018-11-07T09:53:43.936Z</updated>
+    <updated>2018-11-08T08:52:49.737Z</updated>
     
     <summary type="html">
     
@@ -265,9 +265,9 @@
       <category term="reading" scheme="https://zerosun.top/categories/reading/"/>
     
     
-      <category term="reading" scheme="https://zerosun.top/tags/reading/"/>
+      <category term="Reading" scheme="https://zerosun.top/tags/Reading/"/>
     
-      <category term="booklist" scheme="https://zerosun.top/tags/booklist/"/>
+      <category term="BookList" scheme="https://zerosun.top/tags/BookList/"/>
     
   </entry>
   
@@ -276,7 +276,7 @@
     <link href="https://zerosun.top/2016/11/25/book2016-BorderTown-by-ShenCongwen-begain/"/>
     <id>https://zerosun.top/2016/11/25/book2016-BorderTown-by-ShenCongwen-begain/</id>
     <published>2016-11-25T15:43:00.000Z</published>
-    <updated>2018-11-07T10:00:26.863Z</updated>
+    <updated>2018-11-08T08:52:22.791Z</updated>
     
     <summary type="html">
     
@@ -297,9 +297,9 @@
       <category term="reading" scheme="https://zerosun.top/categories/reading/"/>
     
     
-      <category term="reading" scheme="https://zerosun.top/tags/reading/"/>
+      <category term="Reading" scheme="https://zerosun.top/tags/Reading/"/>
     
-      <category term="booklist" scheme="https://zerosun.top/tags/booklist/"/>
+      <category term="BookList" scheme="https://zerosun.top/tags/BookList/"/>
     
   </entry>
   
@@ -308,7 +308,7 @@
     <link href="https://zerosun.top/2016/11/10/book2016-TheUnlikelyPilgrimage-of-HaroldFry-by-Rachel%20Joyce-end/"/>
     <id>https://zerosun.top/2016/11/10/book2016-TheUnlikelyPilgrimage-of-HaroldFry-by-Rachel Joyce-end/</id>
     <published>2016-11-10T12:41:00.000Z</published>
-    <updated>2018-11-07T10:05:29.293Z</updated>
+    <updated>2018-11-08T08:52:33.807Z</updated>
     
     <summary type="html">
     
@@ -326,9 +326,9 @@
       <category term="reading" scheme="https://zerosun.top/categories/reading/"/>
     
     
-      <category term="reading" scheme="https://zerosun.top/tags/reading/"/>
+      <category term="Reading" scheme="https://zerosun.top/tags/Reading/"/>
     
-      <category term="booklist" scheme="https://zerosun.top/tags/booklist/"/>
+      <category term="BookList" scheme="https://zerosun.top/tags/BookList/"/>
     
   </entry>
   
