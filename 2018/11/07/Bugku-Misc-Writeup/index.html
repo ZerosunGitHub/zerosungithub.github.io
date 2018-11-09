@@ -121,18 +121,18 @@
 
 
 
-  <meta name="description" content="简述：ubuntu1604：xmanager+xdmcp+lightdm+xubuntu(xfce)桌面环境">
-<meta name="keywords" content="Tools">
+  <meta name="description" content="和孤独签订体面的协议">
+<meta name="keywords" content="CTF,WriteUp">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Xmanager远程Ubuntu1604LTS">
-<meta property="og:url" content="https://zerosun.top/2018/09/19/connect-xmanager2ubuntu1604lts/index.html">
+<meta property="og:title" content="Bugku-Misc-Writeup">
+<meta property="og:url" content="https://zerosun.top/2018/11/07/Bugku-Misc-Writeup/index.html">
 <meta property="og:site_name" content="北岸冷若冰霜">
-<meta property="og:description" content="简述：ubuntu1604：xmanager+xdmcp+lightdm+xubuntu(xfce)桌面环境">
+<meta property="og:description" content="和孤独签订体面的协议">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-08T09:03:18.833Z">
+<meta property="og:updated_time" content="2018-11-09T05:52:16.868Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Xmanager远程Ubuntu1604LTS">
-<meta name="twitter:description" content="简述：ubuntu1604：xmanager+xdmcp+lightdm+xubuntu(xfce)桌面环境">
+<meta name="twitter:title" content="Bugku-Misc-Writeup">
+<meta name="twitter:description" content="和孤独签订体面的协议">
 
 
 
@@ -141,7 +141,7 @@
 
 
 
-  <link rel="canonical" href="https://zerosun.top/2018/09/19/connect-xmanager2ubuntu1604lts/"/>
+  <link rel="canonical" href="https://zerosun.top/2018/11/07/Bugku-Misc-Writeup/"/>
 
 
 
@@ -151,7 +151,7 @@
   };
 </script>
 
-  <title>Xmanager远程Ubuntu1604LTS | 北岸冷若冰霜</title>
+  <title>Bugku-Misc-Writeup | 北岸冷若冰霜</title>
   
 
 
@@ -407,7 +407,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zerosun.top/2018/09/19/connect-xmanager2ubuntu1604lts/">
+    <link itemprop="mainEntityOfPage" href="https://zerosun.top/2018/11/07/Bugku-Misc-Writeup/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="北岸冷若冰霜">
@@ -424,7 +424,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Xmanager远程Ubuntu1604LTS
+          <h1 class="post-title" itemprop="name headline">Bugku-Misc-Writeup
               
             
           </h1>
@@ -449,7 +449,7 @@
                 
               
 
-              <time title="创建时间：2018-09-19 14:40:52" itemprop="dateCreated datePublished" datetime="2018-09-19T14:40:52+08:00">2018-09-19</time>
+              <time title="创建时间：2018-11-07 16:52:19" itemprop="dateCreated datePublished" datetime="2018-11-07T16:52:19+08:00">2018-11-07</time>
             
 
             
@@ -466,7 +466,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-11-08 17:03:18" itemprop="dateModified" datetime="2018-11-08T17:03:18+08:00">2018-11-08</time>
+                <time title="修改时间：2018-11-09 13:52:16" itemprop="dateModified" datetime="2018-11-09T13:52:16+08:00">2018-11-09</time>
               
             
           </span>
@@ -483,7 +483,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/tools/" itemprop="url" rel="index"><span itemprop="name">tools</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ctf/" itemprop="url" rel="index"><span itemprop="name">ctf</span></a></span>
 
                 
                 
@@ -517,19 +517,7 @@
       
 
       
-        <p>简述：<br>ubuntu1604：xmanager+xdmcp+lightdm+xubuntu(xfce)桌面环境<br><a id="more"></a></p>
-<h1 id="ubuntu1604具体步骤"><a href="#ubuntu1604具体步骤" class="headerlink" title="ubuntu1604具体步骤"></a>ubuntu1604具体步骤</h1><h2 id="1-安装gdm3与lightdm"><a href="#1-安装gdm3与lightdm" class="headerlink" title="1.安装gdm3与lightdm"></a>1.安装gdm3与lightdm</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt install gdm -y</span><br></pre></td></tr></table></figure>
-<p>会弹出窗口，选择lightdm就好。</p>
-<h2 id="2-配置lightdm"><a href="#2-配置lightdm" class="headerlink" title="2.配置lightdm"></a>2.配置lightdm</h2><p>配置文件需要新建，lightdm.conf and gdm.schemas<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo nano /etc/lightdm/lightdm.conf</span><br></pre></td></tr></table></figure></p>
-<p>粘贴以下内容：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[SeatDefaults]</span><br><span class="line">greeter-show-manual-login=<span class="literal">true</span></span><br><span class="line">xserver-allow-tcp=<span class="literal">true</span></span><br><span class="line"></span><br><span class="line">[XDMCPServer]</span><br><span class="line">Enabled=<span class="literal">true</span></span><br><span class="line">Port=177</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo nano /etc/lightdm/gdm.schemas</span><br></pre></td></tr></table></figure>
-<p>粘贴以下内容：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;schema&gt;</span><br><span class="line">&lt;key&gt;xdmcp/Enable&lt;/key&gt;</span><br><span class="line">&lt;signature&gt;b&lt;/signature&gt;</span><br><span class="line">&lt;default&gt;<span class="literal">true</span>&lt;/default&gt;</span><br><span class="line">&lt;/schema&gt;</span><br></pre></td></tr></table></figure></p>
-<h2 id="3-安装xubuntu-desktop"><a href="#3-安装xubuntu-desktop" class="headerlink" title="3.安装xubuntu-desktop"></a>3.安装xubuntu-desktop</h2><p>xubuntu-desktop用的就是xfce，一个轻量级的unix桌面管理环境,消耗资源少，UI也还比较美观。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get update</span><br><span class="line">$ sudo apt-get upgrade</span><br><span class="line">$ sudo apt install xubuntu-desktop -y <span class="comment">#时间较久</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="4-关闭防火墙"><a href="#4-关闭防火墙" class="headerlink" title="4.关闭防火墙"></a>4.关闭防火墙</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ sudo ufw <span class="built_in">disable</span></span><br><span class="line">or</span><br><span class="line">$ sudo ufw allow 177</span><br><span class="line">either is OK!</span><br></pre></td></tr></table></figure>
-<h2 id="5-修改配置Ubuntu文件"><a href="#5-修改配置Ubuntu文件" class="headerlink" title="5.修改配置Ubuntu文件"></a>5.修改配置Ubuntu文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo nano /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf</span><br></pre></td></tr></table></figure>
-<p>内容修改后如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[Seat:*]</span><br><span class="line">user-session=ubuntu</span><br><span class="line"><span class="comment">#user-session=gnome</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#added by myself</span></span><br><span class="line">[XDMCPServer]</span><br><span class="line">enabled=<span class="literal">true</span></span><br><span class="line">[SeatDefaults]</span><br><span class="line">xserver-allow-tcp=<span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="6-连接"><a href="#6-连接" class="headerlink" title="6.连接"></a>6.连接</h2><p>连接时登陆界面右上角选择“Xubuntu Session”主题即可，后附图。</p>
-
+        
       
     </div>
 
@@ -606,7 +594,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Tools/" rel="tag"><i class="fa fa-tag"></i> Tools</a>
+            <a href="/tags/CTF/" rel="tag"><i class="fa fa-tag"></i> CTF</a>
+          
+            <a href="/tags/WriteUp/" rel="tag"><i class="fa fa-tag"></i> WriteUp</a>
           
         </div>
       
@@ -639,8 +629,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/18/Ethereum-SmartContract-setup-env/" rel="next" title="以太坊智能合约-环境搭建">
-                <i class="fa fa-chevron-left"></i> 以太坊智能合约-环境搭建
+              <a href="/2018/11/07/repositories-starred-on-github/" rel="next" title="Repositories Starred on Github">
+                <i class="fa fa-chevron-left"></i> Repositories Starred on Github
               </a>
             
           </div>
@@ -649,8 +639,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/11/07/repositories-starred-on-github/" rel="prev" title="Repositories Starred on Github">
-                Repositories Starred on Github <i class="fa fa-chevron-right"></i>
+              <a href="/2018/11/07/booklist-2018/" rel="prev" title="给你分享2018年的书单">
+                给你分享2018年的书单 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -698,17 +688,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -878,22 +859,6 @@ show_date_time();
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ubuntu1604具体步骤"><span class="nav-number">1.</span> <span class="nav-text">ubuntu1604具体步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-安装gdm3与lightdm"><span class="nav-number">1.1.</span> <span class="nav-text">1.安装gdm3与lightdm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-配置lightdm"><span class="nav-number">1.2.</span> <span class="nav-text">2.配置lightdm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-安装xubuntu-desktop"><span class="nav-number">1.3.</span> <span class="nav-text">3.安装xubuntu-desktop</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-关闭防火墙"><span class="nav-number">1.4.</span> <span class="nav-text">4.关闭防火墙</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-修改配置Ubuntu文件"><span class="nav-number">1.5.</span> <span class="nav-text">5.修改配置Ubuntu文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-连接"><span class="nav-number">1.6.</span> <span class="nav-text">6.连接</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
