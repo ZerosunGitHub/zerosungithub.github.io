@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Bugku-Misc-Writeup]]></title>
-    <url>%2F2018%2F11%2F07%2FBugku-Misc-Writeup%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>ctf</category>
-      </categories>
-      <tags>
-        <tag>CTF</tag>
-        <tag>WriteUp</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[给你分享2018年的书单]]></title>
     <url>%2F2018%2F11%2F07%2Fbooklist-2018%2F</url>
     <content type="text"></content>
@@ -22,6 +10,18 @@
       <tags>
         <tag>Reading</tag>
         <tag>BookList</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Bugku-Misc-Writeup]]></title>
+    <url>%2F2018%2F11%2F07%2FBugku-Misc-Writeup%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>ctf</category>
+      </categories>
+      <tags>
+        <tag>CTF</tag>
+        <tag>WriteUp</tag>
       </tags>
   </entry>
   <entry>
@@ -55,8 +55,8 @@
       </categories>
       <tags>
         <tag>Ethereum</tag>
-        <tag>SmartContract</tag>
         <tag>BlockChain</tag>
+        <tag>SmartContract</tag>
       </tags>
   </entry>
   <entry>
@@ -67,8 +67,8 @@
         <category>blockchain</category>
       </categories>
       <tags>
-        <tag>BlockChain</tag>
         <tag>Hash</tag>
+        <tag>BlockChain</tag>
       </tags>
   </entry>
   <entry>
@@ -91,8 +91,8 @@
       </categories>
       <tags>
         <tag>Ethereum</tag>
-        <tag>BlockChain</tag>
         <tag>MIST</tag>
+        <tag>BlockChain</tag>
       </tags>
   </entry>
   <entry>
@@ -125,7 +125,7 @@
   <entry>
     <title><![CDATA[给你分享2016年的书单]]></title>
     <url>%2F2016%2F12%2F31%2Fbooklist-2016%2F</url>
-    <content type="text"><![CDATA[第一个年阅读计划，一月一本。流水账表述，便也粗糙，望见谅。读这些书有什么用？讲真，答不上来 /尴尬脸.jpg。文学爱好？算不上爱好。现在渐渐觉得阅读不要附有功利性的目的。读一本书而已。 额，引用一段话来敷衍吧 “我读过很多书，但后来大部分都被我忘记了，那阅读的意义是什么？答：当我还是个孩子的时候，我吃过很多食物，现在已经记不起来吃过什么了。但可以肯定的是，它们中的一部分已经长成为我的骨头和肉。” 一月《苦难辉煌》 by金一南少将，坐在数图三楼看完的，看完并没有慷慨激昂的感觉，了解一段历史的细节故事。 二月《孤独是生命的礼物》 ，周国平、陈忠实等人的散文选集，朴实，真。 三月《一个人的朝圣》 必须赞啊！必须赞！赞到哭。花了三天时间读完的，第一次有迫切看完又担心看完的一本书的感觉。 四月《在残酷的世界里骄傲的活着》张芮涵 的反正以前没听过这个作者，看书名有点浮夸，和二月那本书一起买的，我也记不得当时为啥一下买了这两本书/笑哭。 五月 《凯尔特的薄暮》叶芝译版，读起来更像诗……奈何一个人随着年龄增长，梦想便不复轻盈。他开始用双手掂量生活，更看重果实而非花朵。 六月《皮囊》 朋友那讨的，朴实、人心、生命。 七月《围城》 从学校背过来的书，感觉到讽刺性质，性格特征明显，其实以前并不了解钱老。 八月《奎妮的情歌》 微博第一次转发抽奖活动，然后就中了。应该是算作《一个人的朝圣》的姐妹篇，而非第二部，以奎妮的口吻来叙述与哈罗德家庭的交集。可以尝试两本同步阅读。 九月《边城》 高中教材节选了部分，终于读了完整版，更想去茶峒小镇了。我想你一定记得这句话：“这个人也许永远不回来了，也许“明天”回来！” 十月《向着光亮那方》好吧，我承认是粉同哥才看的，好朋友没吃晚饭啃面包在内场要得签名. 十一月《我讲个笑话你可别哭啊》笑了哭了 十二月《活着》生活，既然生着，记得活着，热情地活着。 后两篇仓促结尾，爪机，眼疼，待更…后续入手《三体》《S.忒修斯之船》… 于2016年12月31日]]></content>
+    <content type="text"><![CDATA[第一个年阅读计划，一月一本。流水账表述，便也粗糙，望见谅。读这些书有什么用？讲真，答不上来 /尴尬脸.jpg。文学爱好？算不上爱好。现在渐渐觉得阅读不要附有功利性的目的。读一本书而已。额，引用一段话来敷衍吧 “我读过很多书，但后来大部分都被我忘记了，那阅读的意义是什么？答：当我还是个孩子的时候，我吃过很多食物，现在已经记不起来吃过什么了。但可以肯定的是，它们中的一部分已经长成为我的骨头和肉。” 一月《苦难辉煌》 by金一南少将，坐在数图三楼看完的，看完并没有慷慨激昂的感觉，了解一段历史的细节故事。 二月《孤独是生命的礼物》 ，周国平、陈忠实等人的散文选集，朴实，真。 三月《一个人的朝圣》 必须赞啊！必须赞！赞到哭。花了三天时间读完的，第一次有迫切看完又担心看完的一本书的感觉。 四月《在残酷的世界里骄傲的活着》张芮涵 的反正以前没听过这个作者，看书名有点浮夸，和二月那本书一起买的，我也记不得当时为啥一下买了这两本书/笑哭。 五月 《凯尔特的薄暮》叶芝译版，读起来更像诗……奈何一个人随着年龄增长，梦想便不复轻盈。他开始用双手掂量生活，更看重果实而非花朵。 六月《皮囊》 朋友那讨的，朴实、人心、生命。 七月《围城》 从学校背过来的书，感觉到讽刺性质，性格特征明显，其实以前并不了解钱老。 八月《奎妮的情歌》 微博第一次转发抽奖活动，然后就中了。应该是算作《一个人的朝圣》的姐妹篇，而非第二部，以奎妮的口吻来叙述与哈罗德家庭的交集。可以尝试两本同步阅读。 九月《边城》 高中教材节选了部分，终于读了完整版，更想去茶峒小镇了。我想你一定记得这句话：“这个人也许永远不回来了，也许“明天”回来！” 十月《向着光亮那方》好吧，我承认是粉同哥才看的，好朋友没吃晚饭啃面包在内场要得签名.十一月《我讲个笑话你可别哭啊》笑了哭了 十二月《活着》生活，既然生着，记得活着，热情地活着。 后两篇仓促结尾，爪机，眼疼，待更…后续入手《三体》《S.忒修斯之船》… 于2016年12月31日]]></content>
       <categories>
         <category>reading</category>
       </categories>
@@ -137,7 +137,7 @@
   <entry>
     <title><![CDATA[这个人也许永远不回来了，也许“明天”回来！]]></title>
     <url>%2F2016%2F12%2F11%2Fbook2016-BorderTown-by-ShenCongwen-end%2F</url>
-    <content type="text"><![CDATA[可是到了冬天那个圮坍了的白塔又重新修好了。 那个在月下唱歌使翠翠在睡梦里为歌声把灵魂轻轻浮起的青年人还不曾回到茶峒来。 ………]]></content>
+    <content type="text"><![CDATA[可是到了冬天那个圮坍了的白塔又重新修好了。 那个在月下唱歌使翠翠在睡梦里为歌声把灵魂轻轻浮起的青年人还不曾回到茶峒来。………]]></content>
       <categories>
         <category>reading</category>
       </categories>
@@ -148,7 +148,7 @@
   <entry>
     <title><![CDATA[由四川过湖南去，靠东有一条官路。]]></title>
     <url>%2F2016%2F11%2F25%2Fbook2016-BorderTown-by-ShenCongwen-begain%2F</url>
-    <content type="text"><![CDATA[由四川过湖南去， 靠东有一条官路。 这官路将近湘西边境到了一个地方名为“茶峒”的小山城时， 有一小溪， 溪边有座白色小塔， 塔下住了一户单独的人家。 这人家只一个老人， 一个女孩子， 一只黄狗。 ——摘《边城》]]></content>
+    <content type="text"><![CDATA[由四川过湖南去， 靠东有一条官路。 这官路将近湘西边境到了一个地方名为“茶峒”的小山城时， 有一小溪， 溪边有座白色小塔， 塔下住了一户单独的人家。 这人家只一个老人， 一个女孩子， 一只黄狗。 ——摘《边城》在这洗净的田园里，爱是透明的，沱江边上，连惆怅，也有了淡淡的人情味儿。——记再读《边城》]]></content>
       <categories>
         <category>reading</category>
       </categories>
