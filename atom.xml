@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2018-11-19T10:21:18.817Z</updated>
+  <updated>2018-11-19T10:23:22.466Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="https://zerosun.top/2018/11/19/linuxperf/"/>
     <id>https://zerosun.top/2018/11/19/linuxperf/</id>
     <published>2018-11-19T10:08:08.000Z</published>
-    <updated>2018-11-19T10:21:18.817Z</updated>
+    <updated>2018-11-19T10:23:22.466Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;Linux性能分析工具合集&lt;br&gt;linux_perf_tools_full&lt;br&gt;linux_observability_tools&lt;br&gt;linux_benchmarking_tools&lt;br&gt;linux_tuning_tools&lt;br&gt;linux_observability_sar&lt;br&gt;&lt;a href=&quot;http://www.brendangregg.com/linuxperf.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;参考链接&lt;/a&gt;&lt;br&gt;
+      &lt;h1 id=&quot;Linux性能分析工具合集&quot;&gt;&lt;a href=&quot;#Linux性能分析工具合集&quot; class=&quot;headerlink&quot; title=&quot;Linux性能分析工具合集&quot;&gt;&lt;/a&gt;Linux性能分析工具合集&lt;/h1&gt;&lt;p&gt;linux_perf_tools_full&lt;br&gt;linux_observability_tools&lt;br&gt;linux_benchmarking_tools&lt;br&gt;linux_tuning_tools&lt;br&gt;linux_observability_sar&lt;br&gt;&lt;a href=&quot;http://www.brendangregg.com/linuxperf.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;参考链接&lt;/a&gt;&lt;br&gt;
     
     </summary>
     
