@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Linux性能分析工具合集]]></title>
     <url>%2F2018%2F11%2F19%2Flinuxperf%2F</url>
-    <content type="text"><![CDATA[Linux性能分析工具合集linux_perf_tools_fulllinux_observability_toolslinux_benchmarking_toolslinux_tuning_toolslinux_observability_sar参考链接 linux_perf_tools_full linux_observability_tools linux_benchmarking_tools linux_tuning_tools linux_observability_sar]]></content>
+    <content type="text"><![CDATA[Linux性能分析工具合集linux_perf_tools_fulllinux_observability_toolslinux_benchmarking_toolslinux_tuning_toolslinux_observability_sar 0x00.linux_perf_tools_full 0x01.linux_observability_tools 0x02.linux_benchmarking_tools 0x03.linux_tuning_tools 0x04.linux_observability_sar 参考链接http://www.brendangregg.com/linuxperf.html]]></content>
       <categories>
         <category>tools</category>
       </categories>
