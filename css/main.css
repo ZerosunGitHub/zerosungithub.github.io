@@ -2021,7 +2021,7 @@ animation-play-state:paused; */
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0bff4e;
+  background: #ffcfc1;
 }
 .links-of-author-item {
   text-align: center;
@@ -3060,7 +3060,7 @@ body {
   color: #ff4500;
 }
 .site-meta {
-  background: #29d;
+  background: #f5f5f5;
 }
 .post-nav-item a {
   color: #0593d3;
