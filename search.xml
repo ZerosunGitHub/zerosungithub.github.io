@@ -1,6 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[CTF]]></title>
+    <url>%2F2018%2F11%2F30%2FCTF%2F</url>
+    <content type="text"><![CDATA[CTFXCTF社区https://www.xctf.org.cn/XCTF攻防世界http://adworld.xctf.org.cn/]]></content>
+      <categories>
+        <category>ctf</category>
+      </categories>
+      <tags>
+        <tag>CTF</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[CTF Web]]></title>
+    <url>%2F2018%2F11%2F30%2FCTF-Web%2F</url>
+    <content type="text"><![CDATA[CTF Web类型https://wiki.x10sec.org/web/csrf/]]></content>
+      <categories>
+        <category>ctf</category>
+      </categories>
+      <tags>
+        <tag>CTF</tag>
+        <tag>Web</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[CTF Steg]]></title>
+    <url>%2F2018%2F11%2F30%2FCTF-Steg%2F</url>
+    <content type="text"><![CDATA[CTF Steganography类型]]></content>
+      <categories>
+        <category>ctf</category>
+      </categories>
+      <tags>
+        <tag>CTF</tag>
+        <tag>Steg</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[CTF Reverse]]></title>
+    <url>%2F2018%2F11%2F30%2FCTF-Reverse%2F</url>
+    <content type="text"><![CDATA[CTF REverse类型https://wiki.x10sec.org/reverse/introduction/]]></content>
+      <categories>
+        <category>ctf</category>
+      </categories>
+      <tags>
+        <tag>CTF</tag>
+        <tag>Reverse</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[CTF PWN]]></title>
+    <url>%2F2018%2F11%2F30%2FCTF-PWN%2F</url>
+    <content type="text"><![CDATA[CTF PWN类型https://wiki.x10sec.org/pwn/arm/environment/]]></content>
+      <categories>
+        <category>ctf</category>
+      </categories>
+      <tags>
+        <tag>CTF</tag>
+        <tag>PWN</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[CTF MISC]]></title>
+    <url>%2F2018%2F11%2F30%2FCTF-MISC%2F</url>
+    <content type="text"><![CDATA[CTF MISC类型https://wiki.x10sec.org/misc/introduction/]]></content>
+      <categories>
+        <category>ctf</category>
+      </categories>
+      <tags>
+        <tag>CTF</tag>
+        <tag>MISC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[CTF Crypto]]></title>
+    <url>%2F2018%2F11%2F30%2FCTF-Crypto%2F</url>
+    <content type="text"><![CDATA[CTF Crypto类型https://wiki.x10sec.org/crypto/introduction/]]></content>
+      <categories>
+        <category>ctf</category>
+      </categories>
+      <tags>
+        <tag>CTF</tag>
+        <tag>Crypto</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[CTF Android]]></title>
+    <url>%2F2018%2F11%2F30%2FCTF-Android%2F</url>
+    <content type="text"><![CDATA[CTF Android类型https://wiki.x10sec.org/android/readme/]]></content>
+      <categories>
+        <category>ctf</category>
+      </categories>
+      <tags>
+        <tag>CTF</tag>
+        <tag>Android</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Bugku-Web-Writeup]]></title>
     <url>%2F2018%2F11%2F29%2FBugku-Web-Writeup%2F</url>
     <content type="text"><![CDATA[Bugku Web类题目https://ctf.bugku.com/challenges]]></content>
@@ -26,7 +121,7 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Bugku-Misc-Writeup]]></title>
+    <title><![CDATA[Bugku Misc Writeup]]></title>
     <url>%2F2018%2F11%2F07%2FBugku-Misc-Writeup%2F</url>
     <content type="text"><![CDATA[Bugku MISC类题目https://ctf.bugku.com/challenges]]></content>
       <categories>
@@ -80,8 +175,8 @@
         <category>blockchain</category>
       </categories>
       <tags>
-        <tag>Ethereum</tag>
         <tag>BlockChain</tag>
+        <tag>Ethereum</tag>
         <tag>SmartContract</tag>
       </tags>
   </entry>
@@ -93,8 +188,8 @@
         <category>blockchain</category>
       </categories>
       <tags>
-        <tag>Hash</tag>
         <tag>BlockChain</tag>
+        <tag>Hash</tag>
       </tags>
   </entry>
   <entry>
@@ -116,9 +211,9 @@
         <category>blockchain</category>
       </categories>
       <tags>
+        <tag>BlockChain</tag>
         <tag>Ethereum</tag>
         <tag>MIST</tag>
-        <tag>BlockChain</tag>
       </tags>
   </entry>
   <entry>
