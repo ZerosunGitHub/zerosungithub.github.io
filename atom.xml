@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2018-11-30T07:18:17.311Z</updated>
+  <updated>2018-12-05T03:41:26.519Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>OneNote使用</title>
+    <link href="https://zerosun.top/2018/12/05/OneNoteUsing/"/>
+    <id>https://zerosun.top/2018/12/05/OneNoteUsing/</id>
+    <published>2018-12-05T03:37:48.000Z</published>
+    <updated>2018-12-05T03:41:26.519Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="tools" scheme="https://zerosun.top/categories/tools/"/>
+    
+    
+      <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
+    
+      <category term="OneNote" scheme="https://zerosun.top/tags/OneNote/"/>
+    
+  </entry>
   
   <entry>
     <title>CTF</title>
@@ -336,9 +356,9 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
-    
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
+    
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
       <category term="SmartContract" scheme="https://zerosun.top/tags/SmartContract/"/>
     
@@ -402,11 +422,11 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
-    
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
       <category term="MIST" scheme="https://zerosun.top/tags/MIST/"/>
+    
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
   </entry>
   
@@ -425,26 +445,6 @@
     
     
       <category term="Markdown" scheme="https://zerosun.top/tags/Markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>提问的智慧</title>
-    <link href="https://zerosun.top/2018/08/30/How-To-Ask-Questions-The-Smart-Way/"/>
-    <id>https://zerosun.top/2018/08/30/How-To-Ask-Questions-The-Smart-Way/</id>
-    <published>2018-08-30T05:56:56.000Z</published>
-    <updated>2018-09-18T08:04:52.817Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;How-To-Ask-Questions-The-Smart-Way&quot;&gt;&lt;a href=&quot;#How-To-Ask-Questions-The-Smart-Way&quot; class=&quot;headerlink&quot; title=&quot;How To Ask Questions The Smart Way&quot;&gt;&lt;/a&gt;How To Ask Questions The Smart Way&lt;/h1&gt;&lt;p&gt;Copyright © 2001,2006,2014 Eric S. Raymond, Rick Moen&lt;br&gt;本指南英文版版权为 Eric S. Raymond, Rick Moen 所有。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="favorites" scheme="https://zerosun.top/categories/favorites/"/>
-    
-    
-      <category term="HOWTO" scheme="https://zerosun.top/tags/HOWTO/"/>
     
   </entry>
   
