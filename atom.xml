@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2018-12-05T03:53:54.392Z</updated>
+  <updated>2018-11-30T05:46:31.586Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -15,226 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>OneNote使用</title>
-    <link href="https://zerosun.top/2018/12/05/OneNoteUsing/"/>
-    <id>https://zerosun.top/2018/12/05/OneNoteUsing/</id>
-    <published>2018-12-05T03:37:48.000Z</published>
-    <updated>2018-12-05T03:53:54.392Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;介绍一些OneNote常用的使用技巧&lt;br&gt;
-    
-    </summary>
-    
-      <category term="tools" scheme="https://zerosun.top/categories/tools/"/>
-    
-    
-      <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
-    
-      <category term="OneNote" scheme="https://zerosun.top/tags/OneNote/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CTF</title>
-    <link href="https://zerosun.top/2018/11/30/CTF/"/>
-    <id>https://zerosun.top/2018/11/30/CTF/</id>
-    <published>2018-11-30T15:57:08.000Z</published>
-    <updated>2018-11-30T07:18:17.311Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;CTF&lt;br&gt;
-    
-    </summary>
-    
-      <category term="ctf" scheme="https://zerosun.top/categories/ctf/"/>
-    
-    
-      <category term="CTF" scheme="https://zerosun.top/tags/CTF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CTF Web</title>
-    <link href="https://zerosun.top/2018/11/30/CTF-Web/"/>
-    <id>https://zerosun.top/2018/11/30/CTF-Web/</id>
-    <published>2018-11-30T09:57:08.000Z</published>
-    <updated>2018-11-30T06:45:44.203Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;CTF Web类型&lt;br&gt;
-    
-    </summary>
-    
-      <category term="ctf" scheme="https://zerosun.top/categories/ctf/"/>
-    
-    
-      <category term="CTF" scheme="https://zerosun.top/tags/CTF/"/>
-    
-      <category term="Web" scheme="https://zerosun.top/tags/Web/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CTF Steg</title>
-    <link href="https://zerosun.top/2018/11/30/CTF-Steg/"/>
-    <id>https://zerosun.top/2018/11/30/CTF-Steg/</id>
-    <published>2018-11-30T08:29:35.000Z</published>
-    <updated>2018-11-30T06:45:47.718Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;CTF Steganography类型&lt;br&gt;
-    
-    </summary>
-    
-      <category term="ctf" scheme="https://zerosun.top/categories/ctf/"/>
-    
-    
-      <category term="CTF" scheme="https://zerosun.top/tags/CTF/"/>
-    
-      <category term="Steg" scheme="https://zerosun.top/tags/Steg/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CTF Reverse</title>
-    <link href="https://zerosun.top/2018/11/30/CTF-Reverse/"/>
-    <id>https://zerosun.top/2018/11/30/CTF-Reverse/</id>
-    <published>2018-11-30T07:49:05.000Z</published>
-    <updated>2018-11-30T06:45:46.467Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;CTF REverse类型&lt;br&gt;
-    
-    </summary>
-    
-      <category term="ctf" scheme="https://zerosun.top/categories/ctf/"/>
-    
-    
-      <category term="CTF" scheme="https://zerosun.top/tags/CTF/"/>
-    
-      <category term="Reverse" scheme="https://zerosun.top/tags/Reverse/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CTF PWN</title>
-    <link href="https://zerosun.top/2018/11/30/CTF-PWN/"/>
-    <id>https://zerosun.top/2018/11/30/CTF-PWN/</id>
-    <published>2018-11-30T05:57:08.000Z</published>
-    <updated>2018-11-30T06:43:38.543Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;CTF PWN类型&lt;br&gt;
-    
-    </summary>
-    
-      <category term="ctf" scheme="https://zerosun.top/categories/ctf/"/>
-    
-    
-      <category term="CTF" scheme="https://zerosun.top/tags/CTF/"/>
-    
-      <category term="PWN" scheme="https://zerosun.top/tags/PWN/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CTF MISC</title>
-    <link href="https://zerosun.top/2018/11/30/CTF-MISC/"/>
-    <id>https://zerosun.top/2018/11/30/CTF-MISC/</id>
-    <published>2018-11-30T04:29:35.000Z</published>
-    <updated>2018-11-30T06:40:55.502Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;CTF MISC类型&lt;br&gt;
-    
-    </summary>
-    
-      <category term="ctf" scheme="https://zerosun.top/categories/ctf/"/>
-    
-    
-      <category term="CTF" scheme="https://zerosun.top/tags/CTF/"/>
-    
-      <category term="MISC" scheme="https://zerosun.top/tags/MISC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CTF Crypto</title>
-    <link href="https://zerosun.top/2018/11/30/CTF-Crypto/"/>
-    <id>https://zerosun.top/2018/11/30/CTF-Crypto/</id>
-    <published>2018-11-30T03:57:08.000Z</published>
-    <updated>2018-11-30T06:39:20.516Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;CTF Crypto类型&lt;br&gt;
-    
-    </summary>
-    
-      <category term="ctf" scheme="https://zerosun.top/categories/ctf/"/>
-    
-    
-      <category term="CTF" scheme="https://zerosun.top/tags/CTF/"/>
-    
-      <category term="Crypto" scheme="https://zerosun.top/tags/Crypto/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CTF Android</title>
-    <link href="https://zerosun.top/2018/11/30/CTF-Android/"/>
-    <id>https://zerosun.top/2018/11/30/CTF-Android/</id>
-    <published>2018-11-30T02:57:08.000Z</published>
-    <updated>2018-11-30T06:42:38.516Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;CTF Android类型&lt;br&gt;
-    
-    </summary>
-    
-      <category term="ctf" scheme="https://zerosun.top/categories/ctf/"/>
-    
-    
-      <category term="CTF" scheme="https://zerosun.top/tags/CTF/"/>
-    
-      <category term="Android" scheme="https://zerosun.top/tags/Android/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Bugku-Web-Writeup</title>
-    <link href="https://zerosun.top/2018/11/29/Bugku-Web-Writeup/"/>
-    <id>https://zerosun.top/2018/11/29/Bugku-Web-Writeup/</id>
-    <published>2018-11-29T09:39:36.000Z</published>
-    <updated>2018-11-29T09:42:43.605Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Bugku Web类题目&lt;br&gt;
-    
-    </summary>
-    
-      <category term="ctf" scheme="https://zerosun.top/categories/ctf/"/>
-    
-    
-      <category term="CTF" scheme="https://zerosun.top/tags/CTF/"/>
-    
-      <category term="WriteUp" scheme="https://zerosun.top/tags/WriteUp/"/>
-    
-      <category term="Web" scheme="https://zerosun.top/tags/Web/"/>
-    
-  </entry>
   
   <entry>
     <title>Linux性能分析工具合集</title>
@@ -259,30 +39,6 @@
   </entry>
   
   <entry>
-    <title>Bugku Misc Writeup</title>
-    <link href="https://zerosun.top/2018/11/07/Bugku-Misc-Writeup/"/>
-    <id>https://zerosun.top/2018/11/07/Bugku-Misc-Writeup/</id>
-    <published>2018-11-07T08:52:19.000Z</published>
-    <updated>2018-11-30T06:19:29.307Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Bugku MISC类题目&lt;br&gt;
-    
-    </summary>
-    
-      <category term="ctf" scheme="https://zerosun.top/categories/ctf/"/>
-    
-    
-      <category term="CTF" scheme="https://zerosun.top/tags/CTF/"/>
-    
-      <category term="WriteUp" scheme="https://zerosun.top/tags/WriteUp/"/>
-    
-      <category term="MISC" scheme="https://zerosun.top/tags/MISC/"/>
-    
-  </entry>
-  
-  <entry>
     <title>给你分享2018年的书单</title>
     <link href="https://zerosun.top/2018/11/07/booklist-2018/"/>
     <id>https://zerosun.top/2018/11/07/booklist-2018/</id>
@@ -299,26 +55,6 @@
       <category term="Reading" scheme="https://zerosun.top/tags/Reading/"/>
     
       <category term="BookList" scheme="https://zerosun.top/tags/BookList/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Repositories Starred on Github</title>
-    <link href="https://zerosun.top/2018/11/07/repositories-starred-on-github/"/>
-    <id>https://zerosun.top/2018/11/07/repositories-starred-on-github/</id>
-    <published>2018-11-07T08:39:36.000Z</published>
-    <updated>2018-12-06T01:11:37.460Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;an arrangement for repositories starred on github&lt;br&gt;
-    
-    </summary>
-    
-      <category term="favorites" scheme="https://zerosun.top/categories/favorites/"/>
-    
-    
-      <category term="Github" scheme="https://zerosun.top/tags/Github/"/>
     
   </entry>
   
@@ -447,6 +183,150 @@
     
     
       <category term="Markdown" scheme="https://zerosun.top/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>提问的智慧</title>
+    <link href="https://zerosun.top/2018/08/30/How-To-Ask-Questions-The-Smart-Way/"/>
+    <id>https://zerosun.top/2018/08/30/How-To-Ask-Questions-The-Smart-Way/</id>
+    <published>2018-08-30T05:56:56.000Z</published>
+    <updated>2018-09-18T08:04:52.817Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;How-To-Ask-Questions-The-Smart-Way&quot;&gt;&lt;a href=&quot;#How-To-Ask-Questions-The-Smart-Way&quot; class=&quot;headerlink&quot; title=&quot;How To Ask Questions The Smart Way&quot;&gt;&lt;/a&gt;How To Ask Questions The Smart Way&lt;/h1&gt;&lt;p&gt;Copyright © 2001,2006,2014 Eric S. Raymond, Rick Moen&lt;br&gt;本指南英文版版权为 Eric S. Raymond, Rick Moen 所有。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="favorites" scheme="https://zerosun.top/categories/favorites/"/>
+    
+    
+      <category term="HOWTO" scheme="https://zerosun.top/tags/HOWTO/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Glitter&amp;Gloss</title>
+    <link href="https://zerosun.top/2017/03/26/GlitterGloss/"/>
+    <id>https://zerosun.top/2017/03/26/GlitterGloss/</id>
+    <published>2017-03-26T09:47:34.000Z</published>
+    <updated>2018-10-17T10:33:41.932Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/JxuEBt_RIRs?rel=0&amp;amp;showinfo=0&quot; frame
+      
+    
+    </summary>
+    
+    
+      <category term="MV" scheme="https://zerosun.top/tags/MV/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>给你分享2016年的书单</title>
+    <link href="https://zerosun.top/2016/12/31/booklist-2016/"/>
+    <id>https://zerosun.top/2016/12/31/booklist-2016/</id>
+    <published>2016-12-31T14:58:25.000Z</published>
+    <updated>2018-11-29T09:47:27.806Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;第一个年阅读计划，一月一本。流水账表述，便也粗糙，望见谅。&lt;br&gt;读这些书有什么用？讲真，答不上来 /尴尬脸.jpg。&lt;br&gt;文学爱好？算不上爱好。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="reading" scheme="https://zerosun.top/categories/reading/"/>
+    
+    
+      <category term="Reading" scheme="https://zerosun.top/tags/Reading/"/>
+    
+      <category term="BookList" scheme="https://zerosun.top/tags/BookList/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>这个人也许永远不回来了，也许“明天”回来！</title>
+    <link href="https://zerosun.top/2016/12/11/book2016-BorderTown-by-ShenCongwen-end/"/>
+    <id>https://zerosun.top/2016/12/11/book2016-BorderTown-by-ShenCongwen-end/</id>
+    <published>2016-12-11T15:31:00.000Z</published>
+    <updated>2018-11-15T11:56:24.945Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;可是&lt;br&gt;到了冬天&lt;br&gt;那个圮坍了的白塔&lt;br&gt;又重新修好了。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="reading" scheme="https://zerosun.top/categories/reading/"/>
+    
+    
+      <category term="Reading" scheme="https://zerosun.top/tags/Reading/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>由四川过湖南去，靠东有一条官路。</title>
+    <link href="https://zerosun.top/2016/11/25/book2016-BorderTown-by-ShenCongwen-begain/"/>
+    <id>https://zerosun.top/2016/11/25/book2016-BorderTown-by-ShenCongwen-begain/</id>
+    <published>2016-11-25T15:43:00.000Z</published>
+    <updated>2018-11-15T11:52:33.600Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;由四川过湖南去，&lt;/p&gt;
+&lt;p&gt;靠东有一条官路。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="reading" scheme="https://zerosun.top/categories/reading/"/>
+    
+    
+      <category term="Reading" scheme="https://zerosun.top/tags/Reading/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>坚定的爱的光芒</title>
+    <link href="https://zerosun.top/2016/11/13/book2016-TheLoveSong-of-MissQueenie-by-RachelJoyce-end/"/>
+    <id>https://zerosun.top/2016/11/13/book2016-TheLoveSong-of-MissQueenie-by-RachelJoyce-end/</id>
+    <published>2016-11-13T12:42:10.000Z</published>
+    <updated>2018-11-15T11:52:44.189Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我们回到在《一个人的朝圣》里，65岁的哈罗德，87天的徒步，627英里，北上的路上伴随一个信念：只要他不停下一直在走，奎妮就一定能活下来。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="reading" scheme="https://zerosun.top/categories/reading/"/>
+    
+    
+      <category term="Reading" scheme="https://zerosun.top/tags/Reading/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>那封，改变了一切的信，是星期二寄到的</title>
+    <link href="https://zerosun.top/2016/11/10/book2016-TheUnlikelyPilgrimage-of-HaroldFry-by-RachelJoyce-end/"/>
+    <id>https://zerosun.top/2016/11/10/book2016-TheUnlikelyPilgrimage-of-HaroldFry-by-RachelJoyce-end/</id>
+    <published>2016-11-10T12:41:00.000Z</published>
+    <updated>2018-11-15T11:53:01.516Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我会走路过来。从南德文郡一路走到贝里克郡。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="reading" scheme="https://zerosun.top/categories/reading/"/>
+    
+    
+      <category term="Reading" scheme="https://zerosun.top/tags/Reading/"/>
     
   </entry>
   
