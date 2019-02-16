@@ -94,9 +94,9 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
-    
       <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
+    
+      <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
       <category term="SmartContract" scheme="https://zerosun.top/tags/SmartContract/"/>
     
@@ -118,9 +118,9 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="Hash" scheme="https://zerosun.top/tags/Hash/"/>
-    
       <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
+    
+      <category term="Hash" scheme="https://zerosun.top/tags/Hash/"/>
     
   </entry>
   
@@ -160,11 +160,11 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
+    
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
       <category term="MIST" scheme="https://zerosun.top/tags/MIST/"/>
-    
-      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
   </entry>
   
@@ -254,7 +254,7 @@
     <link href="https://zerosun.top/2016/12/11/book2016-BorderTown-by-ShenCongwen-end/"/>
     <id>https://zerosun.top/2016/12/11/book2016-BorderTown-by-ShenCongwen-end/</id>
     <published>2016-12-11T15:31:00.000Z</published>
-    <updated>2018-11-15T11:56:24.945Z</updated>
+    <updated>2019-02-16T06:03:00.510Z</updated>
     
     <summary type="html">
     
