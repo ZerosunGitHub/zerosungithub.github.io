@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-04-15T03:30:46.871Z</updated>
+  <updated>2019-04-15T03:43:13.769Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -21,9 +21,11 @@
     <link href="https://zerosun.top/2019/04/15/CRSP-of-university/"/>
     <id>https://zerosun.top/2019/04/15/CRSP-of-university/</id>
     <published>2019-04-15T03:29:15.000Z</published>
-    <updated>2019-04-15T03:30:46.871Z</updated>
+    <updated>2019-04-15T03:43:13.769Z</updated>
     
     <summary type="html">
+    
+      &lt;p&gt;始于浙大……&lt;br&gt;
     
     </summary>
     
@@ -110,11 +112,11 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
-    
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
       <category term="SmartContract" scheme="https://zerosun.top/tags/SmartContract/"/>
+    
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
   </entry>
   
@@ -134,9 +136,9 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
-    
       <category term="Hash" scheme="https://zerosun.top/tags/Hash/"/>
+    
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
   </entry>
   
@@ -176,11 +178,11 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
-    
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
       <category term="MIST" scheme="https://zerosun.top/tags/MIST/"/>
+    
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
   </entry>
   
