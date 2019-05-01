@@ -2021,7 +2021,7 @@ animation-play-state:paused; */
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #cc87ff;
+  background: #d6d112;
 }
 .links-of-author-item {
   text-align: center;
@@ -3037,7 +3037,6 @@ hr {
   }
 }
 body {
-  background: url("https://source.unsplash.com/random/1920x1080");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
