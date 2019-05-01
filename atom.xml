@@ -81,11 +81,11 @@
     <link href="https://zerosun.top/2018/11/07/repositories-starred-on-github/"/>
     <id>https://zerosun.top/2018/11/07/repositories-starred-on-github/</id>
     <published>2018-11-07T08:39:36.000Z</published>
-    <updated>2018-12-06T01:11:37.460Z</updated>
+    <updated>2019-05-01T13:48:50.452Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;an arrangement for repositories starred on github&lt;br&gt;
+      &lt;p&gt;an arrangement for repositories starred on github&lt;br&gt;gitHub没有对收藏的仓库进行自定义分类标签的功能，笔者下面做了一个整理归类，方便以后查阅。&lt;br&gt;
     
     </summary>
     
@@ -132,9 +132,9 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
-    
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
+    
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
       <category term="SmartContract" scheme="https://zerosun.top/tags/SmartContract/"/>
     
@@ -156,9 +156,9 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
-    
       <category term="Hash" scheme="https://zerosun.top/tags/Hash/"/>
+    
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
   </entry>
   
@@ -198,11 +198,11 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
-    
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
       <category term="MIST" scheme="https://zerosun.top/tags/MIST/"/>
+    
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
   </entry>
   
