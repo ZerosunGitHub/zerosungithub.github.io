@@ -1756,6 +1756,13 @@ pre .javascript .function {
     transform: rotateZ(-30deg);
   }
 }
+.post-copyright {
+  margin: 2em 0 0;
+  padding: 0.5em 1em;
+  border-left: 3px solid #ff1700;
+  background-color: #f9f9f9;
+  list-style: none;
+}
 .post-widgets {
   border-top: 1px solid #eee;
   padding-top: 9px;
@@ -2031,7 +2038,7 @@ animation-play-state:paused; */
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2aff9c;
+  background: #28328b;
 }
 .links-of-author-item {
   text-align: center;
@@ -2331,22 +2338,6 @@ animation-play-state:paused; */
     -o-transform: scale(1.1);
     transform: scale(1.1);
   }
-}
-#gitment-display-button {
-  display: inline-block;
-  padding: 0 15px;
-  color: #0a9caf;
-  cursor: pointer;
-  font-size: 14px;
-  border: 1px solid #0a9caf;
-  border-radius: 4px;
-}
-#gitment-display-button:hover {
-  color: #fff;
-  background: #0a9caf;
-}
-#gitment-container a {
-  border-bottom: none;
 }
 .fa {
   font-family: FontAwesome !important;
