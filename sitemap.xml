@@ -2,6 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <!-- <loc>https://zerosun.top/2018/11/07/repositories-starred-on-github/</loc> -->
+    <loc>https://zerosun.top/2018/11/07/repositories-starred-on-github/</loc>
+    
+    <lastmod>2019-05-07T09:37:07.708Z</lastmod>
+    
+  </url>
+  
+  <url>
     <!-- <loc>https://zerosun.top/2018/08/30/Hello-world/</loc> -->
     <loc>https://zerosun.top/2018/08/30/Hello-world/</loc>
     
@@ -14,14 +22,6 @@
     <loc>https://zerosun.top/2019/05/03/Merkle-Tree/</loc>
     
     <lastmod>2019-05-03T03:44:46.164Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <!-- <loc>https://zerosun.top/2018/11/07/repositories-starred-on-github/</loc> -->
-    <loc>https://zerosun.top/2018/11/07/repositories-starred-on-github/</loc>
-    
-    <lastmod>2019-05-01T14:17:48.322Z</lastmod>
     
   </url>
   
