@@ -5,8 +5,8 @@
     <url>%2F2019%2F05%2F09%2FRSS4CyberSecruity%2F</url>
     <content type="text"><![CDATA[RSS: 优秀的个人情报来源关注了一些圈内高质量的技术博客的站点，不知道是否有更新文章，数量少的时候倒还可以应付的来，经常挨个翻翻看有没有更新，关注的多了，点击起来甚是低效。后用RRS(RSS(Really Simple Syndication），即简易信息聚合，也叫聚合内容，来进行聚合内容的管理。写到这里突生的一个想法，先记下来吧，各类新闻软件在进行用户浏览行为分析，而后进行的精准推送。读者的认知宽度多少会受到，因对用户行为分析数据分析、个性化推荐带来的“狭隘圈子”影响。久而久之，会不会出现一种：我自己只知道，我只能知道，我只能看到，我只会看到，我关注的。当然，这里亦不是，严格的0与1的概念。一些碎碎念，欢迎指教。 回到本文目的，是什么？怎么用？皆已个人RSS订阅管理来进行开展。]]></content>
       <tags>
-        <tag>RSS</tag>
         <tag>Tools</tag>
+        <tag>RSS</tag>
       </tags>
   </entry>
   <entry>
@@ -79,8 +79,8 @@
         <category>blockchain</category>
       </categories>
       <tags>
-        <tag>BlockChain</tag>
         <tag>Ethereum</tag>
+        <tag>BlockChain</tag>
         <tag>SmartContract</tag>
       </tags>
   </entry>
@@ -92,8 +92,8 @@
         <category>blockchain</category>
       </categories>
       <tags>
-        <tag>BlockChain</tag>
         <tag>Hash</tag>
+        <tag>BlockChain</tag>
       </tags>
   </entry>
   <entry>
@@ -115,9 +115,9 @@
         <category>blockchain</category>
       </categories>
       <tags>
-        <tag>BlockChain</tag>
         <tag>Ethereum</tag>
         <tag>MIST</tag>
+        <tag>BlockChain</tag>
       </tags>
   </entry>
   <entry>
