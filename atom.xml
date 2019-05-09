@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-05-03T03:44:46.164Z</updated>
+  <updated>2019-05-09T03:41:03.431Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>RSS:优秀的个人情报来源</title>
+    <link href="https://zerosun.top/2019/05/09/RSS4CyberSecruity/"/>
+    <id>https://zerosun.top/2019/05/09/RSS4CyberSecruity/</id>
+    <published>2019-05-09T03:08:41.000Z</published>
+    <updated>2019-05-09T03:41:03.431Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;RSS: 优秀的个人情报来源&lt;br&gt;关注了一些圈内高质量的技术博客的站点，不知道是否有更新文章，数量少的时候倒还可以应付的来，经常挨个翻翻看有没有更新，关注的多了，点击起来甚是低效。后用RRS(RSS(Really Simple Syndication），即简易信息聚合，也叫聚合内容，来进行聚合内容的管理。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="RSS" scheme="https://zerosun.top/tags/RSS/"/>
+    
+      <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
+    
+  </entry>
   
   <entry>
     <title>区块基础-Merkle树</title>
@@ -153,9 +173,9 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
-    
       <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
+    
+      <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
       <category term="SmartContract" scheme="https://zerosun.top/tags/SmartContract/"/>
     
@@ -219,11 +239,11 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
+    
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
       <category term="MIST" scheme="https://zerosun.top/tags/MIST/"/>
-    
-      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
   </entry>
   
