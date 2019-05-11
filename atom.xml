@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-05-11T11:44:28.547Z</updated>
+  <updated>2019-05-11T11:51:57.780Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -21,12 +21,11 @@
     <link href="https://zerosun.top/2019/05/11/BlockChain-Basis-Hash/"/>
     <id>https://zerosun.top/2019/05/11/BlockChain-Basis-Hash/</id>
     <published>2019-05-11T09:10:33.000Z</published>
-    <updated>2019-05-11T11:44:28.547Z</updated>
+    <updated>2019-05-11T11:51:57.780Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;区块链基础-Hash算法&quot;&gt;&lt;a href=&quot;#区块链基础-Hash算法&quot; class=&quot;headerlink&quot; title=&quot;区块链基础-Hash算法&quot;&gt;&lt;/a&gt;区块链基础-Hash算法&lt;/h1&gt;&lt;p&gt;hash算法&lt;/p&gt;
-&lt;p&gt;hash算法也称为散列函数算法，在区块链中应用的相当频繁，在说明hash算法之前先明确一个概念。&lt;br&gt;
+      &lt;p&gt;hash算法也称为散列函数算法，在区块链中应用的相当频繁，在说明hash算法之前先明确一个概念。&lt;br&gt;
     
     </summary>
     
@@ -64,12 +63,11 @@
     <link href="https://zerosun.top/2019/05/03/BlockChain-Basis-MerkleTree/"/>
     <id>https://zerosun.top/2019/05/03/BlockChain-Basis-MerkleTree/</id>
     <published>2019-05-03T03:41:49.000Z</published>
-    <updated>2019-05-11T11:47:05.064Z</updated>
+    <updated>2019-05-11T11:52:10.430Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;区块基础-Merkle树&quot;&gt;&lt;a href=&quot;#区块基础-Merkle树&quot; class=&quot;headerlink&quot; title=&quot;区块基础-Merkle树&quot;&gt;&lt;/a&gt;区块基础-Merkle树&lt;/h1&gt;&lt;hr&gt;
-&lt;p&gt;Merkle tree中文叫做默克尔树，这当然不是一棵真正的植物树，merkle tree是计算机数据结构中的一种树，是由计算机科学家 Ralph Merkle 提出的，并以他本人的名字来命名。&lt;br&gt;
+      &lt;p&gt;Merkle tree中文叫做默克尔树，这当然不是一棵真正的植物树，merkle tree是计算机数据结构中的一种树，是由计算机科学家 Ralph Merkle 提出的，并以他本人的名字来命名。&lt;br&gt;
     
     </summary>
     
@@ -209,7 +207,7 @@
     <link href="https://zerosun.top/2018/09/11/BlockChain-Basis-simple-intro/"/>
     <id>https://zerosun.top/2018/09/11/BlockChain-Basis-simple-intro/</id>
     <published>2018-09-11T09:06:31.000Z</published>
-    <updated>2018-11-08T08:54:34.061Z</updated>
+    <updated>2019-05-11T11:52:23.439Z</updated>
     
     <summary type="html">
     
@@ -220,9 +218,9 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="Hash" scheme="https://zerosun.top/tags/Hash/"/>
-    
       <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
+    
+      <category term="Hash" scheme="https://zerosun.top/tags/Hash/"/>
     
   </entry>
   
