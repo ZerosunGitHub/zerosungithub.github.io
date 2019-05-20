@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-05-20T09:13:23.001Z</updated>
+  <updated>2019-05-20T09:30:15.579Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -21,11 +21,13 @@
     <link href="https://zerosun.top/2019/05/20/T-Pot-Multi-Honeypot-Platform-Revolution/"/>
     <id>https://zerosun.top/2019/05/20/T-Pot-Multi-Honeypot-Platform-Revolution/</id>
     <published>2019-05-20T09:05:26.000Z</published>
-    <updated>2019-05-20T09:13:23.001Z</updated>
+    <updated>2019-05-20T09:30:15.579Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;T-Pot-多蜜罐平台革命&quot;&gt;&lt;a href=&quot;#T-Pot-多蜜罐平台革命&quot; class=&quot;headerlink&quot; title=&quot;T-Pot:多蜜罐平台革命&quot;&gt;&lt;/a&gt;T-Pot:多蜜罐平台革命&lt;/h1&gt;&lt;p&gt;T-Pot 19.03 T-Pot 19.03 runs on Debian (Sid), is based heavily on docker, docker-compose and includes dockerized versions of the following honeypots adbhoney, ciscoasa, conpot, cowrie, dionaea, elasticpot, glastopf, glutton, heralding, honeypy, honeytrap, mailoney, medpot, rdpy, snare, tanner Furthermore we use the following tools Cockpit for a lightweight, webui for…&lt;br&gt;
+      &lt;h1 id=&quot;T-Pot-多蜜罐平台革命&quot;&gt;&lt;a href=&quot;#T-Pot-多蜜罐平台革命&quot; class=&quot;headerlink&quot; title=&quot;T-Pot:多蜜罐平台革命&quot;&gt;&lt;/a&gt;T-Pot:多蜜罐平台革命&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;————来自官方的版本概述&lt;br&gt;T-Pot 19.03 T-Pot 19.03 runs on Debian (Sid), is based heavily on docker, docker-compose and includes dockerized versions of the following honeypots adbhoney, ciscoasa, conpot, cowrie, dionaea, elasticpot, glastopf, glutton, heralding, honeypy, honeytrap, mailoney, medpot, rdpy, snare, tanner Furthermore we use the following tools Cockpit for a lightweight, webui for…&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
