@@ -128,7 +128,7 @@
 <meta property="og:site_name" content="北岸冷若冰霜">
 <meta property="og:description" content="T-Pot:多蜜罐平台革命 ————来自官方的版本概述T-Pot 19.03 T-Pot 19.03 runs on Debian (Sid), is based heavily on docker, docker-compose and includes dockerized versions of the following honeypots adbhoney, ciscoasa, conp">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-20T09:30:15.579Z">
+<meta property="og:updated_time" content="2019-05-20T10:15:53.647Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="T-Pot:Multi-Honeypot-Platform-Revolution">
 <meta name="twitter:description" content="T-Pot:多蜜罐平台革命 ————来自官方的版本概述T-Pot 19.03 T-Pot 19.03 runs on Debian (Sid), is based heavily on docker, docker-compose and includes dockerized versions of the following honeypots adbhoney, ciscoasa, conp">
@@ -442,7 +442,7 @@
                 
               
 
-              <time title="创建时间：2019-05-20 17:05:26 / 修改时间：17:30:15" itemprop="dateCreated datePublished" datetime="2019-05-20T17:05:26+08:00">2019-05-20</time>
+              <time title="创建时间：2019-05-20 17:05:26 / 修改时间：18:15:53" itemprop="dateCreated datePublished" datetime="2019-05-20T17:05:26+08:00">2019-05-20</time>
             
 
             
@@ -494,9 +494,26 @@
 <a id="more"></a>
 <h2 id="0x00简述篇"><a href="#0x00简述篇" class="headerlink" title="0x00简述篇"></a>0x00简述篇</h2><h3 id="项目简介"><a href="#项目简介" class="headerlink" title="项目简介"></a>项目简介</h3><p>DTAG 社区蜜罐项目：<a href="http://dtag-dev-sec.github.io/" target="_blank" rel="noopener">http://dtag-dev-sec.github.io/</a><br>官方简介 Release T-Pot 19.03：<a href="http://dtag-dev-sec.github.io/mediator/feature/2019/04/01/tpot-1903.html" target="_blank" rel="noopener">http://dtag-dev-sec.github.io/mediator/feature/2019/04/01/tpot-1903.html</a><br>项目地址：<a href="https://github.com/dtag-dev-sec/tpotce" target="_blank" rel="noopener">https://github.com/dtag-dev-sec/tpotce</a></p>
 <h3 id="技术概念"><a href="#技术概念" class="headerlink" title="技术概念"></a>技术概念</h3><p>T-Pot基于linux的网络安装程序。蜜罐守护程序以及正在使用的其他支持组件已使用Docker进行集装箱化。这允许我们在同一网络接口上运行多个蜜罐守护进程，同时保持较小的占用空间并限制每个蜜罐在其自己的环境中。</p>
-<h2 id="0x01安装篇"><a href="#0x01安装篇" class="headerlink" title="0x01安装篇"></a>0x01安装篇</h2><h2 id="0x02使用篇"><a href="#0x02使用篇" class="headerlink" title="0x02使用篇"></a>0x02使用篇</h2><h3 id="服务器管理"><a href="#服务器管理" class="headerlink" title="服务器管理"></a>服务器管理</h3><p>#### </p>
-<p>#### </p>
-<h3 id="Web管理"><a href="#Web管理" class="headerlink" title="Web管理"></a>Web管理</h3><p>涉及较多的Kibana可视化配置，</p>
+<h2 id="0x01安装篇"><a href="#0x01安装篇" class="headerlink" title="0x01安装篇"></a>0x01安装篇</h2><p>先安装好主机系统，官方指定需要使用Debian系统，这里安装的版本是debian-9.9.0-amd64-xfce ，附下载地址：<a href="https://mirrors.tuna.tsinghua.edu.cn/debian-cd/current/amd64/iso-cd/debian-9.9.0-amd64-xfce-CD-1.iso" target="_blank" rel="noopener">9.9.0 (amd64, CD installer with xfce)</a>  </p>
+<ul>
+<li><p>1.下载项目文件  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/dtag-dev-sec/tpotce</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>2.脚本安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd tpotce/iso/installer/</span><br><span class="line">su root</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>2.1 方法一：安装需要简单的手动配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./install.sh --type=user</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>2.2 方法二：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cp tpot.conf.dist tpot.conf</span><br><span class="line">./install.sh --type=auto --conf=tpot.conf   #配置文件里面含有64297端口进行Web管理的用户名和密码</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<p>等待很久的安装过程,而后重启。</p>
+<h2 id="0x02使用篇"><a href="#0x02使用篇" class="headerlink" title="0x02使用篇"></a>0x02使用篇</h2><h3 id="服务器管理"><a href="#服务器管理" class="headerlink" title="服务器管理"></a>服务器管理</h3><h4 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h4><h4 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h4><p>需要将登录用户添加到docker用户组中。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 将当前用户加入docker组：</span><br><span class="line">$ sudo usermod -aG docker $USER</span><br></pre></td></tr></table></figure></p>
+<h4 id="终端"><a href="#终端" class="headerlink" title="终端"></a>终端</h4><h3 id="Web管理"><a href="#Web管理" class="headerlink" title="Web管理"></a>Web管理</h3><p>涉及较多的Kibana可视化配置，</p>
 <p>调优</p>
 
       
@@ -883,7 +900,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#T-Pot-多蜜罐平台革命"><span class="nav-number">1.</span> <span class="nav-text">T-Pot:多蜜罐平台革命</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#0x00简述篇"><span class="nav-number">1.1.</span> <span class="nav-text">0x00简述篇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#项目简介"><span class="nav-number">1.1.1.</span> <span class="nav-text">项目简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#技术概念"><span class="nav-number">1.1.2.</span> <span class="nav-text">技术概念</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x01安装篇"><span class="nav-number">1.2.</span> <span class="nav-text">0x01安装篇</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x02使用篇"><span class="nav-number">1.3.</span> <span class="nav-text">0x02使用篇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#服务器管理"><span class="nav-number">1.3.1.</span> <span class="nav-text">服务器管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Web管理"><span class="nav-number">1.3.2.</span> <span class="nav-text">Web管理</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#T-Pot-多蜜罐平台革命"><span class="nav-number">1.</span> <span class="nav-text">T-Pot:多蜜罐平台革命</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#0x00简述篇"><span class="nav-number">1.1.</span> <span class="nav-text">0x00简述篇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#项目简介"><span class="nav-number">1.1.1.</span> <span class="nav-text">项目简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#技术概念"><span class="nav-number">1.1.2.</span> <span class="nav-text">技术概念</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x01安装篇"><span class="nav-number">1.2.</span> <span class="nav-text">0x01安装篇</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x02使用篇"><span class="nav-number">1.3.</span> <span class="nav-text">0x02使用篇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#服务器管理"><span class="nav-number">1.3.1.</span> <span class="nav-text">服务器管理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#系统"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">系统</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#容器"><span class="nav-number">1.3.1.2.</span> <span class="nav-text">容器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#终端"><span class="nav-number">1.3.1.3.</span> <span class="nav-text">终端</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Web管理"><span class="nav-number">1.3.2.</span> <span class="nav-text">Web管理</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
