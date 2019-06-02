@@ -136,7 +136,7 @@
 <meta property="og:image" content="https://dtag-dev-sec.github.io/assets/images/spiderfoot.png">
 <meta property="og:image" content="https://dtag-dev-sec.github.io/assets/images/spiderfoot.png">
 <meta property="og:image" content="https://dtag-dev-sec.github.io/assets/images/kibana.png">
-<meta property="og:updated_time" content="2019-06-02T11:23:50.943Z">
+<meta property="og:updated_time" content="2019-06-02T11:33:52.526Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="T-Pot:Multi-Honeypot-Platform-Revolution">
 <meta name="twitter:description" content="T-Pot:多蜜罐平台革命T-Pot 19.03 T-Pot 19.03 runs on Debian (Sid), is based heavily on docker, docker-compose and includes dockerized versions of the following honeypots adbhoney, ciscoasa, conpot, cowrie, di">
@@ -468,7 +468,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-06-02 19:23:50" itemprop="dateModified" datetime="2019-06-02T19:23:50+08:00">2019-06-02</time>
+                <time title="修改时间：2019-06-02 19:33:52" itemprop="dateModified" datetime="2019-06-02T19:33:52+08:00">2019-06-02</time>
               
             
           </span>
@@ -536,7 +536,6 @@
 <li><a href="http://mushmush.org/" target="_blank" rel="noopener">tanner</a><br>Snare/Tanner是web蜜罐Glastopf 的继任者。TANNER是一种远程数据分析和分类服务，用于评估HTTP请求并组成SNARE事件服务的响应。</li>
 </ul>
 <h4 id="FurtherTools"><a href="#FurtherTools" class="headerlink" title="FurtherTools"></a>FurtherTools</h4><p>在主机上同时安装了以下几种工具</p>
-<hr>
 <ul>
 <li><a href="https://cockpit-project.org/running" target="_blank" rel="noopener">Cockpit</a><br>for a lightweight, webui for docker, os, real-time performance monitoring and web terminal.Cockpit 使得 Linux 系统管理员、系统维护员和开发者能轻松地管理他们的服务器并执行一些简单的任务，例如管理存储、检测日志、启动或停止服务以及一些其它任务。它的报告界面添加了一些很好的功能使得可以轻松地在终端和 Web 界面之间切换。另外，它不仅使得管理一台服务器变得简单，更重要的是只需要一个单击就可以在一个地方同时管理多个通过网络连接的服务器.</li>
 <li><a href="https://gchq.github.io/CyberChef/" target="_blank" rel="noopener">Cyberchef</a><br>a web app for encryption, encoding, compression and data analysis.英国情报机构-英国情报机构政府通信总部（GCHQ）发布了一款新型的开源Web工具，这款工具可以帮助安全研究人员更好地分析和解密数据。这款工具名为CyberChef，而它也被GCHQ誉为网络版的“瑞士军刀”。CyberChef是一款非常简单且直观的Web应用，使用者可以在一个Web浏览器中完成各种各样的网络操作。这些操作包括创建hexdump，进行XOR或Base64等简单的编码，进行类似AES、DES和Blowfish等复杂的加密处理，数据压缩或解压缩，计算哈希和校验值，以及对IPv6和X.509数据进行解析等等。”</li>
@@ -545,7 +544,6 @@
 <li><a href="https://github.com/smicallef/spiderfoot" target="_blank" rel="noopener">Spiderfoot</a><br>a open source intelligence automation tool.SpiderFoot是一个Python编写的免费开源的网站信息收集类工具，并且支持跨平台运行，适用于Linux、*BSD和Windows系统。此外，它还为用户提供了一个易于使用的GUI界面。在功能方面SpiderFoot也为我们考虑的非常周全，通过SpiderFoot我们可以获取相关目标的各种信息，例如网站子域、电子邮件地址、web服务器版本等等。SpiderFoot简单的基于Web的界面，使你能够在安装后立即启动扫描 – 只需简单的设置扫描目标域名，并启用相应的扫描模块即可。</li>
 <li><a href="http://suricata-ids.org/" target="_blank" rel="noopener">Suricata</a><br>a Network Security Monitoring engine.开源的网络安全威胁检测引擎。</li>
 </ul>
-<hr>
 <h2 id="0x01安装篇"><a href="#0x01安装篇" class="headerlink" title="0x01安装篇"></a>0x01安装篇</h2><ul>
 <li><p>1.环境准备</p>
 <ul>
@@ -566,7 +564,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./install.sh --type=user</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>2.2 方法二：自动配置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cp tpot.conf.dist tpot.conf</span><br><span class="line">./install.sh --type=auto --conf=tpot.conf	</span><br><span class="line">		# 配置文件里面含有64297端口进行Web管理的用户名和密码</span><br><span class="line">		# 即用户名webuser，密码w3b$ecret</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cp tpot.conf.dist tpot.conf</span><br><span class="line">./install.sh --type=auto --conf=tpot.conf	</span><br><span class="line">	# 配置文件里面含有64297端口进行Web管理的用户名和密码</span><br><span class="line">	# 即用户名webuser，密码w3b$ecret</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
@@ -591,7 +589,16 @@
 <h3 id="Tools"><a href="#Tools" class="headerlink" title="Tools"></a>Tools</h3><p>Cyberchef<br><img src="https://dtag-dev-sec.github.io/assets/images/cyberchef.png" alt="img">  </p>
 <p>ES Head Plugin<br><img src="https://dtag-dev-sec.github.io/assets/images/spiderfoot.png" alt="img">  </p>
 <p>Spiderfoot<br><img src="https://dtag-dev-sec.github.io/assets/images/spiderfoot.png" alt="img">  </p>
-<h3 id="蜜罐可视化：Kibana-Dashboard"><a href="#蜜罐可视化：Kibana-Dashboard" class="headerlink" title="蜜罐可视化：Kibana Dashboard"></a>蜜罐可视化：Kibana Dashboard</h3><p>涉及较多的Kibana可视化配置，<br><img src="https://dtag-dev-sec.github.io/assets/images/kibana.png" alt="img"><br>调优</p>
+<h3 id="蜜罐可视化：Kibana-Dashboard"><a href="#蜜罐可视化：Kibana-Dashboard" class="headerlink" title="蜜罐可视化：Kibana Dashboard"></a>蜜罐可视化：Kibana Dashboard</h3><p>涉及较多的Kibana可视化配置，<br><img src="https://dtag-dev-sec.github.io/assets/images/kibana.png" alt="img"></p>
+<h2 id="0x03优化篇"><a href="#0x03优化篇" class="headerlink" title="0x03优化篇"></a>0x03优化篇</h2><h3 id="Updates"><a href="#Updates" class="headerlink" title="Updates"></a>Updates</h3><p>For the ones of you who want to live on the bleeding edge of T-Pot development we introduced an update feature which will allow you to update all T-Pot relevant files to be up to date with the T-Pot master branch. If you made any relevant changes to the T-Pot relevant config files make sure to create a backup first.  </p>
+<ul>
+<li>The Update script will</li>
+<li>merciless overwrite local changes to be in sync with the T-Pot master branch</li>
+<li>upgrade the system to the packages available in Debian (Sid)</li>
+<li>update all resources to be in-sync with the T-Pot master branch</li>
+<li>ensure all T-Pot relevant system files will be patched / copied into the original T-Pot state<br>You simply run the update script:  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /opt/tpot/</span><br><span class="line">./update.sh -y</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
 
       
     </div>
@@ -977,7 +984,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#T-Pot-多蜜罐平台革命"><span class="nav-number">1.</span> <span class="nav-text">T-Pot:多蜜罐平台革命</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#0x00简述篇"><span class="nav-number">1.1.</span> <span class="nav-text">0x00简述篇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#项目简介"><span class="nav-number">1.1.1.</span> <span class="nav-text">项目简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统架构"><span class="nav-number">1.1.2.</span> <span class="nav-text">系统架构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#技术概念"><span class="nav-number">1.1.3.</span> <span class="nav-text">技术概念</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#DockerizedHoneypots"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">DockerizedHoneypots</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#FurtherTools"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">FurtherTools</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x01安装篇"><span class="nav-number">1.2.</span> <span class="nav-text">0x01安装篇</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x02使用篇"><span class="nav-number">1.3.</span> <span class="nav-text">0x02使用篇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#服务器管理：Web-Access"><span class="nav-number">1.3.1.</span> <span class="nav-text">服务器管理：Web Access</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#系统"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">系统</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#容器"><span class="nav-number">1.3.1.2.</span> <span class="nav-text">容器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#终端"><span class="nav-number">1.3.1.3.</span> <span class="nav-text">终端</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tools"><span class="nav-number">1.3.2.</span> <span class="nav-text">Tools</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#蜜罐可视化：Kibana-Dashboard"><span class="nav-number">1.3.3.</span> <span class="nav-text">蜜罐可视化：Kibana Dashboard</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#T-Pot-多蜜罐平台革命"><span class="nav-number">1.</span> <span class="nav-text">T-Pot:多蜜罐平台革命</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#0x00简述篇"><span class="nav-number">1.1.</span> <span class="nav-text">0x00简述篇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#项目简介"><span class="nav-number">1.1.1.</span> <span class="nav-text">项目简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统架构"><span class="nav-number">1.1.2.</span> <span class="nav-text">系统架构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#技术概念"><span class="nav-number">1.1.3.</span> <span class="nav-text">技术概念</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#DockerizedHoneypots"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">DockerizedHoneypots</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#FurtherTools"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">FurtherTools</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x01安装篇"><span class="nav-number">1.2.</span> <span class="nav-text">0x01安装篇</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x02使用篇"><span class="nav-number">1.3.</span> <span class="nav-text">0x02使用篇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#服务器管理：Web-Access"><span class="nav-number">1.3.1.</span> <span class="nav-text">服务器管理：Web Access</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#系统"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">系统</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#容器"><span class="nav-number">1.3.1.2.</span> <span class="nav-text">容器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#终端"><span class="nav-number">1.3.1.3.</span> <span class="nav-text">终端</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tools"><span class="nav-number">1.3.2.</span> <span class="nav-text">Tools</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#蜜罐可视化：Kibana-Dashboard"><span class="nav-number">1.3.3.</span> <span class="nav-text">蜜罐可视化：Kibana Dashboard</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x03优化篇"><span class="nav-number">1.4.</span> <span class="nav-text">0x03优化篇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Updates"><span class="nav-number">1.4.1.</span> <span class="nav-text">Updates</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
