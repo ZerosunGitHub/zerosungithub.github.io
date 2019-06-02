@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-06-02T11:33:52.526Z</updated>
+  <updated>2019-06-02T11:40:07.194Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zerosun.top/2019/05/20/T-Pot-Multi-Honeypot-Platform-Revolution/"/>
     <id>https://zerosun.top/2019/05/20/T-Pot-Multi-Honeypot-Platform-Revolution/</id>
     <published>2019-05-20T09:05:26.000Z</published>
-    <updated>2019-06-02T11:33:52.526Z</updated>
+    <updated>2019-06-02T11:40:07.194Z</updated>
     
     <summary type="html">
     
@@ -29,6 +29,10 @@
     
     </summary>
     
+      <category term="tools" scheme="https://zerosun.top/categories/tools/"/>
+    
+    
+      <category term="Honeypot" scheme="https://zerosun.top/tags/Honeypot/"/>
     
   </entry>
   
