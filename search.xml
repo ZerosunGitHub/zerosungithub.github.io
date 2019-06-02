@@ -37,13 +37,13 @@
   <entry>
     <title><![CDATA[RSS：优秀的个人情报来源]]></title>
     <url>%2F2019%2F05%2F09%2FRSS4CyberSecruity%2F</url>
-    <content type="text"><![CDATA[RSS: 优秀的个人情报来源关注了一些圈内高质量的技术博客的站点，不知道是否有更新文章，数量少的时候倒还可以应付的来，经常挨个翻翻看有没有更新，关注的多了，点击起来甚是低效。后用RRS(RSS(Really Simple Syndication），即简易信息聚合，也叫聚合内容，来进行聚合内容的管理。写到这里突生的一个想法，先记下来吧，各类新闻软件在进行用户浏览行为分析，而后进行的精准推送。读者的认知宽度多少会受到，因对用户行为分析数据分析、个性化推荐带来的“狭隘圈子”影响。久而久之，会不会出现一种：我自己只知道，我只能知道，我只能看到，我只会看到，我关注的。当然，这里亦不是，严格的0与1的概念。一些碎碎念，欢迎指教。 回到本文目的，是什么？怎么用？皆已个人RSS订阅管理来进行开展。 0x00 RSS工具：NewsflowWindows用户下载地址 下面的来自 Mircrodft Store 的官方介绍：Newsflow把你喜爱网站的全部文章聚集到了一个地方，所以你再也不必花时间在网页浏览上，你将一直获取世界各地最新的文章和新闻。Newsflow应用从RSS订阅源直接下载资讯并存储在你的设备，所以你就可以在任何时间任何地方阅读他们。应用程序界面友好，功能丰富，这款应用将帮助你找到最喜欢网站的文章，通过搜索关键词，就可以收集文章了。 使用这款应用你可以： 接收最新文章的通知 与你的朋友分享章 通过关键词浏览一组文章 固定到动态磁贴 查看文章图片 添加文章到收藏夹 添加文章到稍后阅读 分类并管理你的订阅源 在应用内观看YouTube或HTML页面视频 播放GIF动图 搜索特定新闻 更舒服的方式管理已读和未读的文章 许多更酷的事情 0x01 我的RSS订阅暂图预览 首页 订阅源管理已订阅概览搜索订阅源添加订阅源 软件设置 0x02 订阅源列表源列表源文件]]></content>
+    <content type="text"><![CDATA[RSS: 优秀的个人情报来源关注了一些圈内高质量的技术博客的站点，不知道是否有更新文章，数量少的时候倒还可以应付的来，经常挨个翻翻看有没有更新，关注的多了，点击起来甚是低效。后用RRS(RSS(Really Simple Syndication），即简易信息聚合，也叫聚合内容，来进行聚合内容的管理。写到这里突生的一个想法，先记下来吧，各类新闻软件在进行用户浏览行为分析，而后进行的精准推送。读者的认知宽度多少会受到，因对用户行为分析数据分析、个性化推荐带来的“狭隘圈子”影响。久而久之，会不会出现一种：我自己只知道，我只能知道，我只能看到，我只会看到，我关注的。当然，这里亦不是，严格的0与1的概念。一些碎碎念，欢迎指教。 回到本文目的，是什么？怎么用？皆已个人RSS订阅管理来进行开展。 0x00 RSS工具：NewsflowWindows用户下载地址 下面的来自 Mircrodft Store 的官方介绍：Newsflow把你喜爱网站的全部文章聚集到了一个地方，所以你再也不必花时间在网页浏览上，你将一直获取世界各地最新的文章和新闻。Newsflow应用从RSS订阅源直接下载资讯并存储在你的设备，所以你就可以在任何时间任何地方阅读他们。应用程序界面友好，功能丰富，这款应用将帮助你找到最喜欢网站的文章，通过搜索关键词，就可以收集文章了。 使用这款应用你可以： 接收最新文章的通知 与你的朋友分享章 通过关键词浏览一组文章 固定到动态磁贴 查看文章图片 添加文章到收藏夹 添加文章到稍后阅读 分类并管理你的订阅源 在应用内观看YouTube或HTML页面视频 播放GIF动图 搜索特定新闻 更舒服的方式管理已读和未读的文章 许多更酷的事情 0x01 我的RSS订阅暂图预览 首页 订阅源管理已订阅概览搜索订阅源添加订阅源 软件设置 0x02 订阅源列表源列表存储文件格式为opml，右键使用Newsflow打开就行1234567891011121314151617&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;opml xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;1.0&quot;&gt; &lt;head&gt; &lt;title&gt;Newsflow&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;outline htmlUrl=&quot;https://www.leavesongs.com&quot; text=&quot;phith0n的小站，长期存在与分享关于网络安全与各种编程的原创文章。&amp;#xD;前乌云核心白帽子、混迹于各大社区的伪装程序猿，喜欢各种代码与审计、linux运维与内网、python web开发。&amp;#xD;另外还是一个想当文人的黑客。&quot; title=&quot;离别歌&quot; xmlUrl=&quot;https://www.leavesongs.com/feed/&quot; /&gt; &lt;outline htmlUrl=&quot;https://www.zuozuovera.com/&quot; text=&quot;安全数据/玄学炼丹/十八线透明写手&quot; title=&quot;薇拉航线&quot; xmlUrl=&quot;https://www.zuozuovera.com/feed/&quot; /&gt; &lt;outline htmlUrl=&quot;http://riusksk.github.io/&quot; text=&quot;攀蟾折桂摄寰宇，摘星揽月御乾坤。踏云踩雾骋宵壤，驱风逐日闯天地。 ------泉哥&quot; title=&quot;riusksk&apos;s blog&quot; xmlUrl=&quot;http://riusksk.me/atom.xml&quot; /&gt; &lt;outline htmlUrl=&quot;https://evilcos.me&quot; text=&quot;//:alert(/Hacking Symbol/)//余弦&quot; title=&quot;EVILCOS&quot; xmlUrl=&quot;https://evilcos.me/?feed=rss2&quot; /&gt; &lt;outline htmlUrl=&quot;https://paper.seebug.org/&quot; text=&quot;The last paper on the site paper&quot; title=&quot;Seebug - Last paper&quot; xmlUrl=&quot;https://paper.seebug.org/rss/&quot; /&gt; &lt;outline htmlUrl=&quot;https://liqi.io&quot; text=&quot;创造者和他们的工具&quot; title=&quot;利器&quot; xmlUrl=&quot;https://liqi.io/feed/&quot; /&gt; &lt;outline htmlUrl=&quot;https://zerosun.top/&quot; text=&quot;觉得自己过得不好，一定是太长时间没有读书了&quot; title=&quot;北岸冷若冰霜&quot; xmlUrl=&quot;https://zerosun.top/atom.xml&quot; /&gt; &lt;outline htmlUrl=&quot;http://chengbao.bitcron.com/feed&quot; text=&quot;由阅读爱好者业余制作，基于 Markdown 排版的网络独立杂志。&quot; title=&quot;城堡阅读周刊&quot; xmlUrl=&quot;https://chengbao.bitcron.com/feed&quot; /&gt; &lt;outline htmlUrl=&quot;https://www.quchao.net/&quot; text=&quot;Mark&apos;s Blog&quot; title=&quot;Mark&apos;s Blog&quot; xmlUrl=&quot;https://www.quchao.net/feed/&quot; /&gt; &lt;/body&gt;&lt;/opml&gt;]]></content>
       <categories>
         <category>favorites</category>
       </categories>
       <tags>
-        <tag>RSS</tag>
         <tag>Tools</tag>
+        <tag>RSS</tag>
       </tags>
   </entry>
   <entry>
@@ -116,8 +116,8 @@
         <category>blockchain</category>
       </categories>
       <tags>
-        <tag>BlockChain</tag>
         <tag>Ethereum</tag>
+        <tag>BlockChain</tag>
         <tag>SmartContract</tag>
       </tags>
   </entry>
@@ -152,9 +152,9 @@
         <category>blockchain</category>
       </categories>
       <tags>
-        <tag>BlockChain</tag>
         <tag>Ethereum</tag>
         <tag>MIST</tag>
+        <tag>BlockChain</tag>
       </tags>
   </entry>
   <entry>
