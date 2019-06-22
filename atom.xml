@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-06-10T03:59:14.397Z</updated>
+  <updated>2019-06-22T14:07:04.046Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windows Terminal Configure</title>
+    <link href="https://zerosun.top/2019/06/22/windows-terminal-configure/"/>
+    <id>https://zerosun.top/2019/06/22/windows-terminal-configure/</id>
+    <published>2019-06-22T13:39:39.000Z</published>
+    <updated>2019-06-22T14:07:04.046Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Windows Terminal （Preview）已经正式可以从 Microsoft Store 安装了，安装体验前往：&lt;a href=&quot;https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701?activetab=pivot:overviewtab&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Windows Terminal （Preview）&lt;/a&gt;。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="tools" scheme="https://zerosun.top/categories/tools/"/>
+    
+    
+      <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
+    
+      <category term="Linux" scheme="https://zerosun.top/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>T-Pot:Multi-Honeypot-Platform-Revolution</title>
@@ -403,27 +425,6 @@
     <summary type="html">
     
       &lt;p&gt;可是&lt;br&gt;到了冬天&lt;br&gt;那个圮坍了的白塔&lt;br&gt;又重新修好了。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="reading" scheme="https://zerosun.top/categories/reading/"/>
-    
-    
-      <category term="Reading" scheme="https://zerosun.top/tags/Reading/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>由四川过湖南去，靠东有一条官路。</title>
-    <link href="https://zerosun.top/2016/11/25/book2016-BorderTown-by-ShenCongwen-begain/"/>
-    <id>https://zerosun.top/2016/11/25/book2016-BorderTown-by-ShenCongwen-begain/</id>
-    <published>2016-11-25T15:43:00.000Z</published>
-    <updated>2018-11-15T11:52:33.600Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;由四川过湖南去，&lt;/p&gt;
-&lt;p&gt;靠东有一条官路。&lt;br&gt;
     
     </summary>
     
