@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-06-22T14:44:24.153Z</updated>
+  <updated>2019-07-07T09:48:26.653Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -15,6 +15,22 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>A-better-zip-bomb</title>
+    <link href="https://zerosun.top/2019/07/07/A-better-zip-bomb/"/>
+    <id>https://zerosun.top/2019/07/07/A-better-zip-bomb/</id>
+    <published>2019-07-07T02:15:49.000Z</published>
+    <updated>2019-07-07T09:48:26.653Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;分享一个有趣的工具&lt;br&gt;ZBLG：非递归拉链炸弹，比例为28000000:1&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Windows Terminal Configure</title>
@@ -116,9 +132,9 @@
       <category term="favorites" scheme="https://zerosun.top/categories/favorites/"/>
     
     
-      <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
-    
       <category term="RSS" scheme="https://zerosun.top/tags/RSS/"/>
+    
+      <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
     
   </entry>
   
@@ -259,9 +275,9 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
-    
       <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
+    
+      <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
       <category term="SmartContract" scheme="https://zerosun.top/tags/SmartContract/"/>
     
@@ -325,11 +341,11 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
+    
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
       <category term="MIST" scheme="https://zerosun.top/tags/MIST/"/>
-    
-      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
   </entry>
   
@@ -412,26 +428,6 @@
       <category term="Reading" scheme="https://zerosun.top/tags/Reading/"/>
     
       <category term="BookList" scheme="https://zerosun.top/tags/BookList/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>这个人也许永远不回来了，也许“明天”回来！</title>
-    <link href="https://zerosun.top/2016/12/11/book2016-BorderTown-by-ShenCongwen-end/"/>
-    <id>https://zerosun.top/2016/12/11/book2016-BorderTown-by-ShenCongwen-end/</id>
-    <published>2016-12-11T15:31:00.000Z</published>
-    <updated>2019-02-16T06:03:00.510Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;可是&lt;br&gt;到了冬天&lt;br&gt;那个圮坍了的白塔&lt;br&gt;又重新修好了。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="reading" scheme="https://zerosun.top/categories/reading/"/>
-    
-    
-      <category term="Reading" scheme="https://zerosun.top/tags/Reading/"/>
     
   </entry>
   
