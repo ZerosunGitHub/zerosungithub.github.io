@@ -139,7 +139,7 @@
 <meta property="og:image" content="https://zerosun.top/img/zip.png">
 <meta property="og:image" content="https://zerosun.top/img/zip-size.png">
 <meta property="og:image" content="https://zerosun.top/img/zip-size.png">
-<meta property="og:updated_time" content="2019-07-07T14:09:36.644Z">
+<meta property="og:updated_time" content="2019-07-07T14:41:51.864Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="A-better-zip-bomb">
 <meta name="twitter:description" content="分享一个有趣的工具ZBLG：非递归拉链？炸弹，比例为28000000:1">
@@ -454,7 +454,7 @@
                 
               
 
-              <time title="创建时间：2019-07-07 10:15:49 / 修改时间：22:09:36" itemprop="dateCreated datePublished" datetime="2019-07-07T10:15:49+08:00">2019-07-07</time>
+              <time title="创建时间：2019-07-07 10:15:49 / 修改时间：22:41:51" itemprop="dateCreated datePublished" datetime="2019-07-07T10:15:49+08:00">2019-07-07</time>
             
 
             
@@ -509,7 +509,8 @@
 <p>2019-07-02 updated 2019-07-03, 2019-07-05, 2019-07-06</p>
 </blockquote>
 <p><strong><em>summary</em></strong>：  </p>
-<p>本文介绍如何构建一个<strong>非递归拉链炸弹</strong>，（<a href="https://en.wikipedia.org/wiki/Zip_bomb" target="_blank" rel="noopener">Zip_bomb</a>，这里勉强译为拉链炸弹吧🙂）。“非递归”意味着它不依赖于解压缩程序在zip文件中嵌套的递归解压缩zip文件：它在单轮解压缩后完全展开。输出大小在输入大小的基础上呈二次方增加，在zip格式的限制下，达到压缩比2800万 （10  MB → 281  TB）。使用64位扩展甚至可以实现更大的扩展。该构造仅使用最常见的压缩算法DEFLATE，并且与大多数zip解析器兼容。  </p>
+<p>本文介绍如何构建一个<strong>非递归拉链炸弹</strong>，（<a href="https://en.wikipedia.org/wiki/Zip_bomb" target="_blank" rel="noopener">Zip_bomb</a>，这里勉强译为拉链炸弹吧🙂）。</p>
+<p>“非递归”意味着它不依赖于解压缩程序在zip文件中嵌套的递归解压缩zip文件：它在单轮解压缩后完全展开。输出大小在输入大小的基础上呈二次方增加，在zip格式的限制下，达到压缩比2800万 （10  MB → 281  TB）。使用64位扩展甚至可以实现更大的扩展。该构造仅使用最常见的压缩算法DEFLATE，并且与大多数zip解析器兼容。  </p>
 <p><img src="/img/zip-bomb.png" alt="img"></p>
 <table>
 <thead>
