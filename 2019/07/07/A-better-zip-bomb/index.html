@@ -130,8 +130,10 @@
 <meta property="og:description" content="分享一个有趣的工具ZBLG：非递归拉链？炸弹，比例为28000000:1">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://zerosun.top/img/zip-bomb.png">
-<meta property="og:image" content="https://zerosun.top/mnt/zip-normal-format.png">
-<meta property="og:updated_time" content="2019-07-07T12:46:25.302Z">
+<meta property="og:image" content="https://zerosun.top/img/zip-normal-format.png">
+<meta property="og:image" content="https://zerosun.top/img/zip-overlap.png">
+<meta property="og:image" content="https://zerosun.top/img/zip-quote.png">
+<meta property="og:updated_time" content="2019-07-07T13:08:30.099Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="A-better-zip-bomb">
 <meta name="twitter:description" content="分享一个有趣的工具ZBLG：非递归拉链？炸弹，比例为28000000:1">
@@ -446,7 +448,7 @@
                 
               
 
-              <time title="创建时间：2019-07-07 10:15:49 / 修改时间：20:46:25" itemprop="dateCreated datePublished" datetime="2019-07-07T10:15:49+08:00">2019-07-07</time>
+              <time title="创建时间：2019-07-07 10:15:49 / 修改时间：21:08:30" itemprop="dateCreated datePublished" datetime="2019-07-07T10:15:49+08:00">2019-07-07</time>
             
 
             
@@ -617,7 +619,29 @@
 </ul>
 <h2 id="zip文件的结构"><a href="#zip文件的结构" class="headerlink" title="zip文件的结构"></a>zip文件的结构</h2><p>zip文件由引用 <em>文件</em>的<em>中央目录</em>组成。  </p>
 <p>正常格式  </p>
-<p><img src="/mnt/zip-normal-format.png" alt="img"></p>
+<p><img src="/img/zip-normal-format.png" alt="img"></p>
+<p>中央目录位于zip文件的末尾。它是<em>中央目录标头</em>的列表。每个中央目录头包含单个文件的元数据，如文件名和CRC-32校验和，以及指向本地文件头的向后指针。中央目录标题长度为46个字节，加上文件名的长度。</p>
+<p>文件由<em>本地文件头和</em> 后面的压缩<em>文件数据组成</em>。本地文件头长30个字节，加上文件名的长度。它包含来自中央目录标头的元数据的冗余副本，以及随后的文件数据的压缩和未压缩大小。Zip是容器格式，而不是压缩算法。每个文件的数据都使用元数据中指定的算法进行压缩 - 通常是<a href="https://tools.ietf.org/html/rfc1951" target="_blank" rel="noopener">DEFLATE</a>。</p>
+<p>这种zip格式的描述省略了许多理解拉链炸弹所不需要的细节。有关完整信息，请参阅 <a href="https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT" target="_blank" rel="noopener">APPNOTE.TXT的4.3节</a> 或Florian Buchholz <a href="https://users.cs.jmu.edu/buchhofp/forensics/formats/pkzip.html" target="_blank" rel="noopener">的PKZip文件结构</a>，或参阅<a href="https://www.bamsoftware.com/hacks/zipbomb/#source" target="_blank" rel="noopener">源代码</a>。</p>
+<h2 id="第一个见解：重叠文件"><a href="#第一个见解：重叠文件" class="headerlink" title="第一个见解：重叠文件"></a>第一个见解：重叠文件</h2><p>通过压缩一长串重复字节，我们可以生成 高度压缩数据的<em>内核</em>。就其本身而言，内核的压缩率不能超过1032的DEFLATE限制，因此我们想要一种在许多文件中重用内核的方法，而无需在每个文件中单独复制它。我们可以通过重叠文件来实现：使许多中央目录标头指向单个文件，其数据是内核。</p>
+<p><img src="/img/zip-overlap.png" alt="img"></p>
+<p>让我们看一个例子，看看这种结构如何影响压缩比。假设内核是1000字节 并解压缩到 1  MB。然后第一个MB 输出“成本” 1078个字节 输入：</p>
+<ul>
+<li>31个字节 用于本地文件头（包括1字节文件名）</li>
+<li>47个字节 用于中央目录头（包括1字节文件名）</li>
+<li>1000字节 对于内核本身</li>
+</ul>
+<p>但每一个 1  MB 仅在第一次成本之后的产出 47个字节 - 我们不需要另一个本地文件头或内核的另一个副本，只需要一个额外的中央目录头。因此，虽然内核的第一个引用具有1 000 000 /1078≈928的压缩比，但每个附加引用将该比率拉近接近1 000 000 /47≈21277，更大的内核提高了上限。</p>
+<p>这个想法的问题是缺乏兼容性。由于许多中央目录标头指向单个本地文件头，因此元数据（特别是文件名）无法与每个文件匹配。一些解析器<a href="https://www.bamsoftware.com/hacks/zipbomb/#compatibility" target="_blank" rel="noopener">对此犹豫不决</a>。 <a href="http://infozip.sourceforge.net/UnZip.html" target="_blank" rel="noopener">Info-ZIP UnZip</a> （标准的Unix <code>unzip</code>程序）提取文件，但有警告：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">unzip overlap.zip</span><br><span class="line">inflating: A</span><br><span class="line">B: mismatching "local" filename (A),continuing with "central" filename version</span><br><span class="line">  inflating: B</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>并且Python <a href="https://docs.python.org/3/library/zipfile.html" target="_blank" rel="noopener">zipfile</a>模块 <a href="https://github.com/python/cpython/blob/v3.7.0/Lib/zipfile.py#L1486-L1489" target="_blank" rel="noopener">抛出异常</a>：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> python3 -m zipfile -e overlap.zip .</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">...</span><br><span class="line">__main__.BadZipFile: File name in directory 'B' and header b'A' differ.</span><br></pre></td></tr></table></figure>
+<p>接下来，我们将看到如何修改文件名一致性的构造，同时仍保留重叠文件的大部分优点。</p>
+<h2 id="第二个见解：引用本地文件头"><a href="#第二个见解：引用本地文件头" class="headerlink" title="第二个见解：引用本地文件头"></a>第二个见解：引用本地文件头</h2><p>我们需要为每个文件分离本地文件头，同时仍然重用单个内核。简单地连接所有本地文件头都不起作用，因为zip解析器将找到一个本地文件头，它希望找到DEFLATE流的开头。但这个想法会有所改变。我们将使用DEFLATE（非压缩块）的一个功能来“引用”本地文件头，使它们看起来像是在内核中终止的同一个DEFLATE流的一部分。每个本地文件头（第一个除外）将以两种方式解释：作为代码（zip文件结构的一部分）和数据（文件内容的一部分）。  </p>
+<p><img src="/img/zip-quote.png" alt="img"></p>
+<p>DEFLATE流是一系列 <a href="https://tools.ietf.org/html/rfc1951#section-3.2.3" target="_blank" rel="noopener">块</a>，其中每个块可以是压缩的或非压缩的。压缩块是我们通常想到的; 例如，内核是一个大的压缩块。但也有非压缩块，它以一个<a href="https://tools.ietf.org/html/rfc1951#section-3.2.4" target="_blank" rel="noopener">5字节的头</a>开始， 长度字段意味着“ 逐字输出下一个n字节”。解压缩非压缩块意味着仅剥离5字节头。压缩和非压缩块可以在DEFLATE流中自由混合。输出是按顺序解压缩所有块的结果的串联。  </p>
+<p>“非压缩”概念仅在DEFLATE层具有意义; 文件数据仍然在zip层计为“压缩”，无论使用哪种块.</p>
+<p>最简单的方法是从内到外理解这种引用重叠结构，从最后一个文件开始，然后向后工作。首先插入内核，它将形成每个文件的文件数据结尾。</p>
 
       
     </div>
@@ -1013,7 +1037,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#non-recursive-zip-bomb"><span class="nav-number">1.</span> <span class="nav-text">non-recursive zip bomb</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zip文件的结构"><span class="nav-number">2.</span> <span class="nav-text">zip文件的结构</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#non-recursive-zip-bomb"><span class="nav-number">1.</span> <span class="nav-text">non-recursive zip bomb</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zip文件的结构"><span class="nav-number">2.</span> <span class="nav-text">zip文件的结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一个见解：重叠文件"><span class="nav-number">3.</span> <span class="nav-text">第一个见解：重叠文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二个见解：引用本地文件头"><span class="nav-number">4.</span> <span class="nav-text">第二个见解：引用本地文件头</span></a></li></ol></div>
             
 
           </div>
