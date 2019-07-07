@@ -122,16 +122,20 @@
 
 
   <meta name="description" content="分享一个有趣的工具ZBLG：非递归拉链？炸弹，比例为28000000:1">
+<meta name="keywords" content="tools">
 <meta property="og:type" content="article">
 <meta property="og:title" content="A-better-zip-bomb">
 <meta property="og:url" content="https://zerosun.top/2019/07/07/A-better-zip-bomb/index.html">
 <meta property="og:site_name" content="北岸冷若冰霜">
 <meta property="og:description" content="分享一个有趣的工具ZBLG：非递归拉链？炸弹，比例为28000000:1">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-07T09:54:40.355Z">
+<meta property="og:image" content="https://zerosun.top/img/zip-bomb.png">
+<meta property="og:image" content="https://zerosun.top/mnt/normal.svg">
+<meta property="og:updated_time" content="2019-07-07T12:41:40.732Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="A-better-zip-bomb">
 <meta name="twitter:description" content="分享一个有趣的工具ZBLG：非递归拉链？炸弹，比例为28000000:1">
+<meta name="twitter:image" content="https://zerosun.top/img/zip-bomb.png">
 
 
 
@@ -308,7 +312,7 @@
           
           <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">27</span></a>
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">28</span></a>
   </li>
         
         
@@ -442,7 +446,7 @@
                 
               
 
-              <time title="创建时间：2019-07-07 10:15:49 / 修改时间：17:54:40" itemprop="dateCreated datePublished" datetime="2019-07-07T10:15:49+08:00">2019-07-07</time>
+              <time title="创建时间：2019-07-07 10:15:49 / 修改时间：20:41:40" itemprop="dateCreated datePublished" datetime="2019-07-07T10:15:49+08:00">2019-07-07</time>
             
 
             
@@ -488,8 +492,131 @@
       
 
       
-        <p>分享一个有趣的工具<br>ZBLG：非递归拉链？炸弹，比例为28000000:1<br><a id="more"></a><br>声明：<br>本文引自：<a href="https://www.bamsoftware.com/hacks/zipbomb/" target="_blank" rel="noopener">https://www.bamsoftware.com/hacks/zipbomb/</a><br>作者：David Fifield<br>Email：<a href="mailto:david@bamsoftware.com" target="_blank" rel="noopener">david@bamsoftware.com</a></p>
-<p>summary：</p>
+        <p>分享一个有趣的工具<br>ZBLG：非递归拉链？炸弹，比例为28000000:1<br><a id="more"></a></p>
+<blockquote>
+<p>声明：<br>本文译自：<a href="https://www.bamsoftware.com/hacks/zipbomb/" target="_blank" rel="noopener">https://www.bamsoftware.com/hacks/zipbomb/</a><br>作者：David Fifield<br>Email：<a href="mailto:david@bamsoftware.com" target="_blank" rel="noopener">david@bamsoftware.com</a></p>
+<p>2019-07-02 updated 2019-07-03, 2019-07-05, 2019-07-06</p>
+</blockquote>
+<p><strong><em>summary</em></strong>：本文介绍如何构建一个<strong>非递归拉链炸弹</strong>，（<a href="https://en.wikipedia.org/wiki/Zip_bomb" target="_blank" rel="noopener">Zip_bomb</a>，这里勉强译为拉链炸弹吧🙂）。“非递归”意味着它不依赖于解压缩程序在zip文件中嵌套的递归解压缩zip文件：它在单轮解压缩后完全展开。输出大小在输入大小的基础上呈二次方增加，在zip格式的限制下，达到压缩比2800万 （10  MB → 281  TB）。使用64位扩展甚至可以实现更大的扩展。该构造仅使用最常见的压缩算法DEFLATE，并且与大多数zip解析器兼容。  </p>
+<p><img src="/img/zip-bomb.png" alt="img"></p>
+<table>
+<thead>
+<tr>
+<th><a href="https://www.bamsoftware.com/hacks/zipbomb/zbsm.zip" target="_blank" rel="noopener">zbsm.zip</a></th>
+<th>42 kB</th>
+<th>→</th>
+<th>5.5 GB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.bamsoftware.com/hacks/zipbomb/zblg.zip" target="_blank" rel="noopener">zblg.zip</a></td>
+<td>10 MB</td>
+<td>→</td>
+<td>281 TB</td>
+</tr>
+<tr>
+<td><a href="https://www.bamsoftware.com/hacks/zipbomb/zbxl.zip" target="_blank" rel="noopener">zbxl.zip</a></td>
+<td>46 MB</td>
+<td>→</td>
+<td>4.5 PB (Zip64, less compatible)</td>
+</tr>
+</tbody>
+</table>
+<p>源代码：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://www.bamsoftware.com/git/zipbomb.git</span><br></pre></td></tr></table></figure>
+<p>或者:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://www.bamsoftware.com/hacks/zipbomb/zipbomb-20190702.zip</span><br></pre></td></tr></table></figure>
+<p>数据和数据来源</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://www.bamsoftware.com/git/zipbomb-paper.git</span><br></pre></td></tr></table></figure>
+<h2 id="non-recursive-zip-bomb"><a href="#non-recursive-zip-bomb" class="headerlink" title="non-recursive zip bomb"></a>non-recursive <a href="https://en.wikipedia.org/wiki/Zip_bomb" target="_blank" rel="noopener">zip bomb</a></h2><table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:right"></th>
+<th style="text-align:right">non-recursive</th>
+<th style="text-align:right"></th>
+<th style="text-align:right">recursive</th>
+<th style="text-align:right"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:right">zipped size</td>
+<td style="text-align:right">unzipped size</td>
+<td style="text-align:right">ratio</td>
+<td style="text-align:right">unzipped size</td>
+<td style="text-align:right">ratio</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://research.swtch.com/zip" target="_blank" rel="noopener">Cox quine</a></td>
+<td style="text-align:right">440</td>
+<td style="text-align:right">440</td>
+<td style="text-align:right">1.0</td>
+<td style="text-align:right">∞</td>
+<td style="text-align:right">∞</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://web.archive.org/web/20160130230432/http://www.steike.com/code/useless/zip-file-quine/" target="_blank" rel="noopener">Ellingsen quine</a></td>
+<td style="text-align:right">28 809</td>
+<td style="text-align:right">42 569</td>
+<td style="text-align:right">1.5</td>
+<td style="text-align:right">∞</td>
+<td style="text-align:right">∞</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.unforgettable.dk/" target="_blank" rel="noopener">42.zip</a></td>
+<td style="text-align:right"><a href="https://www.bamsoftware.com/hacks/zipbomb/#42-note" target="_blank" rel="noopener">*</a>42 374</td>
+<td style="text-align:right">558 432</td>
+<td style="text-align:right">13.2</td>
+<td style="text-align:right">4 507 981 343 026 016</td>
+<td style="text-align:right">106 billion</td>
+</tr>
+<tr>
+<td style="text-align:left">this technique</td>
+<td style="text-align:right">42 374</td>
+<td style="text-align:right">5 461 307 620</td>
+<td style="text-align:right">129 thousand</td>
+<td style="text-align:right">5 461 307 620</td>
+<td style="text-align:right">129 thousand</td>
+</tr>
+<tr>
+<td style="text-align:left">this technique</td>
+<td style="text-align:right">9 893 525</td>
+<td style="text-align:right">281 395 456 244 934</td>
+<td style="text-align:right">28 million</td>
+<td style="text-align:right">281 395 456 244 934</td>
+<td style="text-align:right">28 million</td>
+</tr>
+<tr>
+<td style="text-align:left">this technique (Zip64)</td>
+<td style="text-align:right">45 876 952</td>
+<td style="text-align:right">4 507 981 427 706 459</td>
+<td style="text-align:right">98 million</td>
+<td style="text-align:right">4 507 981 427 706 459</td>
+<td style="text-align:right">98 million</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>关于42.zip</p>
+</li>
+<li><p>有两个版本的42.zip，一个<a href="https://web.archive.org/web/20120222083624/http://www.unforgettable.dk/" target="_blank" rel="noopener">较老版本</a>的42 374字节，以及<a href="https://web.archive.org/web/20120301154142/http://www.unforgettable.dk/" target="_blank" rel="noopener">更新版本</a>的42 838字节。不同之处在于新版本在解压缩之前需要密码，新版本结业密码为：42。我们仅与旧版本进行比较。如果需要，提供以下副本： <a href="https://www.bamsoftware.com/hacks/zipbomb/42.zip" target="_blank" rel="noopener">42.zip</a>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">16 x 4294967295       = 68.719.476.720 (68GB)</span><br><span class="line">16 x 68719476720      = 1.099.511.627.520 (1TB)</span><br><span class="line">16 x 1099511627520    = 17.592.186.040.320 (17TB)</span><br><span class="line">16 x 17592186040320   = 281.474.976.645.120 (281TB)</span><br><span class="line">16 x 281474976645120  = 4.503.599.626.321.920 (4,5PB)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>使用zip格式的压缩炸弹必须应对这样一个事实，即zip解析器最常支持的压缩算法DEFLATE <a href="https://www.zlib.net/zlib_tech.html" target="_blank" rel="noopener">无法达到</a>大于1032的压缩比。因此，zip炸弹通常依赖于递归解压缩，在其中嵌套zip文件zip文件以获得每层的额外因子1032。但是这个技巧只适用于递归解压缩的实现，而大多数都没有。  </p>
+<p>最着名的zip炸弹， <a href="https://www.unforgettable.dk/" target="_blank" rel="noopener">42.zip</a>，扩展到了一个强大的4.5  PB 如果它的所有六个层都是递归解压缩的，那就是微不足道的 0.6  MB在顶层。  </p>
+<p>Zip Quines，就像<a href="https://web.archive.org/web/20160130230432/http://www.steike.com/code/useless/zip-file-quine/" target="_blank" rel="noopener">Ellingsen</a> 和<a href="https://research.swtch.com/zip" target="_blank" rel="noopener">Cox</a>一样，它们包含自己的副本，因此如果递归解压缩无限扩展，同样可以非常安全地解压缩一次。  </p>
+<p>本文展示了如何构造一个压缩比超过DEFAATE限制1032的<strong>非递归拉链炸弹</strong>。它通过重叠zip容器内的文件来工作，以便在多个文件中引用高度压缩数据的“内核”，而不制作它的多个副本。zip炸弹的输出尺寸在输入尺寸上呈二次方增长; 即，随着炸弹变大，压缩比变得更好。构造取决于zip和DEFLATE的特征 - 它不能直接移植到其他文件格式或压缩算法。它与大多数zip解析器兼容，例外的是“流”解析器，它在一次传递中解析而无需先查询zip文件的中心目录。我们试图平衡两个相互冲突的目标：</p>
+<ul>
+<li>最大化压缩比。我们将压缩率定义为zip文件中包含的所有文件大小的总和除以zip文件本身的大小。它不计算文件名或其他文件系统元数据，只计算内容。</li>
+<li>兼容。Zip是一种棘手的格式，解析器不同，特别是在边缘情况和可选功能周围。避免利用仅适用于某些解析器的技巧。我们将评论某些方法来提高zip炸弹的效率，这会降低兼容性。</li>
+</ul>
+<h2 id="zip文件的结构"><a href="#zip文件的结构" class="headerlink" title="zip文件的结构"></a>zip文件的结构</h2><p>zip文件由引用 <em>文件</em>的<em>中央目录</em>组成。  </p>
+<p>正常格式  </p>
+<p><img src="/mnt/normal.svg" alt="img"></p>
 
       
     </div>
@@ -579,6 +706,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/tools/" rel="tag"><i class="fa fa-tag"></i> tools</a>
+          
+        </div>
+      
 
       
       
@@ -663,8 +796,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -775,7 +917,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">15</span>
+                      
+                    
+                    <span class="site-state-item-count">16</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -858,6 +1002,22 @@ show_date_time();
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#non-recursive-zip-bomb"><span class="nav-number">1.</span> <span class="nav-text">non-recursive zip bomb</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zip文件的结构"><span class="nav-number">2.</span> <span class="nav-text">zip文件的结构</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
