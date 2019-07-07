@@ -131,7 +131,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://zerosun.top/img/zip-bomb.png">
 <meta property="og:image" content="https://zerosun.top/mnt/zip-normal-format.png">
-<meta property="og:updated_time" content="2019-07-07T12:45:37.753Z">
+<meta property="og:updated_time" content="2019-07-07T12:46:25.302Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="A-better-zip-bomb">
 <meta name="twitter:description" content="分享一个有趣的工具ZBLG：非递归拉链？炸弹，比例为28000000:1">
@@ -446,7 +446,7 @@
                 
               
 
-              <time title="创建时间：2019-07-07 10:15:49 / 修改时间：20:45:37" itemprop="dateCreated datePublished" datetime="2019-07-07T10:15:49+08:00">2019-07-07</time>
+              <time title="创建时间：2019-07-07 10:15:49 / 修改时间：20:46:25" itemprop="dateCreated datePublished" datetime="2019-07-07T10:15:49+08:00">2019-07-07</time>
             
 
             
@@ -497,7 +497,8 @@
 <p>声明：<br>本文译自：<a href="https://www.bamsoftware.com/hacks/zipbomb/" target="_blank" rel="noopener">https://www.bamsoftware.com/hacks/zipbomb/</a><br>作者：David Fifield<br>Email：<a href="mailto:david@bamsoftware.com" target="_blank" rel="noopener">david@bamsoftware.com</a></p>
 <p>2019-07-02 updated 2019-07-03, 2019-07-05, 2019-07-06</p>
 </blockquote>
-<p><strong><em>summary</em></strong>：本文介绍如何构建一个<strong>非递归拉链炸弹</strong>，（<a href="https://en.wikipedia.org/wiki/Zip_bomb" target="_blank" rel="noopener">Zip_bomb</a>，这里勉强译为拉链炸弹吧🙂）。“非递归”意味着它不依赖于解压缩程序在zip文件中嵌套的递归解压缩zip文件：它在单轮解压缩后完全展开。输出大小在输入大小的基础上呈二次方增加，在zip格式的限制下，达到压缩比2800万 （10  MB → 281  TB）。使用64位扩展甚至可以实现更大的扩展。该构造仅使用最常见的压缩算法DEFLATE，并且与大多数zip解析器兼容。  </p>
+<p><strong><em>summary</em></strong>：  </p>
+<p>本文介绍如何构建一个<strong>非递归拉链炸弹</strong>，（<a href="https://en.wikipedia.org/wiki/Zip_bomb" target="_blank" rel="noopener">Zip_bomb</a>，这里勉强译为拉链炸弹吧🙂）。“非递归”意味着它不依赖于解压缩程序在zip文件中嵌套的递归解压缩zip文件：它在单轮解压缩后完全展开。输出大小在输入大小的基础上呈二次方增加，在zip格式的限制下，达到压缩比2800万 （10  MB → 281  TB）。使用64位扩展甚至可以实现更大的扩展。该构造仅使用最常见的压缩算法DEFLATE，并且与大多数zip解析器兼容。  </p>
 <p><img src="/img/zip-bomb.png" alt="img"></p>
 <table>
 <thead>
