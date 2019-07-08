@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-07-07T14:41:51.864Z</updated>
+  <updated>2019-07-08T14:01:33.342Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>virt-install-image4openstack</title>
+    <link href="https://zerosun.top/2019/07/08/virt-install-image4openstack/"/>
+    <id>https://zerosun.top/2019/07/08/virt-install-image4openstack/</id>
+    <published>2019-07-08T14:01:33.000Z</published>
+    <updated>2019-07-08T14:01:33.342Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>A-better-zip-bomb</title>
@@ -277,11 +291,11 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
-    
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
       <category term="SmartContract" scheme="https://zerosun.top/tags/SmartContract/"/>
+    
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
   </entry>
   
@@ -343,9 +357,9 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
-    
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
+    
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
       <category term="MIST" scheme="https://zerosun.top/tags/MIST/"/>
     
@@ -408,28 +422,6 @@
     
     
       <category term="hexo" scheme="https://zerosun.top/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>给你分享2016年的书单</title>
-    <link href="https://zerosun.top/2016/12/31/booklist-2016/"/>
-    <id>https://zerosun.top/2016/12/31/booklist-2016/</id>
-    <published>2016-12-31T14:58:25.000Z</published>
-    <updated>2019-05-01T13:17:05.930Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;第一个年阅读计划，一月一本。流水账表述，便也粗糙，望见谅。&lt;br&gt;读这些书有什么用？讲真，答不上来 /尴尬脸.jpg。&lt;br&gt;文学爱好？算不上爱好。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="reading" scheme="https://zerosun.top/categories/reading/"/>
-    
-    
-      <category term="Reading" scheme="https://zerosun.top/tags/Reading/"/>
-    
-      <category term="BookList" scheme="https://zerosun.top/tags/BookList/"/>
     
   </entry>
   
