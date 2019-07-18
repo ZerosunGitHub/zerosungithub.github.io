@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-07-18T01:03:05.993Z</updated>
+  <updated>2019-07-08T14:01:33.342Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -17,27 +17,6 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>OpenStack镜像制作</title>
-    <link href="https://zerosun.top/2019/07/08/virt-install-image4openstack/"/>
-    <id>https://zerosun.top/2019/07/08/virt-install-image4openstack/</id>
-    <published>2019-07-08T14:01:33.000Z</published>
-    <updated>2019-07-18T01:03:05.993Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;系统：Ubuntu16.04.2 Desktop&lt;br&gt;环境：qemu-kvm libvirt-bin virtinst&lt;br&gt;源镜像：&lt;/p&gt;
-&lt;!----&gt;
-
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>virt-install-image4openstack</title>
     <link href="https://zerosun.top/2019/07/08/openstack-image-making/"/>
     <id>https://zerosun.top/2019/07/08/openstack-image-making/</id>
@@ -45,6 +24,26 @@
     <updated>2019-07-08T14:01:33.342Z</updated>
     
     <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>OpenStack镜像制作</title>
+    <link href="https://zerosun.top/2019/07/08/virt-install-image4openstack/"/>
+    <id>https://zerosun.top/2019/07/08/virt-install-image4openstack/</id>
+    <published>2019-07-08T14:01:33.000Z</published>
+    <updated>2019-07-18T01:07:53.951Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;系统：Ubuntu16.04.2 Desktop 64位&lt;br&gt;环境：qemu-kvm libvirt-bin virtinst&lt;br&gt;镜像：&lt;br&gt;软件：vnc-viewer、VMware Workstation Pro&lt;br&gt;&lt;!----&gt;&lt;/p&gt;
+
+      
     
     </summary>
     
