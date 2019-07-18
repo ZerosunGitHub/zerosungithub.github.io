@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-07-08T14:01:33.342Z</updated>
+  <updated>2019-07-18T01:10:47.633Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -17,13 +17,20 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>virt-install-image4openstack</title>
-    <link href="https://zerosun.top/2019/07/08/openstack-image-making/"/>
-    <id>https://zerosun.top/2019/07/08/openstack-image-making/</id>
+    <title>OpenStack镜像制作</title>
+    <link href="https://zerosun.top/2019/07/08/virt-install-image4openstack/"/>
+    <id>https://zerosun.top/2019/07/08/virt-install-image4openstack/</id>
     <published>2019-07-08T14:01:33.000Z</published>
-    <updated>2019-07-08T14:01:33.342Z</updated>
+    <updated>2019-07-18T01:10:47.633Z</updated>
     
     <summary type="html">
+    
+      
+      
+        &lt;p&gt;系统：Ubuntu16.04.2 Desktop 64位&lt;br&gt;环境：qemu-kvm libvirt-bin virtinst&lt;br&gt;镜像：&lt;br&gt;软件：vnc-viewer、VMware Workstation Pro&lt;/p&gt;
+&lt;!----&gt;
+
+      
     
     </summary>
     
@@ -32,18 +39,14 @@
   
   <entry>
     <title>OpenStack镜像制作</title>
-    <link href="https://zerosun.top/2019/07/08/virt-install-image4openstack/"/>
-    <id>https://zerosun.top/2019/07/08/virt-install-image4openstack/</id>
+    <link href="https://zerosun.top/2019/07/08/openstack-image-making/"/>
+    <id>https://zerosun.top/2019/07/08/openstack-image-making/</id>
     <published>2019-07-08T14:01:33.000Z</published>
-    <updated>2019-07-18T01:07:53.951Z</updated>
+    <updated>2019-07-18T01:11:13.609Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;系统：Ubuntu16.04.2 Desktop 64位&lt;br&gt;环境：qemu-kvm libvirt-bin virtinst&lt;br&gt;镜像：&lt;br&gt;软件：vnc-viewer、VMware Workstation Pro&lt;br&gt;&lt;!----&gt;&lt;/p&gt;
-
-      
+      &lt;p&gt;系统：Ubuntu16.04.2 Desktop 64位&lt;br&gt;环境：qemu-kvm libvirt-bin virtinst&lt;br&gt;镜像：&lt;br&gt;软件：vnc-viewer、VMware Workstation Pro&lt;/p&gt;
     
     </summary>
     

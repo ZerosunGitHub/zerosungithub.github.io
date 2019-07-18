@@ -2,10 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <!-- <loc>https://zerosun.top/2019/07/08/openstack-image-making/</loc> -->
+    <loc>https://zerosun.top/2019/07/08/openstack-image-making/</loc>
+    
+    <lastmod>2019-07-18T01:11:13.609Z</lastmod>
+    
+  </url>
+  
+  <url>
     <!-- <loc>https://zerosun.top/2019/07/08/virt-install-image4openstack/</loc> -->
     <loc>https://zerosun.top/2019/07/08/virt-install-image4openstack/</loc>
     
-    <lastmod>2019-07-18T01:07:53.951Z</lastmod>
+    <lastmod>2019-07-18T01:10:47.633Z</lastmod>
     
   </url>
   
@@ -14,14 +22,6 @@
     <loc>https://zerosun.top/2019/07/07/A-better-zip-bomb/</loc>
     
     <lastmod>2019-07-09T06:00:01.015Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <!-- <loc>https://zerosun.top/2019/07/08/openstack-image-making/</loc> -->
-    <loc>https://zerosun.top/2019/07/08/openstack-image-making/</loc>
-    
-    <lastmod>2019-07-08T14:01:33.342Z</lastmod>
     
   </url>
   
