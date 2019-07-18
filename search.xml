@@ -2,11 +2,6 @@
 <search>
   <entry>
     <title><![CDATA[OpenStack镜像制作]]></title>
-    <url>%2F2019%2F07%2F08%2Fvirt-install-image4openstack%2F</url>
-    <content type="text"><![CDATA[系统：Ubuntu16.04.2 Desktop 64位环境：qemu-kvm libvirt-bin virtinst镜像：软件：vnc-viewer、VMware Workstation Pro]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[OpenStack镜像制作]]></title>
     <url>%2F2019%2F07%2F08%2Fopenstack-image-making%2F</url>
     <content type="text"><![CDATA[系统：Ubuntu16.04.2 Desktop 64位环境：qemu-kvm libvirt-bin virtinst镜像：软件：vnc-viewer、VMware Workstation Pro]]></content>
   </entry>

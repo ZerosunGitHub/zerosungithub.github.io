@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-07-18T01:10:47.633Z</updated>
+  <updated>2019-07-18T01:11:13.609Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -15,27 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>OpenStack镜像制作</title>
-    <link href="https://zerosun.top/2019/07/08/virt-install-image4openstack/"/>
-    <id>https://zerosun.top/2019/07/08/virt-install-image4openstack/</id>
-    <published>2019-07-08T14:01:33.000Z</published>
-    <updated>2019-07-18T01:10:47.633Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;系统：Ubuntu16.04.2 Desktop 64位&lt;br&gt;环境：qemu-kvm libvirt-bin virtinst&lt;br&gt;镜像：&lt;br&gt;软件：vnc-viewer、VMware Workstation Pro&lt;/p&gt;
-&lt;!----&gt;
-
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>OpenStack镜像制作</title>
@@ -423,6 +402,28 @@
     
     
       <category term="HOWTO" scheme="https://zerosun.top/tags/HOWTO/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello-World</title>
+    <link href="https://zerosun.top/2018/08/30/Hello-world/"/>
+    <id>https://zerosun.top/2018/08/30/Hello-world/</id>
+    <published>2018-08-30T03:41:49.000Z</published>
+    <updated>2019-05-03T03:48:02.781Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;hr&gt;
+&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="https://zerosun.top/tags/hexo/"/>
     
   </entry>
   
