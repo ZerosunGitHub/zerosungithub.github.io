@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-07-18T01:11:13.609Z</updated>
+  <updated>2019-07-18T01:34:35.109Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -15,6 +15,22 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>区块链基础：拜占庭问题</title>
+    <link href="https://zerosun.top/2019/07/18/BlockChain-Basis-Byzantinefailures/"/>
+    <id>https://zerosun.top/2019/07/18/BlockChain-Basis-Byzantinefailures/</id>
+    <published>2019-07-18T11:31:42.000Z</published>
+    <updated>2019-07-18T01:34:35.109Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;区块链基础：拜占庭问题&quot;&gt;&lt;a href=&quot;#区块链基础：拜占庭问题&quot; class=&quot;headerlink&quot; title=&quot;区块链基础：拜占庭问题&quot;&gt;&lt;/a&gt;区块链基础：拜占庭问题&lt;/h1&gt;&lt;p&gt;区块链技术中很重要的一个部分就是共识机制，在了解共识机制的过程中，拜占庭将军问题就会时常看到，拜占庭将军问题是一个协议问题，拜占庭帝国军队的将军们必须全体一致的决定是否攻击某一支敌军。问题是这些将军在地理上是分隔开来的，并且将军中存在叛徒。叛徒可以任意行动以达到以下目标：欺骗某些将军采取进攻行动；促成一个不是所有将军都同意的决定，如当将军们不希望进攻时促成进攻行动；或者迷惑某些将军，使他们无法做出决定。如果叛徒达到了这些目的之一，则任何攻击行动的结果都是注定要失败的，只有完全达成一致的努力才能获得胜利（来自百度百科）。&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>OpenStack镜像制作</title>
@@ -113,11 +129,11 @@
   </entry>
   
   <entry>
-    <title>区块基础-Hash算法</title>
+    <title>区块链基础：Hash算法</title>
     <link href="https://zerosun.top/2019/05/11/BlockChain-Basis-Hash/"/>
     <id>https://zerosun.top/2019/05/11/BlockChain-Basis-Hash/</id>
     <published>2019-05-11T09:10:33.000Z</published>
-    <updated>2019-05-12T05:00:27.395Z</updated>
+    <updated>2019-07-18T01:26:57.186Z</updated>
     
     <summary type="html">
     
@@ -157,11 +173,11 @@
   </entry>
   
   <entry>
-    <title>区块基础-Merkle树</title>
+    <title>区块链基础：Merkle树</title>
     <link href="https://zerosun.top/2019/05/03/BlockChain-Basis-MerkleTree/"/>
     <id>https://zerosun.top/2019/05/03/BlockChain-Basis-MerkleTree/</id>
     <published>2019-05-03T03:41:49.000Z</published>
-    <updated>2019-05-11T11:52:10.430Z</updated>
+    <updated>2019-07-18T01:26:38.272Z</updated>
     
     <summary type="html">
     
@@ -302,11 +318,11 @@
   </entry>
   
   <entry>
-    <title>区块基础-区块链简介</title>
+    <title>区块链基础：区块链简介</title>
     <link href="https://zerosun.top/2018/09/11/BlockChain-Basis-simple-intro/"/>
     <id>https://zerosun.top/2018/09/11/BlockChain-Basis-simple-intro/</id>
     <published>2018-09-11T09:06:31.000Z</published>
-    <updated>2019-05-11T11:52:23.439Z</updated>
+    <updated>2019-07-18T01:26:48.394Z</updated>
     
     <summary type="html">
     
@@ -324,15 +340,15 @@
   </entry>
   
   <entry>
-    <title>区块基础-常见词汇</title>
+    <title>区块链基础：常见词汇</title>
     <link href="https://zerosun.top/2018/09/10/BlockChain-Basis-common-vocabulary/"/>
     <id>https://zerosun.top/2018/09/10/BlockChain-Basis-common-vocabulary/</id>
     <published>2018-09-10T12:45:16.000Z</published>
-    <updated>2019-05-12T05:03:45.684Z</updated>
+    <updated>2019-07-18T01:27:50.371Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;单纯的对区块链相关基础常见词汇作一个解释说明，涉及名词较多，更多了解，点击阅读原文。&lt;br&gt;
+      &lt;p&gt;单纯的对区块链相关基础常见词汇作一个解释说明，涉及名词较多。&lt;br&gt;
     
     </summary>
     
@@ -402,28 +418,6 @@
     
     
       <category term="HOWTO" scheme="https://zerosun.top/tags/HOWTO/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello-World</title>
-    <link href="https://zerosun.top/2018/08/30/Hello-world/"/>
-    <id>https://zerosun.top/2018/08/30/Hello-world/</id>
-    <published>2018-08-30T03:41:49.000Z</published>
-    <updated>2019-05-03T03:48:02.781Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;hr&gt;
-&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://
-      
-    
-    </summary>
-    
-    
-      <category term="hexo" scheme="https://zerosun.top/tags/hexo/"/>
     
   </entry>
   
