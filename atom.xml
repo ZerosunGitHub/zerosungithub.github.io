@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-07-18T01:34:35.109Z</updated>
+  <updated>2019-07-20T04:20:49.859Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -15,6 +15,22 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>BurningImage4Raspberry</title>
+    <link href="https://zerosun.top/2019/07/20/BurningImage4Raspberry/"/>
+    <id>https://zerosun.top/2019/07/20/BurningImage4Raspberry/</id>
+    <published>2019-07-20T04:19:49.000Z</published>
+    <updated>2019-07-20T04:20:49.859Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;手动安装树莓派操作系统&quot;&gt;&lt;a href=&quot;#手动安装树莓派操作系统&quot; class=&quot;headerlink&quot; title=&quot;手动安装树莓派操作系统&quot;&gt;&lt;/a&gt;手动安装树莓派操作系统&lt;/h1&gt;&lt;p&gt;工具下载：&lt;a href=&quot;https://www.balena.io/etcher/，可选择免安装本。&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.balena.io/etcher/，可选择免安装本。&lt;/a&gt;&lt;br&gt;树莓派镜像下载：&lt;a href=&quot;https://www.raspberrypi.org/downloads/raspbian/，可选择桌面版&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.raspberrypi.org/downloads/raspbian/，可选择桌面版&lt;/a&gt;&lt;br&gt;kali镜像下载：&lt;a href=&quot;https://www.offensive-security.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.offensive-security.com/&lt;/a&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>区块链基础：拜占庭问题</title>
@@ -398,26 +414,6 @@
     
     
       <category term="Markdown" scheme="https://zerosun.top/tags/Markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>提问的智慧</title>
-    <link href="https://zerosun.top/2018/08/30/How-To-Ask-Questions-The-Smart-Way/"/>
-    <id>https://zerosun.top/2018/08/30/How-To-Ask-Questions-The-Smart-Way/</id>
-    <published>2018-08-30T05:56:56.000Z</published>
-    <updated>2019-06-13T06:48:44.814Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;How-To-Ask-Questions-The-Smart-Way&quot;&gt;&lt;a href=&quot;#How-To-Ask-Questions-The-Smart-Way&quot; class=&quot;headerlink&quot; title=&quot;How To Ask Questions The Smart Way&quot;&gt;&lt;/a&gt;How To Ask Questions The Smart Way&lt;/h1&gt;&lt;p&gt;在黑客的世界里，当你拋出一个技术问题时，最终是否能得到有用的回答，往往取决于你所提问和追问的方式。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="favorites" scheme="https://zerosun.top/categories/favorites/"/>
-    
-    
-      <category term="HOWTO" scheme="https://zerosun.top/tags/HOWTO/"/>
     
   </entry>
   
