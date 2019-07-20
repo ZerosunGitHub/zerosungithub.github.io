@@ -121,17 +121,17 @@
 
 
 
-  <meta name="description" content="手动安装树莓派操作系统工具下载：https://www.balena.io/etcher/，可选择免安装本。树莓派镜像下载：https://www.raspberrypi.org/downloads/raspbian/，可选择桌面版kali镜像下载：https://www.offensive-security.com/">
+  <meta name="description" content="树莓派操作系统烧录工具下载：https://www.balena.io/etcher/，可选择免安装本。树莓派镜像下载：https://www.raspberrypi.org/downloads/raspbian/，可选择桌面版kali镜像下载：https://www.offensive-security.com/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="BurningImage4Raspberry">
+<meta property="og:title" content="树莓派操作系统烧录">
 <meta property="og:url" content="https://zerosun.top/2019/07/20/BurningImage4Raspberry/index.html">
 <meta property="og:site_name" content="北岸冷若冰霜">
-<meta property="og:description" content="手动安装树莓派操作系统工具下载：https://www.balena.io/etcher/，可选择免安装本。树莓派镜像下载：https://www.raspberrypi.org/downloads/raspbian/，可选择桌面版kali镜像下载：https://www.offensive-security.com/">
+<meta property="og:description" content="树莓派操作系统烧录工具下载：https://www.balena.io/etcher/，可选择免安装本。树莓派镜像下载：https://www.raspberrypi.org/downloads/raspbian/，可选择桌面版kali镜像下载：https://www.offensive-security.com/">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-20T04:20:49.859Z">
+<meta property="og:updated_time" content="2019-07-20T04:22:53.446Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="BurningImage4Raspberry">
-<meta name="twitter:description" content="手动安装树莓派操作系统工具下载：https://www.balena.io/etcher/，可选择免安装本。树莓派镜像下载：https://www.raspberrypi.org/downloads/raspbian/，可选择桌面版kali镜像下载：https://www.offensive-security.com/">
+<meta name="twitter:title" content="树莓派操作系统烧录">
+<meta name="twitter:description" content="树莓派操作系统烧录工具下载：https://www.balena.io/etcher/，可选择免安装本。树莓派镜像下载：https://www.raspberrypi.org/downloads/raspbian/，可选择桌面版kali镜像下载：https://www.offensive-security.com/">
 
 
 
@@ -150,7 +150,7 @@
   };
 </script>
 
-  <title>BurningImage4Raspberry | 北岸冷若冰霜</title>
+  <title>树莓派操作系统烧录 | 北岸冷若冰霜</title>
   
 
 
@@ -417,7 +417,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">BurningImage4Raspberry
+          <h1 class="post-title" itemprop="name headline">树莓派操作系统烧录
               
             
           </h1>
@@ -442,7 +442,7 @@
                 
               
 
-              <time title="创建时间：2019-07-20 12:19:49 / 修改时间：12:20:49" itemprop="dateCreated datePublished" datetime="2019-07-20T12:19:49+08:00">2019-07-20</time>
+              <time title="创建时间：2019-07-20 12:19:49 / 修改时间：12:22:53" itemprop="dateCreated datePublished" datetime="2019-07-20T12:19:49+08:00">2019-07-20</time>
             
 
             
@@ -488,7 +488,7 @@
       
 
       
-        <h1 id="手动安装树莓派操作系统"><a href="#手动安装树莓派操作系统" class="headerlink" title="手动安装树莓派操作系统"></a>手动安装树莓派操作系统</h1><p>工具下载：<a href="https://www.balena.io/etcher/，可选择免安装本。" target="_blank" rel="noopener">https://www.balena.io/etcher/，可选择免安装本。</a><br>树莓派镜像下载：<a href="https://www.raspberrypi.org/downloads/raspbian/，可选择桌面版" target="_blank" rel="noopener">https://www.raspberrypi.org/downloads/raspbian/，可选择桌面版</a><br>kali镜像下载：<a href="https://www.offensive-security.com/" target="_blank" rel="noopener">https://www.offensive-security.com/</a><br><a id="more"></a></p>
+        <h1 id="树莓派操作系统烧录"><a href="#树莓派操作系统烧录" class="headerlink" title="树莓派操作系统烧录"></a>树莓派操作系统烧录</h1><p>工具下载：<a href="https://www.balena.io/etcher/，可选择免安装本。" target="_blank" rel="noopener">https://www.balena.io/etcher/，可选择免安装本。</a><br>树莓派镜像下载：<a href="https://www.raspberrypi.org/downloads/raspbian/，可选择桌面版" target="_blank" rel="noopener">https://www.raspberrypi.org/downloads/raspbian/，可选择桌面版</a><br>kali镜像下载：<a href="https://www.offensive-security.com/" target="_blank" rel="noopener">https://www.offensive-security.com/</a><br><a id="more"></a></p>
 <p>解压后，使用etcher将镜像烧录进SD卡。<br>ok。<br>下面针对不同的系统，解决树莓派上网、访问、更新源等问题。</p>
 <p>树莓派安装raspberry后<br>–如何配置联网<br>烧录完成后，暂不拔出SD卡，会发现电脑多了一个分区boot分区。<br>新建文件wpa_supplicant.conf<br>内容为：<br>country=CN<br>ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev<br>update_config=1<br>network={<br>ssid=”WiFi-A”<br>psk=”12345678”<br>key_mgmt=WPA-PSK<br>priority=1<br>}<br>–如何发现树莓派的IP地址<br>先使用fping发现自己电脑网段里面存活的主机IP</p>
 <p>fping -ag 192.168.1.0/24 &gt; ip_alive.txt<br>-a 是alive的意思<br>-g 是扫描网段<br>再用nmap扫描这些IP的ssh端口（22）<br>File: scan.sh<br>IP_LIST=$(cat iplist.txt)<br>for IP in $IP_LIST<br>do<br>nmap -sT -p 22 $IP<br>done<br>一般主机不会开放22端口，所以22为open的IP就是树莓派的IP</p>
@@ -581,7 +581,7 @@
     <strong>本文作者： </strong>北岸冷若冰霜</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://zerosun.top/2019/07/20/BurningImage4Raspberry/" title="BurningImage4Raspberry">https://zerosun.top/2019/07/20/BurningImage4Raspberry/</a>
+    <a href="https://zerosun.top/2019/07/20/BurningImage4Raspberry/" title="树莓派操作系统烧录">https://zerosun.top/2019/07/20/BurningImage4Raspberry/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
@@ -892,7 +892,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#手动安装树莓派操作系统"><span class="nav-number">1.</span> <span class="nav-text">手动安装树莓派操作系统</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#树莓派操作系统烧录"><span class="nav-number">1.</span> <span class="nav-text">树莓派操作系统烧录</span></a></li></ol></div>
             
 
           </div>

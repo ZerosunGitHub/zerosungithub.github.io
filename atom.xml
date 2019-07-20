@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-07-20T04:20:49.859Z</updated>
+  <updated>2019-07-20T04:22:53.446Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -17,15 +17,15 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>BurningImage4Raspberry</title>
+    <title>树莓派操作系统烧录</title>
     <link href="https://zerosun.top/2019/07/20/BurningImage4Raspberry/"/>
     <id>https://zerosun.top/2019/07/20/BurningImage4Raspberry/</id>
     <published>2019-07-20T04:19:49.000Z</published>
-    <updated>2019-07-20T04:20:49.859Z</updated>
+    <updated>2019-07-20T04:22:53.446Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;手动安装树莓派操作系统&quot;&gt;&lt;a href=&quot;#手动安装树莓派操作系统&quot; class=&quot;headerlink&quot; title=&quot;手动安装树莓派操作系统&quot;&gt;&lt;/a&gt;手动安装树莓派操作系统&lt;/h1&gt;&lt;p&gt;工具下载：&lt;a href=&quot;https://www.balena.io/etcher/，可选择免安装本。&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.balena.io/etcher/，可选择免安装本。&lt;/a&gt;&lt;br&gt;树莓派镜像下载：&lt;a href=&quot;https://www.raspberrypi.org/downloads/raspbian/，可选择桌面版&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.raspberrypi.org/downloads/raspbian/，可选择桌面版&lt;/a&gt;&lt;br&gt;kali镜像下载：&lt;a href=&quot;https://www.offensive-security.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.offensive-security.com/&lt;/a&gt;&lt;br&gt;
+      &lt;h1 id=&quot;树莓派操作系统烧录&quot;&gt;&lt;a href=&quot;#树莓派操作系统烧录&quot; class=&quot;headerlink&quot; title=&quot;树莓派操作系统烧录&quot;&gt;&lt;/a&gt;树莓派操作系统烧录&lt;/h1&gt;&lt;p&gt;工具下载：&lt;a href=&quot;https://www.balena.io/etcher/，可选择免安装本。&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.balena.io/etcher/，可选择免安装本。&lt;/a&gt;&lt;br&gt;树莓派镜像下载：&lt;a href=&quot;https://www.raspberrypi.org/downloads/raspbian/，可选择桌面版&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.raspberrypi.org/downloads/raspbian/，可选择桌面版&lt;/a&gt;&lt;br&gt;kali镜像下载：&lt;a href=&quot;https://www.offensive-security.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.offensive-security.com/&lt;/a&gt;&lt;br&gt;
     
     </summary>
     
