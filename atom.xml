@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-07-21T03:24:42.423Z</updated>
+  <updated>2019-07-21T03:44:56.087Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -21,12 +21,12 @@
     <link href="https://zerosun.top/2019/07/20/BurningImage4Raspberry/"/>
     <id>https://zerosun.top/2019/07/20/BurningImage4Raspberry/</id>
     <published>2019-07-20T04:19:49.000Z</published>
-    <updated>2019-07-21T03:24:42.423Z</updated>
+    <updated>2019-07-21T03:44:56.087Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;树莓派操作系统烧录&quot;&gt;&lt;a href=&quot;#树莓派操作系统烧录&quot; class=&quot;headerlink&quot; title=&quot;树莓派操作系统烧录&quot;&gt;&lt;/a&gt;树莓派操作系统烧录&lt;/h1&gt;&lt;h2 id=&quot;环境准备&quot;&gt;&lt;a href=&quot;#环境准备&quot; class=&quot;headerlink&quot; title=&quot;环境准备&quot;&gt;&lt;/a&gt;环境准备&lt;/h2&gt;&lt;p&gt;工具下载：&lt;a href=&quot;https://www.balena.io/etcher/，可选择免安装版本。&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.balena.io/etcher/，可选择免安装版本。&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;树莓派镜像下载：&lt;a href=&quot;https://www.raspberrypi.org/downloads/raspbian/，可选择桌面版本。&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.raspberrypi.org/downloads/raspbian/，可选择桌面版本。&lt;/a&gt;&lt;br&gt;kali镜像下载：&lt;a href=&quot;https://www.offensive-security.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.offensive-security.com/&lt;/a&gt;&lt;br&gt;
+      &lt;h1 id=&quot;树莓派操作系统烧录&quot;&gt;&lt;a href=&quot;#树莓派操作系统烧录&quot; class=&quot;headerlink&quot; title=&quot;树莓派操作系统烧录&quot;&gt;&lt;/a&gt;树莓派操作系统烧录&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;准备&lt;br&gt;工具：&lt;a href=&quot;https://www.balena.io/etcher/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.balena.io/etcher/&lt;/a&gt;&lt;br&gt;镜像：&lt;br&gt;树莓派：&lt;a href=&quot;https://www.raspberrypi.org/downloads/raspbian/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.raspberrypi.org/downloads/raspbian/&lt;/a&gt;&lt;br&gt;kali：&lt;a href=&quot;https://www.offensive-security.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.offensive-security.com/&lt;/a&gt;
     
     </summary>
     
