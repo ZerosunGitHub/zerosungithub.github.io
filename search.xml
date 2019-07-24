@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[树莓派操作系统烧录]]></title>
     <url>%2F2019%2F07%2F20%2FBurningImage4Raspberry%2F</url>
-    <content type="text"><![CDATA[树莓派操作系统烧录 准备工具：https://www.balena.io/etcher/镜像：树莓派：https://www.raspberrypi.org/downloads/raspbian/kali：https://www.offensive-security.com/ 解压后，使用etcher将镜像烧录进SD卡，等待烧录完成接入主板。下面针对不同的系统，解决树莓派上网、访问、更新源等问题。树莓派安装raspberry如何配置联网烧录完成后，暂不拔出SD卡，会发现电脑多了一个分区boot分区。新建文件wpa_supplicant.conf内容为：123456789country=CNctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdevupdate_config=1network=&#123;ssid=&quot;WiFi-A&quot;psk=&quot;12345678&quot;key_mgmt=WPA-PSKpriority=1&#125; 如何发现树莓派的IP地址先使用fping发现自己电脑网段里面存活的主机IP1fping -ag 192.168.1.0/24 &gt; ip_alive.txt -a 是alive的意思-g 是扫描网段再用nmap扫描这些IP的ssh端口（22）File: scan.sh12345IP_LIST=$(cat iplist.txt) for IP in $IP_LISTdonmap -sT -p 22 $IPdone 一般主机不会开放22端口，所以22为open的IP就是树莓派的IP 或者：直接进入路由器的管理界面查看树莓派设备的IP地址。 如何配置ssh登录在boot分区下新建一个文件名为SSH，注意大写。然后加电，可以通过用户名pi密码raspberry。 树莓派安装kali如何配置联网， 如何发现树莓派的IP地址先使用fping发现自己电脑网段里面存活的主机IP 1fping -ag 192.168.1.0/24 &gt; ip_alive.txt -a 是alive的意思-g 是扫描网段再用nmap扫描这些IP的ssh端口（22）File: scan.sh12345IP_LIST=$(cat iplist.txt) for IP in $IP_LISTdonmap -sT -p 22 $IPdone 一般主机不会开放22端口，所以22为open的IP就是树莓派的IP 或者：直接进入路由器的管理界面查看树莓派设备的IP地址。加电，用户名root密码toor 遇到问题拔掉网线后，无线网卡会拿不到IP地址。12ifconfig -a vim /etc/network/interfaces 12345678910auto loiface lo inet dhcpauto eth0iface eth0 inet dhcpauto wlan0iface wlan0 inet dhcpwpa-ssid TP-LINK_A686wpa-psk 123456.#!A 修改源：12deb http://mirrors.aliyun.com/kali kali-rolling main non-free contribdeb-src http://mirrors.aliyun.com/kali kali-rolling main non-free contrib 参考链接：https://www.jianshu.com/p/3497c4a7f417 安装远程桌面https://www.cnblogs.com/jokermoon/p/6746702.htmlapt-get install tightvncservertightvncserver设置远程连接密码。然后ip:1输入刚设置的密码roottoor。 更新为完整版的Kali123apt-get updateapt-get updgrade -yapt-get install kali-linux-full -y]]></content>
+    <content type="text"><![CDATA[树莓派操作系统烧录工具：etcher镜像：Raspbian Buster、Kali Linux RaspberryPi 下载etcher工具 树莓派镜像 kali for 树莓派 烧录解压后，使用etcher将镜像烧录进SD卡，等待烧录完成接入主板。下面针对不同的系统，解决树莓派上网、访问、更新源等问题。树莓派安装raspberry如何配置联网烧录完成后，暂不拔出SD卡，会发现电脑多了一个分区boot分区。新建文件wpa_supplicant.conf内容为：123456789country=CNctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdevupdate_config=1network=&#123;ssid=&quot;WiFi-A&quot;psk=&quot;12345678&quot;key_mgmt=WPA-PSKpriority=1&#125; 如何发现树莓派的IP地址先使用fping发现自己电脑网段里面存活的主机IP1fping -ag 192.168.1.0/24 &gt; ip_alive.txt -a 是alive的意思-g 是扫描网段再用nmap扫描这些IP的ssh端口（22）File: scan.sh12345IP_LIST=$(cat iplist.txt) for IP in $IP_LISTdonmap -sT -p 22 $IPdone 一般主机不会开放22端口，所以22为open的IP就是树莓派的IP 或者：直接进入路由器的管理界面查看树莓派设备的IP地址。 如何配置ssh登录在boot分区下新建一个文件名为SSH，注意大写。然后加电，可以通过用户名pi密码raspberry。 树莓派安装kali如何配置联网， 如何发现树莓派的IP地址先使用fping发现自己电脑网段里面存活的主机IP 1fping -ag 192.168.1.0/24 &gt; ip_alive.txt -a 是alive的意思-g 是扫描网段再用nmap扫描这些IP的ssh端口（22）File: scan.sh12345IP_LIST=$(cat iplist.txt) for IP in $IP_LISTdonmap -sT -p 22 $IPdone 一般主机不会开放22端口，所以22为open的IP就是树莓派的IP 或者：直接进入路由器的管理界面查看树莓派设备的IP地址。加电，用户名root密码toor 遇到问题拔掉网线后，无线网卡会拿不到IP地址。12ifconfig -a vim /etc/network/interfaces 12345678910auto loiface lo inet dhcpauto eth0iface eth0 inet dhcpauto wlan0iface wlan0 inet dhcpwpa-ssid TP-LINK_A686wpa-psk 123456.#!A 修改源：12deb http://mirrors.aliyun.com/kali kali-rolling main non-free contribdeb-src http://mirrors.aliyun.com/kali kali-rolling main non-free contrib 参考链接：https://www.jianshu.com/p/3497c4a7f417 安装远程桌面https://www.cnblogs.com/jokermoon/p/6746702.htmlapt-get install tightvncservertightvncserver设置远程连接密码。然后ip:1输入刚设置的密码roottoor。 更新为完整版的Kali123apt-get updateapt-get updgrade -yapt-get install kali-linux-full -y]]></content>
   </entry>
   <entry>
     <title><![CDATA[区块链基础：拜占庭问题]]></title>
@@ -77,8 +77,8 @@
         <category>favorites</category>
       </categories>
       <tags>
-        <tag>Tools</tag>
         <tag>RSS</tag>
+        <tag>Tools</tag>
       </tags>
   </entry>
   <entry>
@@ -151,8 +151,8 @@
         <category>blockchain</category>
       </categories>
       <tags>
-        <tag>Ethereum</tag>
         <tag>BlockChain</tag>
+        <tag>Ethereum</tag>
         <tag>SmartContract</tag>
       </tags>
   </entry>
@@ -187,9 +187,9 @@
         <category>blockchain</category>
       </categories>
       <tags>
+        <tag>BlockChain</tag>
         <tag>Ethereum</tag>
         <tag>MIST</tag>
-        <tag>BlockChain</tag>
       </tags>
   </entry>
   <entry>
