@@ -128,7 +128,7 @@
 <meta property="og:site_name" content="北岸冷若冰霜">
 <meta property="og:description" content="树莓派操作系统烧录工具：etcher镜像：Raspbian Buster、Kali Linux RaspberryPi">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-24T01:39:35.492Z">
+<meta property="og:updated_time" content="2019-07-26T01:45:27.792Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="树莓派操作系统烧录">
 <meta name="twitter:description" content="树莓派操作系统烧录工具：etcher镜像：Raspbian Buster、Kali Linux RaspberryPi">
@@ -459,7 +459,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-07-24 09:39:35" itemprop="dateModified" datetime="2019-07-24T09:39:35+08:00">2019-07-24</time>
+                <time title="修改时间：2019-07-26 09:45:27" itemprop="dateModified" datetime="2019-07-26T09:45:27+08:00">2019-07-26</time>
               
             
           </span>
@@ -522,7 +522,8 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">auto lo</span><br><span class="line">iface lo inet dhcp</span><br><span class="line"></span><br><span class="line">auto eth0</span><br><span class="line">iface eth0 inet dhcp</span><br><span class="line"></span><br><span class="line">auto wlan0</span><br><span class="line">iface wlan0 inet dhcp</span><br><span class="line">wpa-ssid TP-LINK_A686</span><br><span class="line">wpa-psk 123456.#!A</span><br></pre></td></tr></table></figure>
 <h3 id="修改源："><a href="#修改源：" class="headerlink" title="修改源："></a>修改源：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deb http://mirrors.aliyun.com/kali kali-rolling main non-free contrib</span><br><span class="line">deb-src http://mirrors.aliyun.com/kali kali-rolling main non-free contrib</span><br></pre></td></tr></table></figure>
 <p>参考链接：<a href="https://www.jianshu.com/p/3497c4a7f417" target="_blank" rel="noopener">https://www.jianshu.com/p/3497c4a7f417</a></p>
-<h3 id="安装远程桌面"><a href="#安装远程桌面" class="headerlink" title="安装远程桌面"></a>安装远程桌面</h3><p><a href="https://www.cnblogs.com/jokermoon/p/6746702.html" target="_blank" rel="noopener">https://www.cnblogs.com/jokermoon/p/6746702.html</a><br>apt-get install tightvncserver<br>tightvncserver<br>设置远程连接密码。然后ip:1输入刚设置的密码roottoor。</p>
+<h3 id="安装远程桌面"><a href="#安装远程桌面" class="headerlink" title="安装远程桌面"></a>安装远程桌面</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-get install tightvncserver</span><br><span class="line">tightvncserver</span><br></pre></td></tr></table></figure>
+<p>参考链接：<a href="https://www.cnblogs.com/jokermoon/p/6746702.html" target="_blank" rel="noopener">https://www.cnblogs.com/jokermoon/p/6746702.html</a><br>设置远程连接密码。然后ip:1输入刚设置的密码roottoor。</p>
 <h3 id="更新为完整版的Kali"><a href="#更新为完整版的Kali" class="headerlink" title="更新为完整版的Kali"></a>更新为完整版的Kali</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">apt-get updgrade -y</span><br><span class="line">apt-get install kali-linux-full -y</span><br></pre></td></tr></table></figure>
       
     </div>
