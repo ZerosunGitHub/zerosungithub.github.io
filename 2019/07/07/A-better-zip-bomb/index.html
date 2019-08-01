@@ -139,7 +139,7 @@
 <meta property="og:image" content="https://zerosun.top/img/zip.png">
 <meta property="og:image" content="https://zerosun.top/img/zip-size.png">
 <meta property="og:image" content="https://zerosun.top/img/zip-size.png">
-<meta property="og:updated_time" content="2019-07-09T06:00:01.015Z">
+<meta property="og:updated_time" content="2019-08-01T01:37:48.487Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="A better zip bomb">
 <meta name="twitter:description" content="分享一个有趣的工具ZBLG：非递归拉链？炸弹，比例为28000000:1">
@@ -471,7 +471,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-07-09 14:00:01" itemprop="dateModified" datetime="2019-07-09T14:00:01+08:00">2019-07-09</time>
+                <time title="修改时间：2019-08-01 09:37:48" itemprop="dateModified" datetime="2019-08-01T09:37:48+08:00">2019-08-01</time>
               
             
           </span>
@@ -664,7 +664,7 @@
 <p>这个想法的问题是缺乏兼容性。由于许多中央目录标头指向单个本地文件头，因此元数据（特别是文件名）无法与每个文件匹配。一些解析器<a href="https://www.bamsoftware.com/hacks/zipbomb/#compatibility" target="_blank" rel="noopener">对此犹豫不决</a>。 <a href="http://infozip.sourceforge.net/UnZip.html" target="_blank" rel="noopener">Info-ZIP UnZip</a> （标准的Unix <code>unzip</code>程序）提取文件，但有警告：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">unzip overlap.zip</span><br><span class="line">inflating: A</span><br><span class="line">B: mismatching "local" filename (A),continuing with "central" filename version</span><br><span class="line">  inflating: B</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
 <p>并且Python <a href="https://docs.python.org/3/library/zipfile.html" target="_blank" rel="noopener">zipfile</a>模块 <a href="https://github.com/python/cpython/blob/v3.7.0/Lib/zipfile.py#L1486-L1489" target="_blank" rel="noopener">抛出异常</a>：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> python3 -m zipfile -e overlap.zip .</span></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">...</span><br><span class="line">__main__.BadZipFile: File name in directory 'B' and header b'A' differ.</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> python3 -m zipfile -e overlap.zip .</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">...</span><br><span class="line">__main__.BadZipFile: File name in directory 'B' and header b'A' differ.</span><br></pre></td></tr></table></figure>
 <p>接下来，我们将看到如何修改文件名一致性的构造，同时仍保留重叠文件的大部分优点。</p>
 <h2 id="第二个见解：引用本地文件头"><a href="#第二个见解：引用本地文件头" class="headerlink" title="第二个见解：引用本地文件头"></a>第二个见解：引用本地文件头</h2><p>我们需要为每个文件分离本地文件头，同时仍然重用单个内核。简单地连接所有本地文件头都不起作用，因为zip解析器将找到一个本地文件头，它希望找到DEFLATE流的开头。但这个想法会有所改变。我们将使用DEFLATE（非压缩块）的一个功能来“引用”本地文件头，使它们看起来像是在内核中终止的同一个DEFLATE流的一部分。每个本地文件头（第一个除外）将以两种方式解释：作为代码（zip文件结构的一部分）和数据（文件内容的一部分）。  </p>
 <p><img src="/img/zip-quote.png" alt="img"></p>
