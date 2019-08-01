@@ -77,8 +77,8 @@
         <category>favorites</category>
       </categories>
       <tags>
-        <tag>Tools</tag>
         <tag>RSS</tag>
+        <tag>Tools</tag>
       </tags>
   </entry>
   <entry>
@@ -151,8 +151,8 @@
         <category>blockchain</category>
       </categories>
       <tags>
-        <tag>Ethereum</tag>
         <tag>BlockChain</tag>
+        <tag>Ethereum</tag>
         <tag>SmartContract</tag>
       </tags>
   </entry>
@@ -187,9 +187,9 @@
         <category>blockchain</category>
       </categories>
       <tags>
+        <tag>BlockChain</tag>
         <tag>Ethereum</tag>
         <tag>MIST</tag>
-        <tag>BlockChain</tag>
       </tags>
   </entry>
   <entry>
@@ -217,6 +217,14 @@
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Glitter&Gloss]]></title>
+    <url>%2F2017%2F03%2F26%2FGlitterGloss%2F</url>
+    <content type="text"><![CDATA[需要科学上网。]]></content>
+      <tags>
+        <tag>MV</tag>
       </tags>
   </entry>
   <entry>
