@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-07-26T01:45:27.792Z</updated>
+  <updated>2019-08-02T02:41:38.363Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>关于OpenStack的openrc凭据</title>
+    <link href="https://zerosun.top/2019/08/02/openstack-about-openrc/"/>
+    <id>https://zerosun.top/2019/08/02/openstack-about-openrc/</id>
+    <published>2019-08-02T02:23:19.000Z</published>
+    <updated>2019-08-02T02:41:38.363Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;如果使用命令行工具对OpenStack云系统发起查询请求，必须有合适的凭据。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="openstack" scheme="https://zerosun.top/categories/openstack/"/>
+    
+    
+      <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
+    
+  </entry>
+  
+  <entry>
     <title>树莓派操作系统烧录</title>
     <link href="https://zerosun.top/2019/07/20/BurningImage4Raspberry/"/>
     <id>https://zerosun.top/2019/07/20/BurningImage4Raspberry/</id>
     <published>2019-07-20T04:19:49.000Z</published>
-    <updated>2019-07-26T01:45:27.792Z</updated>
+    <updated>2019-08-02T02:35:29.524Z</updated>
     
     <summary type="html">
     
@@ -29,6 +49,12 @@
     
     </summary>
     
+      <category term="raspberrypi" scheme="https://zerosun.top/categories/raspberrypi/"/>
+    
+    
+      <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
+    
+      <category term="Raspberrypi" scheme="https://zerosun.top/tags/Raspberrypi/"/>
     
   </entry>
   
@@ -37,7 +63,7 @@
     <link href="https://zerosun.top/2019/07/18/BlockChain-Basis-Byzantinefailures/"/>
     <id>https://zerosun.top/2019/07/18/BlockChain-Basis-Byzantinefailures/</id>
     <published>2019-07-18T11:31:42.000Z</published>
-    <updated>2019-07-18T01:34:35.109Z</updated>
+    <updated>2019-08-02T02:36:36.494Z</updated>
     
     <summary type="html">
     
@@ -45,6 +71,10 @@
     
     </summary>
     
+      <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
+    
+    
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
   </entry>
   
@@ -53,7 +83,7 @@
     <link href="https://zerosun.top/2019/07/08/openstack-image-making/"/>
     <id>https://zerosun.top/2019/07/08/openstack-image-making/</id>
     <published>2019-07-08T14:01:33.000Z</published>
-    <updated>2019-07-18T01:11:13.609Z</updated>
+    <updated>2019-08-02T02:28:21.231Z</updated>
     
     <summary type="html">
     
@@ -61,6 +91,10 @@
     
     </summary>
     
+      <category term="openstack" scheme="https://zerosun.top/categories/openstack/"/>
+    
+    
+      <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
     
   </entry>
   
@@ -69,7 +103,7 @@
     <link href="https://zerosun.top/2019/07/07/A-better-zip-bomb/"/>
     <id>https://zerosun.top/2019/07/07/A-better-zip-bomb/</id>
     <published>2019-07-07T02:15:49.000Z</published>
-    <updated>2019-08-01T01:37:48.487Z</updated>
+    <updated>2019-08-02T02:34:22.436Z</updated>
     
     <summary type="html">
     
@@ -77,8 +111,10 @@
     
     </summary>
     
+      <category term="tools" scheme="https://zerosun.top/categories/tools/"/>
     
-      <category term="tools" scheme="https://zerosun.top/tags/tools/"/>
+    
+      <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
     
   </entry>
   
@@ -182,9 +218,9 @@
       <category term="favorites" scheme="https://zerosun.top/categories/favorites/"/>
     
     
-      <category term="RSS" scheme="https://zerosun.top/tags/RSS/"/>
-    
       <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
+    
+      <category term="RSS" scheme="https://zerosun.top/tags/RSS/"/>
     
   </entry>
   
@@ -325,9 +361,9 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
-    
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
+    
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
       <category term="SmartContract" scheme="https://zerosun.top/tags/SmartContract/"/>
     
@@ -391,29 +427,11 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
-    
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
       <category term="MIST" scheme="https://zerosun.top/tags/MIST/"/>
     
-  </entry>
-  
-  <entry>
-    <title>Hello Markdown</title>
-    <link href="https://zerosun.top/2018/08/30/Hello-Markdown/"/>
-    <id>https://zerosun.top/2018/08/30/Hello-Markdown/</id>
-    <published>2018-08-30T11:26:13.000Z</published>
-    <updated>2018-11-19T10:26:56.238Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Markdown-一种轻量级标记语言&quot;&gt;&lt;a href=&quot;#Markdown-一种轻量级标记语言&quot; class=&quot;headerlink&quot; title=&quot;Markdown 一种轻量级标记语言&quot;&gt;&lt;/a&gt;Markdown 一种轻量级标记语言&lt;/h1&gt;&lt;p&gt;Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="Markdown" scheme="https://zerosun.top/tags/Markdown/"/>
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
   </entry>
   

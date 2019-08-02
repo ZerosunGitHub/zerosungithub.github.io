@@ -2,10 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <!-- <loc>https://zerosun.top/2017/03/26/GlitterGloss/</loc> -->
-    <loc>https://zerosun.top/2017/03/26/GlitterGloss/</loc>
+    <!-- <loc>https://zerosun.top/2019/08/02/openstack-about-openrc/</loc> -->
+    <loc>https://zerosun.top/2019/08/02/openstack-about-openrc/</loc>
     
-    <lastmod>2019-08-01T07:36:35.093Z</lastmod>
+    <lastmod>2019-08-02T02:41:38.363Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <!-- <loc>https://zerosun.top/2019/07/18/BlockChain-Basis-Byzantinefailures/</loc> -->
+    <loc>https://zerosun.top/2019/07/18/BlockChain-Basis-Byzantinefailures/</loc>
+    
+    <lastmod>2019-08-02T02:36:36.494Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <!-- <loc>https://zerosun.top/2019/07/20/BurningImage4Raspberry/</loc> -->
+    <loc>https://zerosun.top/2019/07/20/BurningImage4Raspberry/</loc>
+    
+    <lastmod>2019-08-02T02:35:29.524Z</lastmod>
     
   </url>
   
@@ -13,7 +29,23 @@
     <!-- <loc>https://zerosun.top/2019/07/07/A-better-zip-bomb/</loc> -->
     <loc>https://zerosun.top/2019/07/07/A-better-zip-bomb/</loc>
     
-    <lastmod>2019-08-01T01:37:48.487Z</lastmod>
+    <lastmod>2019-08-02T02:34:22.436Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <!-- <loc>https://zerosun.top/2019/07/08/openstack-image-making/</loc> -->
+    <loc>https://zerosun.top/2019/07/08/openstack-image-making/</loc>
+    
+    <lastmod>2019-08-02T02:28:21.231Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <!-- <loc>https://zerosun.top/2017/03/26/GlitterGloss/</loc> -->
+    <loc>https://zerosun.top/2017/03/26/GlitterGloss/</loc>
+    
+    <lastmod>2019-08-01T07:36:35.093Z</lastmod>
     
   </url>
   
@@ -26,26 +58,10 @@
   </url>
   
   <url>
-    <!-- <loc>https://zerosun.top/2019/07/20/BurningImage4Raspberry/</loc> -->
-    <loc>https://zerosun.top/2019/07/20/BurningImage4Raspberry/</loc>
-    
-    <lastmod>2019-07-26T01:45:27.792Z</lastmod>
-    
-  </url>
-  
-  <url>
     <!-- <loc>https://zerosun.top/2019/06/22/windows-terminal-configure/</loc> -->
     <loc>https://zerosun.top/2019/06/22/windows-terminal-configure/</loc>
     
     <lastmod>2019-07-19T05:15:01.061Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <!-- <loc>https://zerosun.top/2019/07/18/BlockChain-Basis-Byzantinefailures/</loc> -->
-    <loc>https://zerosun.top/2019/07/18/BlockChain-Basis-Byzantinefailures/</loc>
-    
-    <lastmod>2019-07-18T01:34:35.109Z</lastmod>
     
   </url>
   
@@ -70,14 +86,6 @@
     <loc>https://zerosun.top/2018/09/11/BlockChain-Basis-simple-intro/</loc>
     
     <lastmod>2019-07-18T01:26:48.394Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <!-- <loc>https://zerosun.top/2019/07/08/openstack-image-making/</loc> -->
-    <loc>https://zerosun.top/2019/07/08/openstack-image-making/</loc>
-    
-    <lastmod>2019-07-18T01:11:13.609Z</lastmod>
     
   </url>
   
