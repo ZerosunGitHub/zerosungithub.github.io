@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-08-02T03:12:47.664Z</updated>
+  <updated>2019-08-02T03:58:11.599Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zerosun.top/2019/08/02/openstack-about-openrc/"/>
     <id>https://zerosun.top/2019/08/02/openstack-about-openrc/</id>
     <published>2019-08-02T02:23:19.000Z</published>
-    <updated>2019-08-02T03:12:47.664Z</updated>
+    <updated>2019-08-02T03:58:11.599Z</updated>
     
     <summary type="html">
     
@@ -218,9 +218,9 @@
       <category term="favorites" scheme="https://zerosun.top/categories/favorites/"/>
     
     
-      <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
-    
       <category term="RSS" scheme="https://zerosun.top/tags/RSS/"/>
+    
+      <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
     
   </entry>
   
@@ -361,9 +361,9 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
-    
       <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
+    
+      <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
       <category term="SmartContract" scheme="https://zerosun.top/tags/SmartContract/"/>
     
@@ -427,11 +427,11 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
+    
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
       <category term="MIST" scheme="https://zerosun.top/tags/MIST/"/>
-    
-      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
   </entry>
   
