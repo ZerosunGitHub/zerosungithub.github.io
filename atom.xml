@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-08-05T02:49:07.261Z</updated>
+  <updated>2019-08-05T03:37:34.217Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -21,15 +21,11 @@
     <link href="https://zerosun.top/2019/08/05/Login-server-through-SSH-script/"/>
     <id>https://zerosun.top/2019/08/05/Login-server-through-SSH-script/</id>
     <published>2019-08-05T02:47:28.000Z</published>
-    <updated>2019-08-05T02:49:07.261Z</updated>
+    <updated>2019-08-05T03:37:34.217Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;环境Windows10：&lt;br&gt;将介绍三个用于登录服务器的脚本。&lt;/p&gt;
-
-      
+      &lt;p&gt;系统：Windows10、Ubuntu版WSL（Windows Subsystem for Linux）&lt;br&gt;工具：Windows Terminal （Preview）&lt;br&gt;因不想使用xhell、putty等软件，故折腾脚本以便登录服务器管理。&lt;br&gt;将会介绍3个shell脚本用于登录服务器.&lt;br&gt;
     
     </summary>
     
