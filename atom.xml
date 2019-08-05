@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-08-02T03:58:11.599Z</updated>
+  <updated>2019-08-05T02:49:07.261Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>通过ssh实现登录服务器脚本</title>
+    <link href="https://zerosun.top/2019/08/05/Login-server-through-SSH-script/"/>
+    <id>https://zerosun.top/2019/08/05/Login-server-through-SSH-script/</id>
+    <published>2019-08-05T02:47:28.000Z</published>
+    <updated>2019-08-05T02:49:07.261Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;环境Windows10：&lt;br&gt;将介绍三个用于登录服务器的脚本。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>关于OpenStack的openrc凭据</title>
     <link href="https://zerosun.top/2019/08/02/openstack-about-openrc/"/>
     <id>https://zerosun.top/2019/08/02/openstack-about-openrc/</id>
     <published>2019-08-02T02:23:19.000Z</published>
-    <updated>2019-08-02T03:58:11.599Z</updated>
+    <updated>2019-08-02T04:04:03.086Z</updated>
     
     <summary type="html">
     
@@ -218,9 +238,9 @@
       <category term="favorites" scheme="https://zerosun.top/categories/favorites/"/>
     
     
-      <category term="RSS" scheme="https://zerosun.top/tags/RSS/"/>
-    
       <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
+    
+      <category term="RSS" scheme="https://zerosun.top/tags/RSS/"/>
     
   </entry>
   
@@ -361,9 +381,9 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
-    
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
+    
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
       <category term="SmartContract" scheme="https://zerosun.top/tags/SmartContract/"/>
     
@@ -408,30 +428,6 @@
     
     
       <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>以太坊基础-以太坊私有链搭建</title>
-    <link href="https://zerosun.top/2018/09/06/Ethereum-Basis-setup-eth-private-chain/"/>
-    <id>https://zerosun.top/2018/09/06/Ethereum-Basis-setup-eth-private-chain/</id>
-    <published>2018-09-06T05:05:13.000Z</published>
-    <updated>2019-05-15T03:54:47.404Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;以太坊私有链搭建&quot;&gt;&lt;a href=&quot;#以太坊私有链搭建&quot; class=&quot;headerlink&quot; title=&quot;以太坊私有链搭建&quot;&gt;&lt;/a&gt;以太坊私有链搭建&lt;/h1&gt;&lt;p&gt;搭建环境：&lt;br&gt;Ubuntu16.04.1 amd64&lt;br&gt;Vmware Workstation&lt;br&gt;参考：&lt;br&gt;&lt;a href=&quot;https://github.com/ethereum/go-ethereum&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub以太坊官方项目Go-Ethereum&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://ethereum.mochain.info/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;精通以太坊&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/ethereum/go-ethereum/wiki&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Go-Ethereum/wiki&lt;/a&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
-    
-    
-      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
-    
-      <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
-    
-      <category term="MIST" scheme="https://zerosun.top/tags/MIST/"/>
     
   </entry>
   

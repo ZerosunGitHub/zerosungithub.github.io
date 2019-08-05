@@ -2,10 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <!-- <loc>https://zerosun.top/2019/08/05/Login-server-through-SSH-script/</loc> -->
+    <loc>https://zerosun.top/2019/08/05/Login-server-through-SSH-script/</loc>
+    
+    <lastmod>2019-08-05T02:49:07.261Z</lastmod>
+    
+  </url>
+  
+  <url>
     <!-- <loc>https://zerosun.top/2019/08/02/openstack-about-openrc/</loc> -->
     <loc>https://zerosun.top/2019/08/02/openstack-about-openrc/</loc>
     
-    <lastmod>2019-08-02T03:58:11.599Z</lastmod>
+    <lastmod>2019-08-02T04:04:03.086Z</lastmod>
     
   </url>
   
