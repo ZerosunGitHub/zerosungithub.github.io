@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[通过ssh实现登录服务器脚本]]></title>
-    <url>%2F2019%2F08%2F05%2FLogin-server-through-SSH-script%2F</url>
+    <title><![CDATA[通过shell脚本实现ssh登录管理服务器]]></title>
+    <url>%2F2019%2F08%2F05%2FSSH-login-server-through-Shell-script%2F</url>
     <content type="text"><![CDATA[系统：Windows10、Ubuntu版WSL（Windows Subsystem for Linux）工具：Windows Terminal （Preview）因不想使用xhell、putty等软件，故折腾脚本以便登录服务器管理.将会介绍3个shell脚本用于登录服务器. 0x00Ubuntu需要安装依赖包1sudo apt-get install expect 脚本编写12touch server-ONE.shvim server-ONE.sh 脚本内容server-ONE.sh 12345678910111213141516171819202122232425262728#!/usr/bin/expect -f#!/bin/bash# ReferenceLink：https://blog.csdn.net/kaikai136412162/article/details/80743641#ssh连接的用户名set user test#设置ssh连接的host地址set host 192.168.1.10#设置ssh连接的端口号set port 22#设置ssh连接的登录密码set password 123456#设置连接超时时间set timeout -1spawn ssh -o StrictHostKeyChecking=no $user@$host -p $portexpect "*password:"#提交密码send "$password\r"#控制权移交interact 脚本权限确定server-ONE.sh脚本有可执行权限1chmod +x server-ONE.sh 执行server-ONE.sh脚本./server-ONE.sh 第二种给脚本有可执行权限12chmod 777 ./server-ONE.sh./server-ONE.sh 注意不能按照习惯来用sh server-ONE.sh来这行expect的程序，会提示找不到命令，如下：1234server-ONE.sh: line 3: spawn: command not foundcouldn&apos;t read file &quot;*password:&quot;: no such file or directoryserver-ONE.sh: line 5: send: command not foundserver-ONE.sh: line 6: interact: command not found 因为expect用的不是bash所以会报错。因为bash和expect的脚本指定了不同的脚本解释器12#!/usr/bin/expect -f#!/bin/bash 故而执行的时候直接./server-ONE.sh 0x01需要两个文件，loginserver.sh用于登录，serverList.txt服务器列表信息。 脚本编写loginserver.sh，脚本读取serverList.txt文件，serverList.txt文件存有服务器信息.12touch loginserver.shvim loginserver.sh 脚本内容loginserver.sh12345678910111213141516171819202122232425262728293031323334353637383940414243444546#!/bin/bash# ReferenceLink：https://yq.aliyun.com/articles/516347#show all host infos of serverList.txtif [[ -f ./serverList.txt ]]then hostNum=`cat ./serverList.txt | wc -l`else echo "No .serverList.txt in ./ dir, please create it and add server infos." exitfiwhile [ True ] do echo -e "+++++++++++ Host List ++++++++++++++++" awk -F' ' '&#123;printf("%3d -&gt; %s@%s\n", NR,$1,$2)&#125;' ./serverList.txt echo -e "++++++++++++++++++++++++++++++++++++++" echo -e "Enter hostID at first column." echo -e "Enter q or Q to quit." read hostID if [[ "$hostID" == 'q' ]] || [[ "$hostID" == 'Q' ]] then exit elif [[ $hostID -lt 1 ]] || [[ $hostID -gt $hostNum ]] then echo "Wrong hostID is selected, Only $hostNum hosts are listed, please check." continue else break fidoneuser=""host=""passwd=""eval $(awk -v hostID=$hostID -F' ' '&#123;if (NR==hostID) &#123;printf("user=%s;host=%s;passwd=%s;",$1,$2,$3);&#125;&#125;' ./serverList.txt) #echo $user, $host, $passwdecho "login in $user@$host"expect -c "set timeout 30 spawn ssh $user@$host expect &#123; \"*yes/no\" &#123; send \"yes\r\"; exp_continue &#125; \"*?assword:\" &#123; send \"$passwd\r\" &#125; &#125; interact" server列表第一列：系统用户名称；第二列：服务器ip地址；第三列：服务器密码。12touch serverList.txtvim serverList.txt serverList.txt123test 192.168.1.10 123456test 192.168.1.11 123456test 192.168.1.12 123456 执行1bash loginserver.sh 0x02需要两个文件，managerserver.sh用于登录，managerserver.txt服务器列表信息。 脚本编写managerserver.sh，脚本读取managerserver.txt文件，managerserver.txt文件存有服务器信息. 12touch managerserver.shvim managerserver.sh 脚本内容managerserver.sh 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849#!/bin/bash# ReferenceLink：https://yq.aliyun.com/articles/516347#show all host infos of managerserver.txtif [[ -f /root/exec/iplist.txt ]]then hostNum=`cat ./managerserver.txt | wc -l`else echo "No iplist in dir, please create it and add server infos." exitfiwhile [ True ] do echo -e "+++++++++++ Host List ++++++++++++++++" awk -F' ' 'BEGIN &#123;print "ID\tServerName\tUser@ServerIp"&#125;&#123;printf("%2d -&gt; %s %s@%s\n", NR,$1,$2,$3)&#125;' ./managerserver.txt echo -e "++++++++++++++++++++++++++++++++++++++" echo -e "Enter hostID at first column." echo -e "Enter q or Q to quit." read hostID if [[ "$hostID" == 'q' ]] || [[ "$hostID" == 'Q' ]] then exit elif [[ $hostID -lt 1 ]] || [[ $hostID -gt $hostNum ]] then echo "Wrong hostID is selected, Only $hostNum hosts are listed, please check." continue else break fidoneservername=""user=""host=""passwd=""eval $(awk -v hostID=$hostID -F' ' '&#123;if (NR==hostID) &#123;printf("servername=%s;user=%s;host=%s;passwd=%s;",$1,$2,$3,$4);&#125;&#125;' ./managerserver.txt) #echo $user, $host, $passwdecho "logining $servername by $user@$host"expect -c " set timeout 30 spawn ssh $user@$host expect &#123; \"*yes/no\" &#123; send \"yes\r\"; exp_continue &#125; \"*?assword:\" &#123; send \"$passwd\r\" &#125; &#125; interact" server列表第一列：服务器名称；第二列：系统用户名；第三列：服务器ip地址；第四列：服务器密码。12touch managerserver.txtvim managerserver.txt managerserver.txt123server-ONE test 192.168.1.10 123456server-TWO test 192.168.1.11 123456server-THREE test 192.168.1.12 123456 执行1bash managerserver.sh]]></content>
   </entry>
   <entry>
@@ -189,8 +189,8 @@
         <category>blockchain</category>
       </categories>
       <tags>
-        <tag>BlockChain</tag>
         <tag>Ethereum</tag>
+        <tag>BlockChain</tag>
         <tag>SmartContract</tag>
       </tags>
   </entry>
@@ -225,9 +225,9 @@
         <category>blockchain</category>
       </categories>
       <tags>
-        <tag>BlockChain</tag>
         <tag>Ethereum</tag>
         <tag>MIST</tag>
+        <tag>BlockChain</tag>
       </tags>
   </entry>
   <entry>
