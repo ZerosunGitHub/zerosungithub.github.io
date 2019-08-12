@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-08-12T03:37:27.169Z</updated>
+  <updated>2019-08-12T03:38:36.348Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zerosun.top/2019/08/12/ansible-intro/"/>
     <id>https://zerosun.top/2019/08/12/ansible-intro/</id>
     <published>2019-08-12T02:22:40.000Z</published>
-    <updated>2019-08-12T03:37:27.169Z</updated>
+    <updated>2019-08-12T03:38:36.348Z</updated>
     
     <summary type="html">
     
@@ -421,9 +421,9 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
-    
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
+    
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
       <category term="SmartContract" scheme="https://zerosun.top/tags/SmartContract/"/>
     
