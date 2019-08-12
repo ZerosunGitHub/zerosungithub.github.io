@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-08-12T03:39:48.664Z</updated>
+  <updated>2019-08-12T08:17:56.574Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zerosun.top/2019/08/12/openstack-deploying-by-Ansible/"/>
     <id>https://zerosun.top/2019/08/12/openstack-deploying-by-Ansible/</id>
     <published>2019-08-12T02:22:01.000Z</published>
-    <updated>2019-08-12T03:39:48.664Z</updated>
+    <updated>2019-08-12T08:17:56.574Z</updated>
     
     <summary type="html">
     
@@ -52,9 +52,9 @@
       <category term="openstack" scheme="https://zerosun.top/categories/openstack/"/>
     
     
-      <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
-    
       <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
+    
+      <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
     
       <category term="tools" scheme="https://zerosun.top/tags/tools/"/>
     

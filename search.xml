@@ -20,8 +20,8 @@
         <category>openstack</category>
       </categories>
       <tags>
-        <tag>OpenStack</tag>
         <tag>Ansible</tag>
+        <tag>OpenStack</tag>
         <tag>tools</tag>
       </tags>
   </entry>
