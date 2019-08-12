@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[ansible-intro]]></title>
+    <title><![CDATA[OSA（一）：Ansible介绍]]></title>
     <url>%2F2019%2F08%2F12%2Fansible-intro%2F</url>
     <content type="text"></content>
+      <categories>
+        <category>openstack</category>
+      </categories>
+      <tags>
+        <tag>OpenStack</tag>
+        <tag>Ansible</tag>
+        <tag>tools</tag>
+      </tags>
   </entry>
   <entry>
-    <title><![CDATA[openstack-deploying-by-Ansible]]></title>
+    <title><![CDATA[OSA（二）：Ansible部署Opensatck]]></title>
     <url>%2F2019%2F08%2F12%2Fopenstack-deploying-by-Ansible%2F</url>
     <content type="text"></content>
+      <categories>
+        <category>openstack</category>
+      </categories>
+      <tags>
+        <tag>Tools</tag>
+        <tag>OpenStack</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[通过shell脚本实现ssh登录管理服务器]]></title>
@@ -199,8 +214,8 @@
         <category>blockchain</category>
       </categories>
       <tags>
-        <tag>BlockChain</tag>
         <tag>Ethereum</tag>
+        <tag>BlockChain</tag>
         <tag>SmartContract</tag>
       </tags>
   </entry>
@@ -235,9 +250,9 @@
         <category>blockchain</category>
       </categories>
       <tags>
-        <tag>BlockChain</tag>
         <tag>Ethereum</tag>
         <tag>MIST</tag>
+        <tag>BlockChain</tag>
       </tags>
   </entry>
   <entry>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-08-12T02:22:40.405Z</updated>
+  <updated>2019-08-12T03:22:29.486Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -17,30 +17,44 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>ansible-intro</title>
+    <title>OSA（一）：Ansible介绍</title>
     <link href="https://zerosun.top/2019/08/12/ansible-intro/"/>
     <id>https://zerosun.top/2019/08/12/ansible-intro/</id>
     <published>2019-08-12T02:22:40.000Z</published>
-    <updated>2019-08-12T02:22:40.405Z</updated>
+    <updated>2019-08-12T03:22:29.486Z</updated>
     
     <summary type="html">
     
     </summary>
     
+      <category term="openstack" scheme="https://zerosun.top/categories/openstack/"/>
+    
+    
+      <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
+    
+      <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
+    
+      <category term="tools" scheme="https://zerosun.top/tags/tools/"/>
     
   </entry>
   
   <entry>
-    <title>openstack-deploying-by-Ansible</title>
+    <title>OSA（二）：Ansible部署Opensatck</title>
     <link href="https://zerosun.top/2019/08/12/openstack-deploying-by-Ansible/"/>
     <id>https://zerosun.top/2019/08/12/openstack-deploying-by-Ansible/</id>
     <published>2019-08-12T02:21:01.000Z</published>
-    <updated>2019-08-12T02:21:01.771Z</updated>
+    <updated>2019-08-12T03:22:03.255Z</updated>
     
     <summary type="html">
     
     </summary>
     
+      <category term="openstack" scheme="https://zerosun.top/categories/openstack/"/>
+    
+    
+      <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
+    
+      <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
     
   </entry>
   
@@ -147,7 +161,7 @@
     <link href="https://zerosun.top/2019/07/07/A-better-zip-bomb/"/>
     <id>https://zerosun.top/2019/07/07/A-better-zip-bomb/</id>
     <published>2019-07-07T02:15:49.000Z</published>
-    <updated>2019-08-12T02:22:54.963Z</updated>
+    <updated>2019-08-12T02:52:33.316Z</updated>
     
     <summary type="html">
     
@@ -405,9 +419,9 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
-    
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
+    
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
       <category term="SmartContract" scheme="https://zerosun.top/tags/SmartContract/"/>
     

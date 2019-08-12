@@ -2,18 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <!-- <loc>https://zerosun.top/2019/07/07/A-better-zip-bomb/</loc> -->
-    <loc>https://zerosun.top/2019/07/07/A-better-zip-bomb/</loc>
-    
-    <lastmod>2019-08-12T02:22:54.963Z</lastmod>
-    
-  </url>
-  
-  <url>
     <!-- <loc>https://zerosun.top/2019/08/12/ansible-intro/</loc> -->
     <loc>https://zerosun.top/2019/08/12/ansible-intro/</loc>
     
-    <lastmod>2019-08-12T02:22:40.405Z</lastmod>
+    <lastmod>2019-08-12T03:22:29.486Z</lastmod>
     
   </url>
   
@@ -21,7 +13,15 @@
     <!-- <loc>https://zerosun.top/2019/08/12/openstack-deploying-by-Ansible/</loc> -->
     <loc>https://zerosun.top/2019/08/12/openstack-deploying-by-Ansible/</loc>
     
-    <lastmod>2019-08-12T02:21:01.771Z</lastmod>
+    <lastmod>2019-08-12T03:22:03.255Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <!-- <loc>https://zerosun.top/2019/07/07/A-better-zip-bomb/</loc> -->
+    <loc>https://zerosun.top/2019/07/07/A-better-zip-bomb/</loc>
+    
+    <lastmod>2019-08-12T02:52:33.316Z</lastmod>
     
   </url>
   
