@@ -121,18 +121,18 @@
 
 
 
-  <meta name="description" content="和孤独签订体面的协议">
+  <meta name="description" content="Ansible是一个基础架构自动化引擎。容易上手，足够灵活，可以处理复杂的相互依赖的系统。">
 <meta name="keywords" content="OpenStack,Ansible,tools">
 <meta property="og:type" content="article">
 <meta property="og:title" content="OSA（一）：Ansible介绍">
 <meta property="og:url" content="https://zerosun.top/2019/08/12/ansible-intro/index.html">
 <meta property="og:site_name" content="北岸冷若冰霜">
-<meta property="og:description" content="和孤独签订体面的协议">
+<meta property="og:description" content="Ansible是一个基础架构自动化引擎。容易上手，足够灵活，可以处理复杂的相互依赖的系统。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-12T03:22:29.486Z">
+<meta property="og:updated_time" content="2019-08-12T03:37:27.169Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OSA（一）：Ansible介绍">
-<meta name="twitter:description" content="和孤独签订体面的协议">
+<meta name="twitter:description" content="Ansible是一个基础架构自动化引擎。容易上手，足够灵活，可以处理复杂的相互依赖的系统。">
 
 
 
@@ -443,7 +443,7 @@
                 
               
 
-              <time title="创建时间：2019-08-12 10:22:40 / 修改时间：11:22:29" itemprop="dateCreated datePublished" datetime="2019-08-12T10:22:40+08:00">2019-08-12</time>
+              <time title="创建时间：2019-08-12 10:22:40 / 修改时间：11:37:27" itemprop="dateCreated datePublished" datetime="2019-08-12T10:22:40+08:00">2019-08-12</time>
             
 
             
@@ -507,7 +507,10 @@
       
 
       
-        
+        <p>Ansible是一个基础架构自动化引擎。容易上手，足够灵活，可以处理复杂的相互依赖的系统。<br><a id="more"></a></p>
+<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>Ansible的架构包括安装Ansible自身的部署系统，以及由Ansible管理的目标系统。它不需要代理（agent）就能将变更推送到目标系统，因为它使用SSH协议作为将变更推送到目标系统的传输机制。这也意味着目标系统上不需要额外安装软件。无代理架构使Ansible的配置变得非常简单。<br>Ansible通过SSH将模块复制到目标系统之中，然后执行它们以更改目标系统的状态。执行后，Ansible模块将被清除，目标系统上不会留下任何痕迹。<br>Ansible默认使用基于SSH的推送模型（push model）来将变更推送到目标系统。如果你认为这种机制对于你的基础架构扩展性不够， Ansible还支持基于代理的拉取模型（pull model）。Ansible是用Python 开发的，附带了大量的核心自动化模块。<br>Ansible的配置文件称为playbook，它们是用YAML编写的，YAML只是一种标记语言。YAML很容易理解，它是为编写配置文件而定制 的。这使得学习Ansible自动化变得更加容易。Ansible Galaxy是可用于 你的项目的可重复使用的Ansible模块的集合。<br>在后续的文章中，我们将选择Ansible来自动化云基础架构。<br>更多了解请查阅：<a href="https://docs.ansible.com/ansible/latest/user_guide/intro.html" target="_blank" rel="noopener">https://docs.ansible.com/ansible/latest/user_guide/intro.html</a></p>
+<h1 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h1><h2 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h2><p>更多了解请查阅：<a href="https://docs.ansible.com/ansible/latest/modules/list_of_cloud_modules.html#openstack" target="_blank" rel="noopener">https://docs.ansible.com/ansible/latest/modules/list_of_cloud_modules.html#openstack</a></p>
+<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2>
       
     </div>
 
@@ -690,8 +693,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -897,6 +909,22 @@ show_date_time();
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#概念"><span class="nav-number">2.</span> <span class="nav-text">概念</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#模块"><span class="nav-number">2.1.</span> <span class="nav-text">模块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#变量"><span class="nav-number">2.2.</span> <span class="nav-text">变量</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
