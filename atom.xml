@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-08-09T05:22:33.606Z</updated>
+  <updated>2019-08-12T02:22:40.405Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ansible-intro</title>
+    <link href="https://zerosun.top/2019/08/12/ansible-intro/"/>
+    <id>https://zerosun.top/2019/08/12/ansible-intro/</id>
+    <published>2019-08-12T02:22:40.000Z</published>
+    <updated>2019-08-12T02:22:40.405Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>openstack-deploying-by-Ansible</title>
+    <link href="https://zerosun.top/2019/08/12/openstack-deploying-by-Ansible/"/>
+    <id>https://zerosun.top/2019/08/12/openstack-deploying-by-Ansible/</id>
+    <published>2019-08-12T02:21:01.000Z</published>
+    <updated>2019-08-12T02:21:01.771Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>通过shell脚本实现ssh登录管理服务器</title>
@@ -119,7 +147,7 @@
     <link href="https://zerosun.top/2019/07/07/A-better-zip-bomb/"/>
     <id>https://zerosun.top/2019/07/07/A-better-zip-bomb/</id>
     <published>2019-07-07T02:15:49.000Z</published>
-    <updated>2019-08-02T02:34:22.436Z</updated>
+    <updated>2019-08-12T02:22:54.963Z</updated>
     
     <summary type="html">
     
@@ -234,9 +262,9 @@
       <category term="favorites" scheme="https://zerosun.top/categories/favorites/"/>
     
     
-      <category term="RSS" scheme="https://zerosun.top/tags/RSS/"/>
-    
       <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
+    
+      <category term="RSS" scheme="https://zerosun.top/tags/RSS/"/>
     
   </entry>
   
@@ -382,48 +410,6 @@
       <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
       <category term="SmartContract" scheme="https://zerosun.top/tags/SmartContract/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>区块链基础：区块链简介</title>
-    <link href="https://zerosun.top/2018/09/11/BlockChain-Basis-simple-intro/"/>
-    <id>https://zerosun.top/2018/09/11/BlockChain-Basis-simple-intro/</id>
-    <published>2018-09-11T09:06:31.000Z</published>
-    <updated>2019-07-18T01:26:48.394Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;区块链作为目前最为火热的计算机相关技术之一，收到越来越多人的关注，互联网巨头们纷纷入场，区块链创业公司也不停涌现，这里对区块链相关基础知识做一个系统介绍，旨在普及区块链基础知识点。不涉及项目推广投资，单纯的对区块链相关基础知识概念作一个说明讲解。涉及相关内容如理解有误，也请及时指正。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
-    
-    
-      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
-    
-      <category term="Hash" scheme="https://zerosun.top/tags/Hash/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>区块链基础：常见词汇</title>
-    <link href="https://zerosun.top/2018/09/10/BlockChain-Basis-common-vocabulary/"/>
-    <id>https://zerosun.top/2018/09/10/BlockChain-Basis-common-vocabulary/</id>
-    <published>2018-09-10T12:45:16.000Z</published>
-    <updated>2019-07-18T01:27:50.371Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;单纯的对区块链相关基础常见词汇作一个解释说明，涉及名词较多。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
-    
-    
-      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
   </entry>
   
