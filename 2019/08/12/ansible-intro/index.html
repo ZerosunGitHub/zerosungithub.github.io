@@ -129,7 +129,7 @@
 <meta property="og:site_name" content="北岸冷若冰霜">
 <meta property="og:description" content="Ansible是一个基础架构自动化引擎。容易上手，足够灵活，可以处理复杂的相互依赖的系统。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-12T03:39:43.832Z">
+<meta property="og:updated_time" content="2019-08-13T02:58:29.842Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OSA（一）：Ansible介绍">
 <meta name="twitter:description" content="Ansible是一个基础架构自动化引擎。容易上手，足够灵活，可以处理复杂的相互依赖的系统。">
@@ -443,12 +443,24 @@
                 
               
 
-              <time title="创建时间：2019-08-12 10:21:40 / 修改时间：11:39:43" itemprop="dateCreated datePublished" datetime="2019-08-12T10:21:40+08:00">2019-08-12</time>
+              <time title="创建时间：2019-08-12 10:21:40" itemprop="dateCreated datePublished" datetime="2019-08-12T10:21:40+08:00">2019-08-12</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-08-13 10:58:29" itemprop="dateModified" datetime="2019-08-13T10:58:29+08:00">2019-08-13</time>
               
             
           </span>
@@ -509,7 +521,7 @@
       
         <p>Ansible是一个基础架构自动化引擎。容易上手，足够灵活，可以处理复杂的相互依赖的系统。<br><a id="more"></a></p>
 <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>Ansible的架构包括安装Ansible自身的部署系统，以及由Ansible管理的目标系统。它不需要代理（agent）就能将变更推送到目标系统，因为它使用SSH协议作为将变更推送到目标系统的传输机制。这也意味着目标系统上不需要额外安装软件。无代理架构使Ansible的配置变得非常简单。<br>Ansible通过SSH将模块复制到目标系统之中，然后执行它们以更改目标系统的状态。执行后，Ansible模块将被清除，目标系统上不会留下任何痕迹。<br>Ansible默认使用基于SSH的推送模型（push model）来将变更推送到目标系统。如果你认为这种机制对于你的基础架构扩展性不够， Ansible还支持基于代理的拉取模型（pull model）。Ansible是用Python 开发的，附带了大量的核心自动化模块。<br>Ansible的配置文件称为playbook，它们是用YAML编写的，YAML只是一种标记语言。YAML很容易理解，它是为编写配置文件而定制 的。这使得学习Ansible自动化变得更加容易。Ansible Galaxy是可用于 你的项目的可重复使用的Ansible模块的集合。<br>在后续的文章中，我们将选择Ansible来自动化云基础架构。<br>更多了解请查阅：<a href="https://docs.ansible.com/ansible/latest/user_guide/intro.html" target="_blank" rel="noopener">https://docs.ansible.com/ansible/latest/user_guide/intro.html</a></p>
-<h1 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h1><h2 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h2><p>更多了解请查阅：<a href="https://docs.ansible.com/ansible/latest/modules/list_of_cloud_modules.html#openstack" target="_blank" rel="noopener">https://docs.ansible.com/ansible/latest/modules/list_of_cloud_modules.html#openstack</a></p>
+<h1 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h1><h2 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h2><p>Ansible模块（module）是封装系统资源或操作的组件。模块对资源及其属性进行建模。Ansible附带了包含各种核心模块的软件包，这些核 心模块代表了各种系统资源；例如，file模块对系统中的文件进行封 装，它具有诸如所有者、组、模式等属性。这些属性表示系统中文件的 状态；通过更改资源的属，我们可以描述系统所需的最终状态。<br>注：Ansible还为多个云供应商和虚拟化引擎（包括OpenStack）提供了优秀且稳定的模块。更多了解请查阅官方网站：<a href="https://docs.ansible.com/ansible/latest/modules/list_of_cloud_modules.html#openstack" target="_blank" rel="noopener">https://docs.ansible.com/ansible/latest/modules/list_of_cloud_modules.html#openstack</a></p>
 <h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><h2 id="清单"><a href="#清单" class="headerlink" title="清单"></a>清单</h2><h2 id="角色"><a href="#角色" class="headerlink" title="角色"></a>角色</h2><h2 id="playbook"><a href="#playbook" class="headerlink" title="playbook"></a>playbook</h2>
       
     </div>
