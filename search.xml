@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[OSA（二）：Ansible部署Opensatck]]></title>
     <url>%2F2019%2F08%2F12%2Fopenstack-deploying-by-Ansible%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。项目地址：https://github.com/openstack/openstack-ansibleOSA项目的一个独特功能是使用容器来隔离和管理OpenStack服务。OSA在LXC容器中安装OpenStack服务，为每个服务提供隔离环境。LXC是一个操作系统级容器，它包含一个完整的操作系统环境，包括单独的文件系统、网络堆栈，并使用cgroups进行资源隔离。]]></content>
       <categories>
         <category>openstack</category>
       </categories>
@@ -214,8 +214,8 @@
         <category>blockchain</category>
       </categories>
       <tags>
-        <tag>BlockChain</tag>
         <tag>Ethereum</tag>
+        <tag>BlockChain</tag>
         <tag>SmartContract</tag>
       </tags>
   </entry>
@@ -250,9 +250,9 @@
         <category>blockchain</category>
       </categories>
       <tags>
-        <tag>BlockChain</tag>
         <tag>Ethereum</tag>
         <tag>MIST</tag>
+        <tag>BlockChain</tag>
       </tags>
   </entry>
   <entry>
