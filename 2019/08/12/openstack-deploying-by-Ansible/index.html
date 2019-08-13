@@ -121,18 +121,20 @@
 
 
 
-  <meta name="description" content="OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。项目地址：https://github.com/openstack/openstack-ansibleOSA项目的一个独特功能是使用容器来隔离和管理OpenStack服务。OSA在LXC容器中安装OpenS">
+  <meta name="description" content="OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。">
 <meta name="keywords" content="Tools,OpenStack">
 <meta property="og:type" content="article">
 <meta property="og:title" content="OSA（二）：Ansible部署Opensatck">
 <meta property="og:url" content="https://zerosun.top/2019/08/12/openstack-deploying-by-Ansible/index.html">
 <meta property="og:site_name" content="北岸冷若冰霜">
-<meta property="og:description" content="OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。项目地址：https://github.com/openstack/openstack-ansibleOSA项目的一个独特功能是使用容器来隔离和管理OpenStack服务。OSA在LXC容器中安装OpenS">
+<meta property="og:description" content="OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-13T03:18:27.724Z">
+<meta property="og:image" content="https://zerosun.top/img/OSAdeployment-architecture.jpg">
+<meta property="og:updated_time" content="2019-08-13T03:55:03.934Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OSA（二）：Ansible部署Opensatck">
-<meta name="twitter:description" content="OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。项目地址：https://github.com/openstack/openstack-ansibleOSA项目的一个独特功能是使用容器来隔离和管理OpenStack服务。OSA在LXC容器中安装OpenS">
+<meta name="twitter:description" content="OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。">
+<meta name="twitter:image" content="https://zerosun.top/img/OSAdeployment-architecture.jpg">
 
 
 
@@ -460,7 +462,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-08-13 11:18:27" itemprop="dateModified" datetime="2019-08-13T11:18:27+08:00">2019-08-13</time>
+                <time title="修改时间：2019-08-13 11:55:03" itemprop="dateModified" datetime="2019-08-13T11:55:03+08:00">2019-08-13</time>
               
             
           </span>
@@ -519,8 +521,11 @@
       
 
       
-        <p>OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。<br>项目地址：<a href="https://github.com/openstack/openstack-ansible" target="_blank" rel="noopener">https://github.com/openstack/openstack-ansible</a><br>OSA项目的一个独特功能是使用容器来隔离和管理OpenStack服务。<br>OSA在LXC容器中安装OpenStack服务，为每个服务提供隔离环境。<br>LXC是一个操作系统级容器，它包含一个完整的操作系统环境，包括单独的文件系统、网络堆栈，并使用cgroups进行资源隔离。</p>
-
+        <p>OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。<br><a id="more"></a><br>项目地址：<a href="https://github.com/openstack/openstack-ansible" target="_blank" rel="noopener">https://github.com/openstack/openstack-ansible</a></p>
+<h1 id="关于OSA"><a href="#关于OSA" class="headerlink" title="关于OSA"></a>关于OSA</h1><p>OSA项目的一个独特功能是使用容器来隔离和管理OpenStack服务。<br>OSA在LXC容器中安装OpenStack服务，为每个服务提供隔离环境。<br>LXC是一个操作系统级容器，它包含一个完整的操作系统环境，包括单独的文件系统、网络堆栈，并使用cgroups进行资源隔离。<br>LXC是Linux中非常流行的容器实现，允许隔离包括文件系统在内的资源，以运行多个应用程序和一组层序，并且不会相互干扰。</p>
+<h1 id="OSA部署架构"><a href="#OSA部署架构" class="headerlink" title="OSA部署架构"></a>OSA部署架构</h1><p>OSA部署过程开始于一台部署主机，我们记为：deployment host。<br><img src="/img/OSAdeployment-architecture.jpg" alt="img"></p>
+<h2 id="部署主机"><a href="#部署主机" class="headerlink" title="部署主机"></a>部署主机</h2><p>在部署主机安装Ansible，运行OSA playbook，并负责编排目标主机上的OpenStack安装。</p>
+<h2 id="目标主机"><a href="#目标主机" class="headerlink" title="目标主机"></a>目标主机</h2>
       
     </div>
 
@@ -701,8 +706,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -908,6 +922,22 @@ show_date_time();
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#关于OSA"><span class="nav-number">1.</span> <span class="nav-text">关于OSA</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#OSA部署架构"><span class="nav-number">2.</span> <span class="nav-text">OSA部署架构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#部署主机"><span class="nav-number">2.1.</span> <span class="nav-text">部署主机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目标主机"><span class="nav-number">2.2.</span> <span class="nav-text">目标主机</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

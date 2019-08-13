@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-08-13T03:18:27.724Z</updated>
+  <updated>2019-08-13T03:55:03.934Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -21,14 +21,11 @@
     <link href="https://zerosun.top/2019/08/12/openstack-deploying-by-Ansible/"/>
     <id>https://zerosun.top/2019/08/12/openstack-deploying-by-Ansible/</id>
     <published>2019-08-12T02:22:01.000Z</published>
-    <updated>2019-08-13T03:18:27.724Z</updated>
+    <updated>2019-08-13T03:55:03.934Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/ope
-      
+      &lt;p&gt;OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。&lt;br&gt;
     
     </summary>
     
