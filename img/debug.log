@@ -2,3 +2,17 @@
 [0707/230337:INFO:exception_record.cc(518)] [QB]Process ID: 16068 Type: 2
 [0707/230340:INFO:http_cache_transaction.cc(72)] IgnoreZeroCacheError: 0
 [0707/231405:ERROR:shell.cc(348)] Cannot client process matching existing identity:Name: exe:content_gpu User: 505C0EE9-3013-43C0-82B0-A84F50CF8D84 Instance: content_gpu
+[0814/112124:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0814/112129:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0814/112134:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0814/112139:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0814/112144:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0814/112149:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0814/112154:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0814/112159:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0814/112204:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0814/112209:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0814/112214:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0814/112219:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0814/112224:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0814/112229:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
