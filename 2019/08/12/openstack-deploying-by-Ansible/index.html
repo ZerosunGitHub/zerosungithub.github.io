@@ -130,7 +130,8 @@
 <meta property="og:description" content="OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://zerosun.top/img/OSAdeployment-architecture.jpg">
-<meta property="og:updated_time" content="2019-08-14T02:08:30.387Z">
+<meta property="og:image" content="https://zerosun.top/img/loghost.png">
+<meta property="og:updated_time" content="2019-08-14T02:25:45.183Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OSA（二）：Ansible部署Opensatck">
 <meta name="twitter:description" content="OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。">
@@ -462,7 +463,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-08-14 10:08:30" itemprop="dateModified" datetime="2019-08-14T10:08:30+08:00">2019-08-14</time>
+                <time title="修改时间：2019-08-14 10:25:45" itemprop="dateModified" datetime="2019-08-14T10:25:45+08:00">2019-08-14</time>
               
             
           </span>
@@ -523,7 +524,27 @@
       
         <p>OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。<br><a id="more"></a><br>项目地址：<a href="https://github.com/openstack/openstack-ansible" target="_blank" rel="noopener">https://github.com/openstack/openstack-ansible</a></p>
 <h1 id="关于OSA"><a href="#关于OSA" class="headerlink" title="关于OSA"></a>关于OSA</h1><p>OSA项目的一个独特功能是使用容器来隔离和管理OpenStack服务。<br>OSA在LXC容器中安装OpenStack服务，为每个服务提供隔离环境。<br>LXC是一个操作系统级容器，它包含一个完整的操作系统环境，包括单独的文件系统、网络堆栈，并使用cgroups进行资源隔离。<br>LXC是Linux中非常流行的容器实现，允许隔离包括文件系统在内的资源，以运行多个应用程序和一组层序，并且不会相互干扰。</p>
-<h1 id="OSA部署架构"><a href="#OSA部署架构" class="headerlink" title="OSA部署架构"></a>OSA部署架构</h1><p>OSA部署过程开始于一台部署主机，我们记为：deployment host。<br><img src="/img/OSAdeployment-architecture.jpg" alt="img"><br><strong>部署主机</strong><br>在部署主机安装Ansible，运行OSA playbook，并负责编排目标主机上的OpenStack安装。<br><strong>目标主机</strong><br>Ansible目标主机 target host 是用来运行OpenStack服务的主机。目标主机上可以安装Ubuntu 14.04 LTS操作系统（或者Ubuntu 16.04.2，Ubuntu 18.04.2）。后面我会使用Ubuntu 16.04.2 进行部署过程的详解。在目标主机需要配置基于SSH密钥的身份验证，以允许从部署主机上登录。<br>目标主机</p>
+<h1 id="OSA部署架构"><a href="#OSA部署架构" class="headerlink" title="OSA部署架构"></a>OSA部署架构</h1><p>OSA部署过程开始于一台部署主机，我们记为：deployment host。<br><img src="/img/OSAdeployment-architecture.jpg" alt="img"></p>
+<h2 id="部署主机"><a href="#部署主机" class="headerlink" title="部署主机"></a>部署主机</h2><p>在部署主机安装Ansible，运行OSA playbook，并负责编排目标主机上的OpenStack安装。</p>
+<h2 id="目标主机"><a href="#目标主机" class="headerlink" title="目标主机"></a>目标主机</h2><p>Ansible目标主机 target host 是用来运行OpenStack服务的主机。目标主机上可以安装Ubuntu 14.04 LTS操作系统（或者Ubuntu 16.04.2，Ubuntu 18.04.2）。后面我会使用Ubuntu 16.04.2 进行部署过程的详解。在目标主机需要配置基于SSH密钥的身份验证，以允许从部署主机上登录。<br>OSA架构将目标主机分为以下几组：</p>
+<ul>
+<li>基础架构个控制平面主机</li>
+<li>日志主机</li>
+<li>计算主机</li>
+<li>（可选的）存储主机<h3 id="基础架构和控制平面主机"><a href="#基础架构和控制平面主机" class="headerlink" title="基础架构和控制平面主机"></a>基础架构和控制平面主机</h3>建议至少使用三台基础架构和控制平面主机提供冗余服务。基础架构主机安装一下常用服务：</li>
+<li>数据库服务器：装有MySQL Galera集群</li>
+<li>消息服务器：RabbitMQ</li>
+<li>Memcached</li>
+<li>代码仓库服务器</li>
+<li>OpenStack控制平面服务<ul>
+<li>认证服务Keystone</li>
+<li>镜像服务Glance</li>
+<li>计算管理服务Nova</li>
+<li>网络服务Neutron</li>
+<li>其他API服务，如Heat，Ceilmeter等。<h3 id="日志主机"><a href="#日志主机" class="headerlink" title="日志主机"></a>日志主机</h3>日志服务器使用Logstash和Elasticsearch托管一个集中式日志服务器（如rsyslog）和一个日志分析器。可以在计算主机上运行Nova计算服务，以及网络和日志代理。<br><img src="/img/loghost.png" alt="img"><br>对于生产环境需要都的存储主机来运行Cinder调度器和Cinder卷服务，以提供存储服务。</li>
+</ul>
+</li>
+</ul>
 
       
     </div>
@@ -931,7 +952,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#关于OSA"><span class="nav-number">1.</span> <span class="nav-text">关于OSA</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#OSA部署架构"><span class="nav-number">2.</span> <span class="nav-text">OSA部署架构</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#关于OSA"><span class="nav-number">1.</span> <span class="nav-text">关于OSA</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#OSA部署架构"><span class="nav-number">2.</span> <span class="nav-text">OSA部署架构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#部署主机"><span class="nav-number">2.1.</span> <span class="nav-text">部署主机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目标主机"><span class="nav-number">2.2.</span> <span class="nav-text">目标主机</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基础架构和控制平面主机"><span class="nav-number">2.2.1.</span> <span class="nav-text">基础架构和控制平面主机</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#日志主机"><span class="nav-number">2.2.2.</span> <span class="nav-text">日志主机</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
