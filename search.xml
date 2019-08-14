@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[OSA（二）：Ansible部署Opensatck]]></title>
     <url>%2F2019%2F08%2F12%2Fopenstack-deploying-by-Ansible%2F</url>
-    <content type="text"><![CDATA[OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。项目地址：https://github.com/openstack/openstack-ansible 关于OSAOSA项目的一个独特功能是使用容器来隔离和管理OpenStack服务。OSA在LXC容器中安装OpenStack服务，为每个服务提供隔离环境。LXC是一个操作系统级容器，它包含一个完整的操作系统环境，包括单独的文件系统、网络堆栈，并使用cgroups进行资源隔离。LXC是Linux中非常流行的容器实现，允许隔离包括文件系统在内的资源，以运行多个应用程序和一组层序，并且不会相互干扰。 OSA部署架构OSA部署过程开始于一台部署主机，我们记为：deployment host。 部署主机在部署主机安装Ansible，运行OSA playbook，并负责编排目标主机上的OpenStack安装。 目标主机]]></content>
+    <content type="text"><![CDATA[OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。项目地址：https://github.com/openstack/openstack-ansible 关于OSAOSA项目的一个独特功能是使用容器来隔离和管理OpenStack服务。OSA在LXC容器中安装OpenStack服务，为每个服务提供隔离环境。LXC是一个操作系统级容器，它包含一个完整的操作系统环境，包括单独的文件系统、网络堆栈，并使用cgroups进行资源隔离。LXC是Linux中非常流行的容器实现，允许隔离包括文件系统在内的资源，以运行多个应用程序和一组层序，并且不会相互干扰。 OSA部署架构OSA部署过程开始于一台部署主机，我们记为：deployment host。部署主机在部署主机安装Ansible，运行OSA playbook，并负责编排目标主机上的OpenStack安装。目标主机Ansible目标主机 target host 是用来运行OpenStack服务的主机。目标主机上可以安装Ubuntu 14.04 LTS操作系统（或者Ubuntu 16.04.2，Ubuntu 18.04.2）。后面我会使用Ubuntu 16.04.2 进行部署过程的详解。在目标主机需要配置基于SSH密钥的身份验证，以允许从部署主机上登录。目标主机]]></content>
       <categories>
         <category>openstack</category>
       </categories>
