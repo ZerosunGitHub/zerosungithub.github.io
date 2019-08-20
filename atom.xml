@@ -32,9 +32,9 @@
       <category term="openstack" scheme="https://zerosun.top/categories/openstack/"/>
     
     
-      <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
-    
       <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
+    
+      <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
     
       <category term="tools" scheme="https://zerosun.top/tags/tools/"/>
     
@@ -401,9 +401,9 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
-    
       <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
+    
+      <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
       <category term="SmartContract" scheme="https://zerosun.top/tags/SmartContract/"/>
     

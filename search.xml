@@ -8,8 +8,8 @@
         <category>openstack</category>
       </categories>
       <tags>
-        <tag>OpenStack</tag>
         <tag>Ansible</tag>
+        <tag>OpenStack</tag>
         <tag>tools</tag>
       </tags>
   </entry>
@@ -202,8 +202,8 @@
         <category>blockchain</category>
       </categories>
       <tags>
-        <tag>Ethereum</tag>
         <tag>BlockChain</tag>
+        <tag>Ethereum</tag>
         <tag>SmartContract</tag>
       </tags>
   </entry>
@@ -238,9 +238,9 @@
         <category>blockchain</category>
       </categories>
       <tags>
+        <tag>BlockChain</tag>
         <tag>Ethereum</tag>
         <tag>MIST</tag>
-        <tag>BlockChain</tag>
       </tags>
   </entry>
   <entry>
