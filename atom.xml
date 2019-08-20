@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-08-14T07:21:22.327Z</updated>
+  <updated>2019-08-20T08:45:18.696Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>OSA（二）：Ansible部署Opensatck</title>
+    <link href="https://zerosun.top/2019/08/12/openstack-deploying-by-Ansible/"/>
+    <id>https://zerosun.top/2019/08/12/openstack-deploying-by-Ansible/</id>
+    <published>2019-08-12T02:22:01.000Z</published>
+    <updated>2019-08-20T08:45:18.696Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="openstack" scheme="https://zerosun.top/categories/openstack/"/>
+    
+    
+      <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
+    
+      <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
+    
+  </entry>
   
   <entry>
     <title>OSA：Ansible介绍</title>
@@ -32,9 +54,9 @@
       <category term="openstack" scheme="https://zerosun.top/categories/openstack/"/>
     
     
-      <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
-    
       <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
+    
+      <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
     
       <category term="tools" scheme="https://zerosun.top/tags/tools/"/>
     
@@ -406,28 +428,6 @@
       <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
     
       <category term="SmartContract" scheme="https://zerosun.top/tags/SmartContract/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>区块链基础：区块链简介</title>
-    <link href="https://zerosun.top/2018/09/11/BlockChain-Basis-simple-intro/"/>
-    <id>https://zerosun.top/2018/09/11/BlockChain-Basis-simple-intro/</id>
-    <published>2018-09-11T09:06:31.000Z</published>
-    <updated>2019-07-18T01:26:48.394Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;区块链作为目前最为火热的计算机相关技术之一，收到越来越多人的关注，互联网巨头们纷纷入场，区块链创业公司也不停涌现，这里对区块链相关基础知识做一个系统介绍，旨在普及区块链基础知识点。不涉及项目推广投资，单纯的对区块链相关基础知识概念作一个说明讲解。涉及相关内容如理解有误，也请及时指正。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
-    
-    
-      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
-    
-      <category term="Hash" scheme="https://zerosun.top/tags/Hash/"/>
     
   </entry>
   

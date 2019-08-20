@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[OSA（二）：Ansible部署Opensatck]]></title>
+    <url>%2F2019%2F08%2F12%2Fopenstack-deploying-by-Ansible%2F</url>
+    <content type="text"><![CDATA[OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。项目地址：https://github.com/openstack/openstack-ansible 0x00 关于OSAOSA项目的一个独特功能是使用容器来隔离和管理OpenStack服务。OSA在LXC容器中安装OpenStack服务，为每个服务提供隔离环境。LXC是一个操作系统级容器，它包含一个完整的操作系统环境，包括单独的文件系统、网络堆栈，并使用cgroups进行资源隔离。LXC是Linux中非常流行的容器实现，允许隔离包括文件系统在内的资源，以运行多个应用程序和一组层序，并且不会相互干扰。 0x01 OSA部署架构OSA部署过程开始于一台部署主机，我们记为：deployment host。 部署主机在部署主机安装Ansible，运行OSA playbook，并负责编排目标主机上的OpenStack安装。 目标主机Ansible目标主机 target host 是用来运行OpenStack服务的主机。目标主机上可以安装Ubuntu 14.04 LTS操作系统（或者Ubuntu 16.04.2，Ubuntu 18.04.2）。后面我会使用Ubuntu 16.04.2 server版64位进行部署过程的详解。在目标主机需要配置基于SSH密钥的身份验证，以允许从部署主机上登录。OSA架构将目标主机分为以下几组： 基础架构个控制平面主机 日志主机 计算主机 （可选的）存储主机基础架构和控制平面主机建议至少使用三台基础架构和控制平面主机提供冗余服务。基础架构主机安装一下常用服务： 数据库服务器：装有MySQL Galera集群 消息服务器：RabbitMQ Memcached 代码仓库服务器 OpenStack控制平面服务-认证服务Keystone-镜像服务Glance-计算管理服务Nova-网络服务Neutron-其他API服务，如Heat，Ceilmeter等。 日志主机日志服务器使用Logstash和Elasticsearch托管一个集中式日志服务器（如rsyslog）和一个日志分析器。可以在计算主机上运行Nova计算服务，以及网络和日志代理。对于生产环境需要都的存储主机来运行Cinder调度器和Cinder卷服务，以提供存储服务。 0x02 OpenStack Ansible安装部署参考文档：https://docs.openstack.org/openstack-ansible/latest/ https://docs.openstack.org/openstack-ansible/rocky/ 概览涉及以下两种主机 部署主机，运行Ansible playbooks 目标主机，Ansible安装OpenStack服务和基础架构组件1.一般安装工作流程2.安装要求与建议 部署节点部署节点（deployment node）上运行着Ansible OpenStack工具，它将在目标节点（target node）上编排OpenStack云节点。这里部署节点安装Ubuntu 16.04.2 server版 64位操作系统。要在部署节点上运行OpenStack Ansible，需执行以下步骤： 1.安装必要的依赖包12345sudo apt-get install aptitude build-essential git ntp ntpdate openssh-server python-dev -y# 注意先要检查系统python版本而后安装更新pip版本curl https://bootstrap.pypa.io/get-pip.py -o get-pip.pypython get-pip.py 2.配置NTP同步网络时间 3.配置网络使得目标主机可以从部署主机上访问到。 4.克隆OpenStack Ansible代码仓库1git clone -b TAG https://github.com/openstack/openstack-ansible.git /opt/openstack-ansible 5.启动 OpenStack Ansible 12cd /opt//opt/openstack-ansible./scripts/bootstrap-ansible.sh 6.创建SSH密钥在部署节点上生成SSH密钥 7.安装完成需要等待比较久的时间，中间因为python版本和pip的版本问题重新执行了几次bootstrap-ansible.sh脚本。 控制节点环境准备]]></content>
+      <categories>
+        <category>openstack</category>
+      </categories>
+      <tags>
+        <tag>Tools</tag>
+        <tag>OpenStack</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[OSA：Ansible介绍]]></title>
     <url>%2F2019%2F08%2F12%2Fansible-intro%2F</url>
     <content type="text"><![CDATA[Ansible是一个基础架构自动化引擎。容易上手，足够灵活，可以处理复杂的相互依赖的系统。 简介Ansible的架构包括安装Ansible自身的部署系统，以及由Ansible管理的目标系统。它不需要代理（agent）就能将变更推送到目标系统，因为它使用SSH协议作为将变更推送到目标系统的传输机制。这也意味着目标系统上不需要额外安装软件。无代理架构使Ansible的配置变得非常简单。Ansible通过SSH将模块复制到目标系统之中，然后执行它们以更改目标系统的状态。执行后，Ansible模块将被清除，目标系统上不会留下任何痕迹。Ansible默认使用基于SSH的推送模型（push model）来将变更推送到目标系统。如果你认为这种机制对于你的基础架构扩展性不够， Ansible还支持基于代理的拉取模型（pull model）。Ansible是用Python 开发的，附带了大量的核心自动化模块。Ansible的配置文件称为playbook，它们是用YAML编写的，YAML只是一种标记语言。YAML很容易理解，它是为编写配置文件而定制 的。这使得学习Ansible自动化变得更加容易。Ansible Galaxy是可用于 你的项目的可重复使用的Ansible模块的集合。在后续的文章中，我们将选择Ansible来自动化云基础架构。更多了解请查阅：https://docs.ansible.com/ansible/latest/user_guide/intro.html 概念模块Ansible模块（module）是封装系统资源或操作的组件。模块对资源及其属性进行建模。Ansible附带了包含各种核心模块的软件包，这些核 心模块代表了各种系统资源；例如，file模块对系统中的文件进行封 装，它具有诸如所有者、组、模式等属性。这些属性表示系统中文件的 状态；通过更改资源的属，我们可以描述系统所需的最终状态。注：Ansible还为多个云供应商和虚拟化引擎（包括OpenStack）提供了优秀且稳定的模块。更多了解请查阅官方网站：https://docs.ansible.com/ansible/latest/modules/list_of_cloud_modules.html#openstack 变量清单角色playbook]]></content>
@@ -8,8 +20,8 @@
         <category>openstack</category>
       </categories>
       <tags>
-        <tag>OpenStack</tag>
         <tag>Ansible</tag>
+        <tag>OpenStack</tag>
         <tag>tools</tag>
       </tags>
   </entry>

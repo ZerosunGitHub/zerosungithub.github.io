@@ -131,7 +131,10 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://zerosun.top/img/OSAdeployment-architecture.jpg">
 <meta property="og:image" content="https://zerosun.top/img/loghost.png">
-<meta property="og:updated_time" content="2019-08-14T03:41:27.933Z">
+<meta property="og:image" content="https://zerosun.top/img/installation-workflow-overview.png">
+<meta property="og:image" content="https://zerosun.top/img/openstackdeployarc.png">
+<meta property="og:image" content="https://zerosun.top/img/OSAdeploy-host.png">
+<meta property="og:updated_time" content="2019-08-20T08:45:18.696Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OSA（二）：Ansible部署Opensatck">
 <meta name="twitter:description" content="OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。">
@@ -463,7 +466,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-08-14 11:41:27" itemprop="dateModified" datetime="2019-08-14T11:41:27+08:00">2019-08-14</time>
+                <time title="修改时间：2019-08-20 16:45:18" itemprop="dateModified" datetime="2019-08-20T16:45:18+08:00">2019-08-20</time>
               
             
           </span>
@@ -523,10 +526,10 @@
 
       
         <p>OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。<br><a id="more"></a><br>项目地址：<a href="https://github.com/openstack/openstack-ansible" target="_blank" rel="noopener">https://github.com/openstack/openstack-ansible</a></p>
-<h1 id="关于OSA"><a href="#关于OSA" class="headerlink" title="关于OSA"></a>关于OSA</h1><p>OSA项目的一个独特功能是使用容器来隔离和管理OpenStack服务。<br>OSA在LXC容器中安装OpenStack服务，为每个服务提供隔离环境。<br>LXC是一个操作系统级容器，它包含一个完整的操作系统环境，包括单独的文件系统、网络堆栈，并使用cgroups进行资源隔离。<br>LXC是Linux中非常流行的容器实现，允许隔离包括文件系统在内的资源，以运行多个应用程序和一组层序，并且不会相互干扰。</p>
-<h1 id="OSA部署架构"><a href="#OSA部署架构" class="headerlink" title="OSA部署架构"></a>OSA部署架构</h1><p>OSA部署过程开始于一台部署主机，我们记为：deployment host。<br><img src="/img/OSAdeployment-architecture.jpg" alt="img"></p>
+<h1 id="0x00-关于OSA"><a href="#0x00-关于OSA" class="headerlink" title="0x00 关于OSA"></a>0x00 关于OSA</h1><p>OSA项目的一个独特功能是使用容器来隔离和管理OpenStack服务。<br>OSA在LXC容器中安装OpenStack服务，为每个服务提供隔离环境。<br>LXC是一个操作系统级容器，它包含一个完整的操作系统环境，包括单独的文件系统、网络堆栈，并使用cgroups进行资源隔离。<br>LXC是Linux中非常流行的容器实现，允许隔离包括文件系统在内的资源，以运行多个应用程序和一组层序，并且不会相互干扰。</p>
+<h1 id="0x01-OSA部署架构"><a href="#0x01-OSA部署架构" class="headerlink" title="0x01 OSA部署架构"></a>0x01 OSA部署架构</h1><p>OSA部署过程开始于一台部署主机，我们记为：deployment host。<br><img src="/img/OSAdeployment-architecture.jpg" alt="img"></p>
 <h2 id="部署主机"><a href="#部署主机" class="headerlink" title="部署主机"></a>部署主机</h2><p>在部署主机安装Ansible，运行OSA playbook，并负责编排目标主机上的OpenStack安装。</p>
-<h2 id="目标主机"><a href="#目标主机" class="headerlink" title="目标主机"></a>目标主机</h2><p>Ansible目标主机 target host 是用来运行OpenStack服务的主机。目标主机上可以安装Ubuntu 14.04 LTS操作系统（或者Ubuntu 16.04.2，Ubuntu 18.04.2）。后面我会使用Ubuntu 16.04.2 进行部署过程的详解。在目标主机需要配置基于SSH密钥的身份验证，以允许从部署主机上登录。<br>OSA架构将目标主机分为以下几组：</p>
+<h2 id="目标主机"><a href="#目标主机" class="headerlink" title="目标主机"></a>目标主机</h2><p>Ansible目标主机 target host 是用来运行OpenStack服务的主机。目标主机上可以安装Ubuntu 14.04 LTS操作系统（或者Ubuntu 16.04.2，Ubuntu 18.04.2）。后面我会使用Ubuntu 16.04.2 server版64位进行部署过程的详解。在目标主机需要配置基于SSH密钥的身份验证，以允许从部署主机上登录。<br>OSA架构将目标主机分为以下几组：</p>
 <ul>
 <li>基础架构个控制平面主机</li>
 <li>日志主机</li>
@@ -539,8 +542,23 @@
 <li>OpenStack控制平面服务<br>-认证服务Keystone<br>-镜像服务Glance<br>-计算管理服务Nova<br>-网络服务Neutron<br>-其他API服务，如Heat，Ceilmeter等。</li>
 </ul>
 <h3 id="日志主机"><a href="#日志主机" class="headerlink" title="日志主机"></a>日志主机</h3><p>日志服务器使用Logstash和Elasticsearch托管一个集中式日志服务器（如rsyslog）和一个日志分析器。可以在计算主机上运行Nova计算服务，以及网络和日志代理。<br><img src="/img/loghost.png" alt="img"><br>对于生产环境需要都的存储主机来运行Cinder调度器和Cinder卷服务，以提供存储服务。</p>
-<h1 id="构建开发环境"><a href="#构建开发环境" class="headerlink" title="构建开发环境"></a>构建开发环境</h1><p>OpenStack Ansible所提供的模式是AIO（All-In-One）模式，以便开发和测试。在AIO模式下，安装过程依然使用容器化服务的方法，在多个LXC中运行OpenStack服务。所有的服务都会有自己的私有容器。</p>
-<h2 id="配置开发机器"><a href="#配置开发机器" class="headerlink" title="配置开发机器"></a>配置开发机器</h2>
+<h1 id="0x02-OpenStack-Ansible安装部署"><a href="#0x02-OpenStack-Ansible安装部署" class="headerlink" title="0x02 OpenStack Ansible安装部署"></a>0x02 OpenStack Ansible安装部署</h1><p>参考文档：<br><a href="https://docs.openstack.org/openstack-ansible/latest/" target="_blank" rel="noopener">https://docs.openstack.org/openstack-ansible/latest/</a></p>
+<p><a href="https://docs.openstack.org/openstack-ansible/rocky/" target="_blank" rel="noopener">https://docs.openstack.org/openstack-ansible/rocky/</a></p>
+<h2 id="概览"><a href="#概览" class="headerlink" title="概览"></a>概览</h2><p>涉及以下两种主机</p>
+<ul>
+<li>部署主机，运行Ansible playbooks</li>
+<li>目标主机，Ansible安装OpenStack服务和基础架构组件<br>1.一般安装工作流程<br><img src="/img/installation-workflow-overview.png" alt="img"><br>2.安装要求与建议</li>
+</ul>
+<h2 id="部署节点"><a href="#部署节点" class="headerlink" title="部署节点"></a>部署节点</h2><p>部署节点（deployment node）上运行着Ansible OpenStack工具，它将在目标节点（target node）上编排OpenStack云节点。这里部署节点安装Ubuntu 16.04.2 server版 64位操作系统。<br>要在部署节点上运行OpenStack Ansible，需执行以下步骤：<br><img src="/img/openstackdeployarc.png" alt="img"></p>
+<p>1.安装必要的依赖包<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install aptitude build-essential git ntp ntpdate openssh-server python-dev  -y</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 注意先要检查系统python版本而后安装更新pip版本</span></span><br><span class="line">curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py</span><br><span class="line">python get-pip.py</span><br></pre></td></tr></table></figure></p>
+<p>2.配置NTP同步网络时间</p>
+<p>3.配置网络<br>使得目标主机可以从部署主机上访问到。</p>
+<p>4.克隆OpenStack Ansible代码仓库<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b TAG https://github.com/openstack/openstack-ansible.git /opt/openstack-ansible</span><br></pre></td></tr></table></figure></p>
+<p>5.启动 OpenStack Ansible</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /opt//opt/openstack-ansible</span><br><span class="line">./scripts/bootstrap-ansible.sh</span><br></pre></td></tr></table></figure>
+<p>6.创建SSH密钥<br>在部署节点上生成SSH密钥</p>
+<p>7.安装完成<br>需要等待比较久的时间，中间因为python版本和pip的版本问题重新执行了几次bootstrap-ansible.sh脚本。<br><img src="/img/OSAdeploy-host.png" alt="img"></p>
+<h2 id="控制节点环境准备"><a href="#控制节点环境准备" class="headerlink" title="控制节点环境准备"></a>控制节点环境准备</h2>
       
     </div>
 
@@ -666,8 +684,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/08/12/ansible-intro/" rel="next" title="OSA（一）：Ansible介绍">
-                <i class="fa fa-chevron-left"></i> OSA（一）：Ansible介绍
+              <a href="/2019/08/12/ansible-intro/" rel="next" title="OSA：Ansible介绍">
+                <i class="fa fa-chevron-left"></i> OSA：Ansible介绍
               </a>
             
           </div>
@@ -947,7 +965,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#关于OSA"><span class="nav-number">1.</span> <span class="nav-text">关于OSA</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#OSA部署架构"><span class="nav-number">2.</span> <span class="nav-text">OSA部署架构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#部署主机"><span class="nav-number">2.1.</span> <span class="nav-text">部署主机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目标主机"><span class="nav-number">2.2.</span> <span class="nav-text">目标主机</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基础架构和控制平面主机"><span class="nav-number">2.2.1.</span> <span class="nav-text">基础架构和控制平面主机</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#日志主机"><span class="nav-number">2.2.2.</span> <span class="nav-text">日志主机</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#构建开发环境"><span class="nav-number">3.</span> <span class="nav-text">构建开发环境</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#配置开发机器"><span class="nav-number">3.1.</span> <span class="nav-text">配置开发机器</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#0x00-关于OSA"><span class="nav-number">1.</span> <span class="nav-text">0x00 关于OSA</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x01-OSA部署架构"><span class="nav-number">2.</span> <span class="nav-text">0x01 OSA部署架构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#部署主机"><span class="nav-number">2.1.</span> <span class="nav-text">部署主机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目标主机"><span class="nav-number">2.2.</span> <span class="nav-text">目标主机</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基础架构和控制平面主机"><span class="nav-number">2.2.1.</span> <span class="nav-text">基础架构和控制平面主机</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#日志主机"><span class="nav-number">2.2.2.</span> <span class="nav-text">日志主机</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x02-OpenStack-Ansible安装部署"><span class="nav-number">3.</span> <span class="nav-text">0x02 OpenStack Ansible安装部署</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概览"><span class="nav-number">3.1.</span> <span class="nav-text">概览</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署节点"><span class="nav-number">3.2.</span> <span class="nav-text">部署节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#控制节点环境准备"><span class="nav-number">3.3.</span> <span class="nav-text">控制节点环境准备</span></a></li></ol></li></ol></div>
             
 
           </div>
