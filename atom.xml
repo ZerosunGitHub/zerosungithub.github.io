@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-08-20T08:45:18.696Z</updated>
+  <updated>2019-08-20T09:13:06.864Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>OSA（二）：Ansible部署Opensatck</title>
+    <title>OSA：Ansible部署Opensatck</title>
     <link href="https://zerosun.top/2019/08/12/openstack-deploying-by-Ansible/"/>
     <id>https://zerosun.top/2019/08/12/openstack-deploying-by-Ansible/</id>
     <published>2019-08-12T02:22:01.000Z</published>
-    <updated>2019-08-20T08:45:18.696Z</updated>
+    <updated>2019-08-20T09:13:06.864Z</updated>
     
     <summary type="html">
     
@@ -32,9 +32,9 @@
       <category term="openstack" scheme="https://zerosun.top/categories/openstack/"/>
     
     
-      <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
-    
       <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
+    
+      <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
     
   </entry>
   
@@ -145,7 +145,7 @@
     <link href="https://zerosun.top/2019/07/08/openstack-image-making/"/>
     <id>https://zerosun.top/2019/07/08/openstack-image-making/</id>
     <published>2019-07-08T14:01:33.000Z</published>
-    <updated>2019-08-02T02:28:21.231Z</updated>
+    <updated>2019-08-20T08:51:54.639Z</updated>
     
     <summary type="html">
     
@@ -280,9 +280,9 @@
       <category term="favorites" scheme="https://zerosun.top/categories/favorites/"/>
     
     
-      <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
-    
       <category term="RSS" scheme="https://zerosun.top/tags/RSS/"/>
+    
+      <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
     
   </entry>
   
@@ -423,9 +423,9 @@
       <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
     
     
-      <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
-    
       <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
+    
+      <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
     
       <category term="SmartContract" scheme="https://zerosun.top/tags/SmartContract/"/>
     
