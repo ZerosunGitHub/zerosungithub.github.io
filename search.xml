@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[openstack-deploying-by-Kolla-Ansible]]></title>
+    <title><![CDATA[Kolla-Ansible 部署OpenStack]]></title>
     <url>%2F2019%2F08%2F21%2Fopenstack-deploying-by-Kolla-Ansible%2F</url>
-    <content type="text"><![CDATA[参考链接https://docs.openstack.org/stein/选择R版https://docs.openstack.org/rocky/index.html]]></content>
+    <content type="text"><![CDATA[待更新。。。参考链接https://docs.openstack.org/stein/ 选择R版https://docs.openstack.org/rocky/index.html]]></content>
       <categories>
         <category>openstack</category>
       </categories>
       <tags>
-        <tag>Ansible</tag>
         <tag>OpenStack</tag>
+        <tag>Ansible</tag>
         <tag>tools</tag>
         <tag>Kolla</tag>
       </tags>
@@ -23,8 +23,8 @@
       </categories>
       <tags>
         <tag>Tools</tag>
-        <tag>Ansible</tag>
         <tag>OpenStack</tag>
+        <tag>Ansible</tag>
       </tags>
   </entry>
   <entry>
@@ -35,8 +35,8 @@
         <category>openstack</category>
       </categories>
       <tags>
-        <tag>Ansible</tag>
         <tag>OpenStack</tag>
+        <tag>Ansible</tag>
         <tag>tools</tag>
       </tags>
   </entry>
