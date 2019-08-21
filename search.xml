@@ -3,15 +3,15 @@
   <entry>
     <title><![CDATA[Kolla-Ansible 部署OpenStack]]></title>
     <url>%2F2019%2F08%2F21%2Fopenstack-deploying-by-Kolla-Ansible%2F</url>
-    <content type="text"><![CDATA[待更新。。。参考链接https://docs.openstack.org/stein/ 选择R版https://docs.openstack.org/rocky/index.html https://docs.openstack.org/rocky/deploy/ https://docs.openstack.org/project-deploy-guide/kolla-ansible/rocky/]]></content>
+    <content type="text"><![CDATA[待更新。。。参考链接https://docs.openstack.org/stein/ 选择R版https://docs.openstack.org/rocky/index.html https://docs.openstack.org/rocky/deploy/ https://docs.openstack.org/project-deploy-guide/kolla-ansible/rocky/ 操作环境系统：Ubuntu server 16.04.2 LTS 64位]]></content>
       <categories>
         <category>openstack</category>
       </categories>
       <tags>
         <tag>Ansible</tag>
+        <tag>Kolla</tag>
         <tag>OpenStack</tag>
         <tag>tools</tag>
-        <tag>Kolla</tag>
       </tags>
   </entry>
   <entry>
