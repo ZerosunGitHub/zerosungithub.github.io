@@ -122,7 +122,7 @@
 
 
   <meta name="description" content="OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。 持续更新中。">
-<meta name="keywords" content="Tools,OpenStack,Ansible">
+<meta name="keywords" content="Tools,Ansible,OpenStack">
 <meta property="og:type" content="article">
 <meta property="og:title" content="OpenStack Ansible部署OpenStack">
 <meta property="og:url" content="https://zerosun.top/2019/08/12/openstack-deploying-by-OSA/index.html">
@@ -564,7 +564,7 @@
 <h1 id="0x03-部署"><a href="#0x03-部署" class="headerlink" title="0x03 部署"></a>0x03 部署</h1><h2 id="准备部署节点"><a href="#准备部署节点" class="headerlink" title="准备部署节点"></a>准备部署节点</h2><p>部署节点（deployment node）上运行着Ansible OpenStack工具，它将在目标节点（target node）上编排OpenStack云节点。这里部署节点安装Ubuntu 16.04.2 server版 64位操作系统。<br>要在部署节点上运行OpenStack Ansible，需执行以下步骤：</p>
 <p><img src="/img/installation-workflow-deploymenthost.png" alt="img"></p>
 <p>参考链接<br><a href="https://docs.openstack.org/project-deploy-guide/openstack-ansible/rocky/deploymenthost.html" target="_blank" rel="noopener">https://docs.openstack.org/project-deploy-guide/openstack-ansible/rocky/deploymenthost.html</a></p>
-<p>1.安装必要的依赖包<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install aptitude build-essential git ntp ntpdate openssh-server python-dev  -y</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 注意先要检查系统python版本而后安装更新pip版本</span><br><span class="line">curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py</span><br><span class="line">python get-pip.py</span><br></pre></td></tr></table></figure></p>
+<p>1.安装必要的依赖包<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install aptitude build-essential git ntp ntpdate openssh-server python-dev  -y</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 注意先要检查系统python版本而后安装更新pip版本</span></span><br><span class="line">curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py</span><br><span class="line">python get-pip.py</span><br></pre></td></tr></table></figure></p>
 <p>2.配置NTP同步网络时间</p>
 <p>3.配置网络<br>使得目标主机可以从部署主机上访问到。</p>
 <p>4.克隆OpenStack Ansible代码仓库<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b TAG https://github.com/openstack/openstack-ansible.git /opt/openstack-ansible</span><br></pre></td></tr></table></figure></p>
@@ -712,9 +712,9 @@
           
             <a href="/tags/Tools/" rel="tag"><i class="fa fa-tag"></i> Tools</a>
           
-            <a href="/tags/OpenStack/" rel="tag"><i class="fa fa-tag"></i> OpenStack</a>
-          
             <a href="/tags/Ansible/" rel="tag"><i class="fa fa-tag"></i> Ansible</a>
+          
+            <a href="/tags/OpenStack/" rel="tag"><i class="fa fa-tag"></i> OpenStack</a>
           
         </div>
       

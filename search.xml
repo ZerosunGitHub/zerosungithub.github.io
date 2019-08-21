@@ -3,15 +3,15 @@
   <entry>
     <title><![CDATA[Kolla-Ansible 部署OpenStack]]></title>
     <url>%2F2019%2F08%2F21%2Fopenstack-deploying-by-Kolla-Ansible%2F</url>
-    <content type="text"><![CDATA[待更新。。。参考链接https://docs.openstack.org/stein/ 选择R版https://docs.openstack.org/rocky/index.html]]></content>
+    <content type="text"><![CDATA[待更新。。。参考链接https://docs.openstack.org/stein/ 选择R版https://docs.openstack.org/rocky/index.html https://docs.openstack.org/rocky/deploy/ https://docs.openstack.org/project-deploy-guide/kolla-ansible/rocky/]]></content>
       <categories>
         <category>openstack</category>
       </categories>
       <tags>
-        <tag>OpenStack</tag>
         <tag>Ansible</tag>
-        <tag>Kolla</tag>
+        <tag>OpenStack</tag>
         <tag>tools</tag>
+        <tag>Kolla</tag>
       </tags>
   </entry>
   <entry>
@@ -23,8 +23,8 @@
       </categories>
       <tags>
         <tag>Tools</tag>
-        <tag>OpenStack</tag>
         <tag>Ansible</tag>
+        <tag>OpenStack</tag>
       </tags>
   </entry>
   <entry>
@@ -35,8 +35,8 @@
         <category>openstack</category>
       </categories>
       <tags>
-        <tag>OpenStack</tag>
         <tag>Ansible</tag>
+        <tag>OpenStack</tag>
         <tag>tools</tag>
       </tags>
   </entry>
@@ -229,8 +229,8 @@
         <category>blockchain</category>
       </categories>
       <tags>
-        <tag>BlockChain</tag>
         <tag>Ethereum</tag>
+        <tag>BlockChain</tag>
         <tag>SmartContract</tag>
       </tags>
   </entry>
@@ -265,9 +265,9 @@
         <category>blockchain</category>
       </categories>
       <tags>
-        <tag>BlockChain</tag>
         <tag>Ethereum</tag>
         <tag>MIST</tag>
+        <tag>BlockChain</tag>
       </tags>
   </entry>
   <entry>
