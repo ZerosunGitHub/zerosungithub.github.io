@@ -121,13 +121,13 @@
 
 
 
-  <meta name="description" content="OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。">
+  <meta name="description" content="OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。 持续更新中。">
 <meta name="keywords" content="Tools,OpenStack,Ansible">
 <meta property="og:type" content="article">
 <meta property="og:title" content="OpenStack Ansible部署OpenStack">
 <meta property="og:url" content="https://zerosun.top/2019/08/12/openstack-deploying-by-OSA/index.html">
 <meta property="og:site_name" content="北岸冷若冰霜">
-<meta property="og:description" content="OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。">
+<meta property="og:description" content="OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。 持续更新中。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://zerosun.top/img/OSAdeployment-architecture.jpg">
 <meta property="og:image" content="https://zerosun.top/img/loghost.png">
@@ -137,10 +137,11 @@
 <meta property="og:image" content="https://zerosun.top/img/installation-workflow-targethosts.png">
 <meta property="og:image" content="https://zerosun.top/img/installation-workflow-configure-deployment.png">
 <meta property="og:image" content="https://zerosun.top/img/installation-workflow-run-playbooks.png">
-<meta property="og:updated_time" content="2019-08-21T07:15:11.885Z">
+<meta property="og:image" content="https://zerosun.top/img/installation-workflow-verify-openstack.png">
+<meta property="og:updated_time" content="2019-08-21T07:46:21.258Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OpenStack Ansible部署OpenStack">
-<meta name="twitter:description" content="OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。">
+<meta name="twitter:description" content="OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。 持续更新中。">
 <meta name="twitter:image" content="https://zerosun.top/img/OSAdeployment-architecture.jpg">
 
 
@@ -469,7 +470,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-08-21 15:15:11" itemprop="dateModified" datetime="2019-08-21T15:15:11+08:00">2019-08-21</time>
+                <time title="修改时间：2019-08-21 15:46:21" itemprop="dateModified" datetime="2019-08-21T15:46:21+08:00">2019-08-21</time>
               
             
           </span>
@@ -528,7 +529,8 @@
       
 
       
-        <p>OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。<br><a id="more"></a><br>项目地址：<a href="https://github.com/openstack/openstack-ansible" target="_blank" rel="noopener">https://github.com/openstack/openstack-ansible</a></p>
+        <p>OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。</p>
+<p>持续更新中。<br><a id="more"></a><br>项目地址：<a href="https://github.com/openstack/openstack-ansible" target="_blank" rel="noopener">https://github.com/openstack/openstack-ansible</a></p>
 <h1 id="0x00-关于OSA"><a href="#0x00-关于OSA" class="headerlink" title="0x00 关于OSA"></a>0x00 关于OSA</h1><p>OSA项目的一个独特功能是使用容器来隔离和管理OpenStack服务。<br>OSA在LXC容器中安装OpenStack服务，为每个服务提供隔离环境。<br>LXC是一个操作系统级容器，它包含一个完整的操作系统环境，包括单独的文件系统、网络堆栈，并使用cgroups进行资源隔离。<br>LXC是Linux中非常流行的容器实现，允许隔离包括文件系统在内的资源，以运行多个应用程序和一组层序，并且不会相互干扰。</p>
 <h1 id="0x01-OpenStack-Ansible部署架构"><a href="#0x01-OpenStack-Ansible部署架构" class="headerlink" title="0x01 OpenStack Ansible部署架构"></a>0x01 OpenStack Ansible部署架构</h1><p>OSA部署过程开始于一台部署主机，我们记为：deployment host。<br><img src="/img/OSAdeployment-architecture.jpg" alt="img"></p>
 <h2 id="部署主机"><a href="#部署主机" class="headerlink" title="部署主机"></a>部署主机</h2><p>在部署主机安装Ansible，运行OSA playbook，并负责编排目标主机上的OpenStack安装。</p>
@@ -562,7 +564,7 @@
 <h1 id="0x03-部署"><a href="#0x03-部署" class="headerlink" title="0x03 部署"></a>0x03 部署</h1><h2 id="准备部署节点"><a href="#准备部署节点" class="headerlink" title="准备部署节点"></a>准备部署节点</h2><p>部署节点（deployment node）上运行着Ansible OpenStack工具，它将在目标节点（target node）上编排OpenStack云节点。这里部署节点安装Ubuntu 16.04.2 server版 64位操作系统。<br>要在部署节点上运行OpenStack Ansible，需执行以下步骤：</p>
 <p><img src="/img/installation-workflow-deploymenthost.png" alt="img"></p>
 <p>参考链接<br><a href="https://docs.openstack.org/project-deploy-guide/openstack-ansible/rocky/deploymenthost.html" target="_blank" rel="noopener">https://docs.openstack.org/project-deploy-guide/openstack-ansible/rocky/deploymenthost.html</a></p>
-<p>1.安装必要的依赖包<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install aptitude build-essential git ntp ntpdate openssh-server python-dev  -y</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 注意先要检查系统python版本而后安装更新pip版本</span></span><br><span class="line">curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py</span><br><span class="line">python get-pip.py</span><br></pre></td></tr></table></figure></p>
+<p>1.安装必要的依赖包<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install aptitude build-essential git ntp ntpdate openssh-server python-dev  -y</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 注意先要检查系统python版本而后安装更新pip版本</span><br><span class="line">curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py</span><br><span class="line">python get-pip.py</span><br></pre></td></tr></table></figure></p>
 <p>2.配置NTP同步网络时间</p>
 <p>3.配置网络<br>使得目标主机可以从部署主机上访问到。</p>
 <p>4.克隆OpenStack Ansible代码仓库<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b TAG https://github.com/openstack/openstack-ansible.git /opt/openstack-ansible</span><br></pre></td></tr></table></figure></p>
@@ -602,9 +604,22 @@
 <p>3.将openstack_user_config.yml.example文件复制到 /etc/openstack_deploy/openstack_user_config.yml。</p>
 <p>4.查看该openstack_user_config.yml文件并更改OpenStack环境的部署。</p>
 <p>5.查看该user_variables.yml文件以配置全局和特定于角色的部署选项。该文件包含一些示例变量和注释，但您可以在每个角色的特定文档中获取完整的变量列表</p>
-<h2 id="运行OpenStack-Ansible-playbooks"><a href="#运行OpenStack-Ansible-playbooks" class="headerlink" title="运行OpenStack-Ansible playbooks"></a>运行OpenStack-Ansible playbooks</h2><p>参考链接<br><a href="https://docs.openstack.org/project-deploy-guide/openstack-ansible/rocky/run-playbooks.html" target="_blank" rel="noopener">https://docs.openstack.org/project-deploy-guide/openstack-ansible/rocky/run-playbooks.html</a></p>
+<h3 id="安装附加服务"><a href="#安装附加服务" class="headerlink" title="安装附加服务"></a>安装附加服务</h3><h3 id="高级服务配置"><a href="#高级服务配置" class="headerlink" title="高级服务配置"></a>高级服务配置</h3><h3 id="配置服务凭证"><a href="#配置服务凭证" class="headerlink" title="配置服务凭证"></a>配置服务凭证</h3><h2 id="运行OpenStack-Ansible-playbooks"><a href="#运行OpenStack-Ansible-playbooks" class="headerlink" title="运行OpenStack-Ansible playbooks"></a>运行OpenStack-Ansible playbooks</h2><p>参考链接<br><a href="https://docs.openstack.org/project-deploy-guide/openstack-ansible/rocky/run-playbooks.html" target="_blank" rel="noopener">https://docs.openstack.org/project-deploy-guide/openstack-ansible/rocky/run-playbooks.html</a></p>
 <p><img src="/img/installation-workflow-run-playbooks.png" alt="img"></p>
-
+<p>安装过程需要运行三个主要的剧本：</p>
+<ul>
+<li>The setup-hosts.yml Ansible foundation playbook prepares the target hosts for infrastructure and OpenStack services, builds and restarts containers on target hosts, and installs common components into containers on target hosts.</li>
+<li>The setup-infrastructure.yml Ansible infrastructure playbook installs infrastructure services: Memcached, the repository server, Galera, RabbitMQ, and rsyslog.</li>
+<li>The setup-openstack.yml OpenStack playbook installs OpenStack services, including Identity (keystone), Image (glance), Block Storage (cinder), Compute (nova), Networking (neutron), etc.</li>
+</ul>
+<h3 id="检查配置文件的完整性"><a href="#检查配置文件的完整性" class="headerlink" title="检查配置文件的完整性"></a>检查配置文件的完整性</h3><p>在运行任何playbook之前，请检查配置文件的完整性。<br>1.确保/etc/openstack_deploy目录中编辑的所有文件都符合 Ansible YAML。<br>2.检查YAML文件的完整性。<br>3.切换到/opt/openstack-ansible/playbooks目录，然后运行以下命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /opt/openstack-ansible/playbooks</span><br><span class="line">openstack-ansible setup-infrastructure.yml --syntax-check</span><br></pre></td></tr></table></figure>
+<p>4.重新检查所有缩进是否正确。</p>
+<h3 id="运行剧本安装OpenStack"><a href="#运行剧本安装OpenStack" class="headerlink" title="运行剧本安装OpenStack"></a>运行剧本安装OpenStack</h3><p>1.切换到/opt/openstack-ansible/playbooks目录。</p>
+<p>2.运行主机设置手册：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /opt/openstack-ansible/playbooks</span><br><span class="line">openstack-ansible setup-hosts.yml</span><br></pre></td></tr></table></figure></p>
+<h2 id="验证OpenStack操作"><a href="#验证OpenStack操作" class="headerlink" title="验证OpenStack操作"></a>验证OpenStack操作</h2><p>参考链接<br><a href="https://docs.openstack.org/project-deploy-guide/openstack-ansible/rocky/verify-operation.html" target="_blank" rel="noopener">https://docs.openstack.org/project-deploy-guide/openstack-ansible/rocky/verify-operation.html</a></p>
+<p><img src="/img/installation-workflow-verify-openstack.png" alt="img"></p>
+<h3 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h3><h3 id="验证仪表板"><a href="#验证仪表板" class="headerlink" title="验证仪表板"></a>验证仪表板</h3><h1 id="over"><a href="#over" class="headerlink" title="over"></a>over</h1>
       
     </div>
 
@@ -1019,7 +1034,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#0x00-关于OSA"><span class="nav-number">1.</span> <span class="nav-text">0x00 关于OSA</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x01-OpenStack-Ansible部署架构"><span class="nav-number">2.</span> <span class="nav-text">0x01 OpenStack Ansible部署架构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#部署主机"><span class="nav-number">2.1.</span> <span class="nav-text">部署主机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目标主机"><span class="nav-number">2.2.</span> <span class="nav-text">目标主机</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基础架构和控制平面主机"><span class="nav-number">2.2.1.</span> <span class="nav-text">基础架构和控制平面主机</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#日志主机"><span class="nav-number">2.2.2.</span> <span class="nav-text">日志主机</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x02-OpenStack-Ansible部署概览"><span class="nav-number">3.</span> <span class="nav-text">0x02 OpenStack Ansible部署概览</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x03-部署"><span class="nav-number">4.</span> <span class="nav-text">0x03 部署</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备部署节点"><span class="nav-number">4.1.</span> <span class="nav-text">准备部署节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备目标节点"><span class="nav-number">4.2.</span> <span class="nav-text">准备目标节点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#系统配置"><span class="nav-number">4.2.1.</span> <span class="nav-text">系统配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SSH配置"><span class="nav-number">4.2.2.</span> <span class="nav-text">SSH配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络配置"><span class="nav-number">4.2.3.</span> <span class="nav-text">网络配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置部署"><span class="nav-number">4.3.</span> <span class="nav-text">配置部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化环境配置"><span class="nav-number">4.3.1.</span> <span class="nav-text">初始化环境配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运行OpenStack-Ansible-playbooks"><span class="nav-number">4.4.</span> <span class="nav-text">运行OpenStack-Ansible playbooks</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#0x00-关于OSA"><span class="nav-number">1.</span> <span class="nav-text">0x00 关于OSA</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x01-OpenStack-Ansible部署架构"><span class="nav-number">2.</span> <span class="nav-text">0x01 OpenStack Ansible部署架构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#部署主机"><span class="nav-number">2.1.</span> <span class="nav-text">部署主机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目标主机"><span class="nav-number">2.2.</span> <span class="nav-text">目标主机</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基础架构和控制平面主机"><span class="nav-number">2.2.1.</span> <span class="nav-text">基础架构和控制平面主机</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#日志主机"><span class="nav-number">2.2.2.</span> <span class="nav-text">日志主机</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x02-OpenStack-Ansible部署概览"><span class="nav-number">3.</span> <span class="nav-text">0x02 OpenStack Ansible部署概览</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x03-部署"><span class="nav-number">4.</span> <span class="nav-text">0x03 部署</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备部署节点"><span class="nav-number">4.1.</span> <span class="nav-text">准备部署节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备目标节点"><span class="nav-number">4.2.</span> <span class="nav-text">准备目标节点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#系统配置"><span class="nav-number">4.2.1.</span> <span class="nav-text">系统配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SSH配置"><span class="nav-number">4.2.2.</span> <span class="nav-text">SSH配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络配置"><span class="nav-number">4.2.3.</span> <span class="nav-text">网络配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置部署"><span class="nav-number">4.3.</span> <span class="nav-text">配置部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化环境配置"><span class="nav-number">4.3.1.</span> <span class="nav-text">初始化环境配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装附加服务"><span class="nav-number">4.3.2.</span> <span class="nav-text">安装附加服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高级服务配置"><span class="nav-number">4.3.3.</span> <span class="nav-text">高级服务配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置服务凭证"><span class="nav-number">4.3.4.</span> <span class="nav-text">配置服务凭证</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运行OpenStack-Ansible-playbooks"><span class="nav-number">4.4.</span> <span class="nav-text">运行OpenStack-Ansible playbooks</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#检查配置文件的完整性"><span class="nav-number">4.4.1.</span> <span class="nav-text">检查配置文件的完整性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运行剧本安装OpenStack"><span class="nav-number">4.4.2.</span> <span class="nav-text">运行剧本安装OpenStack</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#验证OpenStack操作"><span class="nav-number">4.5.</span> <span class="nav-text">验证OpenStack操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#验证"><span class="nav-number">4.5.1.</span> <span class="nav-text">验证</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#验证仪表板"><span class="nav-number">4.5.2.</span> <span class="nav-text">验证仪表板</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#over"><span class="nav-number">5.</span> <span class="nav-text">over</span></a></li></ol></div>
             
 
           </div>
