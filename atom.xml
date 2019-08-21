@@ -36,9 +36,9 @@
     
       <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
     
-      <category term="Kolla" scheme="https://zerosun.top/tags/Kolla/"/>
-    
       <category term="tools" scheme="https://zerosun.top/tags/tools/"/>
+    
+      <category term="Kolla" scheme="https://zerosun.top/tags/Kolla/"/>
     
   </entry>
   
@@ -47,7 +47,7 @@
     <link href="https://zerosun.top/2019/08/12/openstack-deploying-by-OSA/"/>
     <id>https://zerosun.top/2019/08/12/openstack-deploying-by-OSA/</id>
     <published>2019-08-12T02:22:01.000Z</published>
-    <updated>2019-08-21T05:47:44.914Z</updated>
+    <updated>2019-08-21T06:30:58.275Z</updated>
     
     <summary type="html">
     
