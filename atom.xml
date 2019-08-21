@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-08-21T03:47:01.769Z</updated>
+  <updated>2019-08-21T06:00:39.582Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>OSA：Ansible部署OpenStack</title>
-    <link href="https://zerosun.top/2019/08/12/openstack-deploying-by-Ansible/"/>
-    <id>https://zerosun.top/2019/08/12/openstack-deploying-by-Ansible/</id>
+    <title>openstack-deploying-by-Kolla-Ansible</title>
+    <link href="https://zerosun.top/2019/08/21/openstack-deploying-by-Kolla-Ansible/"/>
+    <id>https://zerosun.top/2019/08/21/openstack-deploying-by-Kolla-Ansible/</id>
+    <published>2019-08-21T05:47:04.000Z</published>
+    <updated>2019-08-21T06:00:39.582Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;参考链接&lt;br&gt;&lt;a href=&quot;https://docs.openstack.org/stein/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://docs.openstack.org/stein/&lt;/a&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="openstack" scheme="https://zerosun.top/categories/openstack/"/>
+    
+    
+      <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
+    
+      <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
+    
+      <category term="Kolla" scheme="https://zerosun.top/tags/Kolla/"/>
+    
+      <category term="tools" scheme="https://zerosun.top/tags/tools/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>OpenStack Ansible部署OpenStack</title>
+    <link href="https://zerosun.top/2019/08/12/openstack-deploying-by-OSA/"/>
+    <id>https://zerosun.top/2019/08/12/openstack-deploying-by-OSA/</id>
     <published>2019-08-12T02:22:01.000Z</published>
-    <updated>2019-08-21T03:47:01.769Z</updated>
+    <updated>2019-08-21T05:47:44.914Z</updated>
     
     <summary type="html">
     
@@ -36,14 +62,16 @@
     
       <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
     
+      <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
+    
   </entry>
   
   <entry>
-    <title>OSA：Ansible介绍</title>
-    <link href="https://zerosun.top/2019/08/12/ansible-intro/"/>
-    <id>https://zerosun.top/2019/08/12/ansible-intro/</id>
+    <title>Ansible介绍</title>
+    <link href="https://zerosun.top/2019/08/12/openstack-Ansible-intro/"/>
+    <id>https://zerosun.top/2019/08/12/openstack-Ansible-intro/</id>
     <published>2019-08-12T02:21:40.000Z</published>
-    <updated>2019-08-14T07:21:22.327Z</updated>
+    <updated>2019-08-21T05:46:07.855Z</updated>
     
     <summary type="html">
     
@@ -404,30 +432,6 @@
     
     
       <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>以太坊智能合约-环境搭建</title>
-    <link href="https://zerosun.top/2018/09/18/Ethereum-SmartContract-setup-env/"/>
-    <id>https://zerosun.top/2018/09/18/Ethereum-SmartContract-setup-env/</id>
-    <published>2018-09-18T07:55:54.000Z</published>
-    <updated>2018-11-08T08:54:09.800Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;智能合约开发环境搭建&quot;&gt;&lt;a href=&quot;#智能合约开发环境搭建&quot; class=&quot;headerlink&quot; title=&quot;智能合约开发环境搭建&quot;&gt;&lt;/a&gt;智能合约开发环境搭建&lt;/h1&gt;&lt;p&gt;进行智能合约开发环境搭建前，建议自行搭建一遍以太坊私有链&lt;br&gt;
-    
-    </summary>
-    
-      <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
-    
-    
-      <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
-    
-      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
-    
-      <category term="SmartContract" scheme="https://zerosun.top/tags/SmartContract/"/>
     
   </entry>
   
