@@ -122,7 +122,7 @@
 
 
   <meta name="description" content="OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。">
-<meta name="keywords" content="Tools,OpenStack,Ansible">
+<meta name="keywords" content="Tools,Ansible,OpenStack">
 <meta property="og:type" content="article">
 <meta property="og:title" content="OpenStack Ansible部署OpenStack">
 <meta property="og:url" content="https://zerosun.top/2019/08/12/openstack-deploying-by-OSA/index.html">
@@ -135,7 +135,9 @@
 <meta property="og:image" content="https://zerosun.top/img/installation-workflow-deploymenthost.png">
 <meta property="og:image" content="https://zerosun.top/img/OSAdeploy-host.png">
 <meta property="og:image" content="https://zerosun.top/img/installation-workflow-targethosts.png">
-<meta property="og:updated_time" content="2019-08-21T06:30:58.275Z">
+<meta property="og:image" content="https://zerosun.top/2019/08/12/openstack-deploying-by-OSA/installation-workflow-configure-deployment.png">
+<meta property="og:image" content="https://zerosun.top/img/installation-workflow-run-playbooks.png">
+<meta property="og:updated_time" content="2019-08-21T07:10:35.643Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OpenStack Ansible部署OpenStack">
 <meta name="twitter:description" content="OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。">
@@ -467,7 +469,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-08-21 14:30:58" itemprop="dateModified" datetime="2019-08-21T14:30:58+08:00">2019-08-21</time>
+                <time title="修改时间：2019-08-21 15:10:35" itemprop="dateModified" datetime="2019-08-21T15:10:35+08:00">2019-08-21</time>
               
             
           </span>
@@ -557,7 +559,9 @@
 <li>部署主机，运行Ansible playbooks</li>
 <li>目标主机，Ansible安装OpenStack服务和基础架构组件<br>1.一般安装工作流程<br><img src="/img/installation-workflow-overview.png" alt="img"><br>2.安装要求与建议</li>
 </ul>
-<h1 id="0x03-部署准备"><a href="#0x03-部署准备" class="headerlink" title="0x03 部署准备"></a>0x03 部署准备</h1><h2 id="部署节点安装"><a href="#部署节点安装" class="headerlink" title="部署节点安装"></a>部署节点安装</h2><p>部署节点（deployment node）上运行着Ansible OpenStack工具，它将在目标节点（target node）上编排OpenStack云节点。这里部署节点安装Ubuntu 16.04.2 server版 64位操作系统。<br>要在部署节点上运行OpenStack Ansible，需执行以下步骤：<br><img src="/img/installation-workflow-deploymenthost.png" alt="img"></p>
+<h1 id="0x03-部署"><a href="#0x03-部署" class="headerlink" title="0x03 部署"></a>0x03 部署</h1><h2 id="准备部署节点"><a href="#准备部署节点" class="headerlink" title="准备部署节点"></a>准备部署节点</h2><p>部署节点（deployment node）上运行着Ansible OpenStack工具，它将在目标节点（target node）上编排OpenStack云节点。这里部署节点安装Ubuntu 16.04.2 server版 64位操作系统。<br>要在部署节点上运行OpenStack Ansible，需执行以下步骤：</p>
+<p><img src="/img/installation-workflow-deploymenthost.png" alt="img"></p>
+<p>参考链接<br><a href="https://docs.openstack.org/project-deploy-guide/openstack-ansible/rocky/deploymenthost.html" target="_blank" rel="noopener">https://docs.openstack.org/project-deploy-guide/openstack-ansible/rocky/deploymenthost.html</a></p>
 <p>1.安装必要的依赖包<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install aptitude build-essential git ntp ntpdate openssh-server python-dev  -y</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 注意先要检查系统python版本而后安装更新pip版本</span></span><br><span class="line">curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py</span><br><span class="line">python get-pip.py</span><br></pre></td></tr></table></figure></p>
 <p>2.配置NTP同步网络时间</p>
 <p>3.配置网络<br>使得目标主机可以从部署主机上访问到。</p>
@@ -567,14 +571,15 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /opt//opt/openstack-ansible</span><br><span class="line">./scripts/bootstrap-ansible.sh</span><br></pre></td></tr></table></figure>
 <p>6.创建SSH密钥<br>在部署节点上生成SSH密钥<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
 <p>7.安装完成<br>需要等待比较久的时间，中间因为python版本和pip的版本问题重新执行了几次bootstrap-ansible.sh脚本。<br><img src="/img/OSAdeploy-host.png" alt="img"></p>
-<h2 id="控制节点环境"><a href="#控制节点环境" class="headerlink" title="控制节点环境"></a>控制节点环境</h2><p>控制节点的部署准备，需要安装所有API服务，以及公共的和基础架构服务。下面会介绍用于部署控制节点的所有 OpenStack Ansible剧本（playbook）。<br>控制节点是OpenStack Ansible的目标主机（target host）中的一部分。<br><img src="/img/installation-workflow-targethosts.png" alt="img"></p>
-<h3 id="配置软件"><a href="#配置软件" class="headerlink" title="配置软件"></a>配置软件</h3><p>1.更新包源列表<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get update</span><br></pre></td></tr></table></figure></p>
+<h2 id="准备目标节点"><a href="#准备目标节点" class="headerlink" title="准备目标节点"></a>准备目标节点</h2><p>目标节点包含：控制节点和计算节点等。<br>控制节点的部署准备，需要安装所有API服务，以及公共的和基础架构服务。下面会介绍用于部署控制节点的所有 OpenStack Ansible剧本（playbook）。<br>控制节点是OpenStack Ansible的目标主机（target host）中的一部分。<br><img src="/img/installation-workflow-targethosts.png" alt="img"></p>
+<p>参考链接<br><a href="https://docs.openstack.org/project-deploy-guide/openstack-ansible/rocky/targethosts.html" target="_blank" rel="noopener">https://docs.openstack.org/project-deploy-guide/openstack-ansible/rocky/targethosts.html</a></p>
+<h3 id="系统配置"><a href="#系统配置" class="headerlink" title="系统配置"></a>系统配置</h3><p>1.更新包源列表<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get update</span><br></pre></td></tr></table></figure></p>
 <p>2.升级系统包和内核<br>  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get dist-upgrade</span><br></pre></td></tr></table></figure></p>
 <p>3.重新启动主机<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure></p>
-<p>4.安装软件<br>  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-get install aptitude build-essential git ntp ntpdate openssh-server python-dev sudo # 如果在操作系统安装期间未安装其他软件包，请安装</span><br><span class="line">sudo apt-get install bridge-utils debootstrap ifenslave ifenslave-2.6 lsof lvm2 tcpdump vlan -y</span><br></pre></td></tr></table></figure></p>
+<p>4.安装软件<br>  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install bridge-utils debootstrap ifenslave ifenslave-2.6 lsof lvm2 chrony openssh-server sudo tcpdump vlan python</span><br></pre></td></tr></table></figure></p>
 <p>5.配置目标节点与NTP服务器同步</p>
-<h3 id="配置SSH密钥"><a href="#配置SSH密钥" class="headerlink" title="配置SSH密钥"></a>配置SSH密钥</h3><p>ansible使用SSH和公钥身份验证来连接部署主机和目标主机。要在Ansible操作期间减少用户交互，请不要包含密钥对的密码。<br>接下来，从OpenStack Ansible主机向目标节点部署ssh密钥。可以通过将部署主机的公钥添加到每个目标主机上的authorized_keys文件来实现。</p>
-<h3 id="配置网络"><a href="#配置网络" class="headerlink" title="配置网络"></a>配置网络</h3><p>参考链接：<br><a href="https://docs.openstack.org/project-deploy-guide/openstack-ansible/rocky/deploymenthost.html" target="_blank" rel="noopener">https://docs.openstack.org/project-deploy-guide/openstack-ansible/rocky/deploymenthost.html</a></p>
+<h3 id="SSH配置"><a href="#SSH配置" class="headerlink" title="SSH配置"></a>SSH配置</h3><p>ansible使用SSH和公钥身份验证来连接部署主机和目标主机。要在Ansible操作期间减少用户交互，请不要包含密钥对的密码。<br>接下来，从OpenStack Ansible主机向目标节点部署ssh密钥。可以通过将部署主机的公钥添加到每个目标主机上的authorized_keys文件来实现。</p>
+<h3 id="网络配置"><a href="#网络配置" class="headerlink" title="网络配置"></a>网络配置</h3><p>参考链接：<br><a href="https://docs.openstack.org/project-deploy-guide/openstack-ansible/rocky/deploymenthost.html" target="_blank" rel="noopener">https://docs.openstack.org/project-deploy-guide/openstack-ansible/rocky/deploymenthost.html</a></p>
 <p>目标节点的网络设置必须为以下服务提供通信路径</p>
 <ul>
 <li>管理网络</li>
@@ -582,7 +587,24 @@
 <li>租户网络</li>
 </ul>
 <p>OpenStack Ansible使用网桥（bridge）在目标节点上提供上述通信路径。租户网络既可以实现为基于VLAN的网段，也可以使用隧道网络 （如VXLAN）。可通过从单个网卡或多个绑定的网卡上创建子接口来 提供到网桥的物理链接。管理网络由br-mgmt网桥提供，存储网络由brstorage网桥提供，租户网络由br-vlan和br-vxlan网桥提供。<br>尽管多网卡和绑定接口不是必需的，但我们建议在生产环境中采用这种配置。</p>
-<h1 id="0x04-使用OpenStack-playbook部署集群"><a href="#0x04-使用OpenStack-playbook部署集群" class="headerlink" title="0x04 使用OpenStack playbook部署集群"></a>0x04 使用OpenStack playbook部署集群</h1>
+<h2 id="配置部署"><a href="#配置部署" class="headerlink" title="配置部署"></a>配置部署</h2><p>Ansible引用一些包含强制和可选配置指令的文件。在运行Ansible playbooks之前，请修改这些文件以定义目标环境。配置任务包括：</p>
+<p><img src="installation-workflow-configure-deployment.png" alt="img"></p>
+<p>参考链接<br><a href="https://docs.openstack.org/project-deploy-guide/openstack-ansible/rocky/configure.html" target="_blank" rel="noopener">https://docs.openstack.org/project-deploy-guide/openstack-ansible/rocky/configure.html</a></p>
+<ul>
+<li>目标主机网络以定义网桥接口和网络。</li>
+<li>要安装软件的目标主机列表。</li>
+<li>OpenStack Networking（neutron）的虚拟和物理网络关系。</li>
+<li>所有服务的密码。</li>
+</ul>
+<h3 id="初始化环境配置"><a href="#初始化环境配置" class="headerlink" title="初始化环境配置"></a>初始化环境配置</h3><p>OpenStack-Ansible（OSA）依赖于用于为Ansible构建库存的各种文件。在部署主机上执行以下配置。</p>
+<p>1.将/opt/openstack-ansible/etc/openstack_deploy目录的内容复制 到该 /etc/openstack_deploy目录。</p>
+<p>2.切换到/etc/openstack_deploy目录。</p>
+<p>3.将openstack_user_config.yml.example文件复制到 /etc/openstack_deploy/openstack_user_config.yml。</p>
+<p>4.查看该openstack_user_config.yml文件并更改OpenStack环境的部署。</p>
+<p>5.查看该user_variables.yml文件以配置全局和特定于角色的部署选项。该文件包含一些示例变量和注释，但您可以在每个角色的特定文档中获取完整的变量列表</p>
+<h2 id="运行OpenStack-Ansible-playbooks"><a href="#运行OpenStack-Ansible-playbooks" class="headerlink" title="运行OpenStack-Ansible playbooks"></a>运行OpenStack-Ansible playbooks</h2><p>参考链接<br><a href="https://docs.openstack.org/project-deploy-guide/openstack-ansible/rocky/run-playbooks.html" target="_blank" rel="noopener">https://docs.openstack.org/project-deploy-guide/openstack-ansible/rocky/run-playbooks.html</a></p>
+<p><img src="/img/installation-workflow-run-playbooks.png" alt="img"></p>
+
       
     </div>
 
@@ -675,9 +697,9 @@
           
             <a href="/tags/Tools/" rel="tag"><i class="fa fa-tag"></i> Tools</a>
           
-            <a href="/tags/OpenStack/" rel="tag"><i class="fa fa-tag"></i> OpenStack</a>
-          
             <a href="/tags/Ansible/" rel="tag"><i class="fa fa-tag"></i> Ansible</a>
+          
+            <a href="/tags/OpenStack/" rel="tag"><i class="fa fa-tag"></i> OpenStack</a>
           
         </div>
       
@@ -997,7 +1019,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#0x00-关于OSA"><span class="nav-number">1.</span> <span class="nav-text">0x00 关于OSA</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x01-OpenStack-Ansible部署架构"><span class="nav-number">2.</span> <span class="nav-text">0x01 OpenStack Ansible部署架构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#部署主机"><span class="nav-number">2.1.</span> <span class="nav-text">部署主机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目标主机"><span class="nav-number">2.2.</span> <span class="nav-text">目标主机</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基础架构和控制平面主机"><span class="nav-number">2.2.1.</span> <span class="nav-text">基础架构和控制平面主机</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#日志主机"><span class="nav-number">2.2.2.</span> <span class="nav-text">日志主机</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x02-OpenStack-Ansible部署概览"><span class="nav-number">3.</span> <span class="nav-text">0x02 OpenStack Ansible部署概览</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x03-部署准备"><span class="nav-number">4.</span> <span class="nav-text">0x03 部署准备</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#部署节点安装"><span class="nav-number">4.1.</span> <span class="nav-text">部署节点安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#控制节点环境"><span class="nav-number">4.2.</span> <span class="nav-text">控制节点环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置软件"><span class="nav-number">4.2.1.</span> <span class="nav-text">配置软件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置SSH密钥"><span class="nav-number">4.2.2.</span> <span class="nav-text">配置SSH密钥</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置网络"><span class="nav-number">4.2.3.</span> <span class="nav-text">配置网络</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x04-使用OpenStack-playbook部署集群"><span class="nav-number">5.</span> <span class="nav-text">0x04 使用OpenStack playbook部署集群</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#0x00-关于OSA"><span class="nav-number">1.</span> <span class="nav-text">0x00 关于OSA</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x01-OpenStack-Ansible部署架构"><span class="nav-number">2.</span> <span class="nav-text">0x01 OpenStack Ansible部署架构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#部署主机"><span class="nav-number">2.1.</span> <span class="nav-text">部署主机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目标主机"><span class="nav-number">2.2.</span> <span class="nav-text">目标主机</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基础架构和控制平面主机"><span class="nav-number">2.2.1.</span> <span class="nav-text">基础架构和控制平面主机</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#日志主机"><span class="nav-number">2.2.2.</span> <span class="nav-text">日志主机</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x02-OpenStack-Ansible部署概览"><span class="nav-number">3.</span> <span class="nav-text">0x02 OpenStack Ansible部署概览</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x03-部署"><span class="nav-number">4.</span> <span class="nav-text">0x03 部署</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备部署节点"><span class="nav-number">4.1.</span> <span class="nav-text">准备部署节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备目标节点"><span class="nav-number">4.2.</span> <span class="nav-text">准备目标节点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#系统配置"><span class="nav-number">4.2.1.</span> <span class="nav-text">系统配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SSH配置"><span class="nav-number">4.2.2.</span> <span class="nav-text">SSH配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络配置"><span class="nav-number">4.2.3.</span> <span class="nav-text">网络配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置部署"><span class="nav-number">4.3.</span> <span class="nav-text">配置部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化环境配置"><span class="nav-number">4.3.1.</span> <span class="nav-text">初始化环境配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运行OpenStack-Ansible-playbooks"><span class="nav-number">4.4.</span> <span class="nav-text">运行OpenStack-Ansible playbooks</span></a></li></ol></li></ol></div>
             
 
           </div>
