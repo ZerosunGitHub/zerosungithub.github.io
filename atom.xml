@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-08-22T06:45:07.869Z</updated>
+  <updated>2019-08-22T06:52:40.358Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zerosun.top/2019/08/21/openstack-deploying-by-Kolla-Ansible/"/>
     <id>https://zerosun.top/2019/08/21/openstack-deploying-by-Kolla-Ansible/</id>
     <published>2019-08-21T05:47:04.000Z</published>
-    <updated>2019-08-22T06:45:07.869Z</updated>
+    <updated>2019-08-22T06:52:40.358Z</updated>
     
     <summary type="html">
     
@@ -32,13 +32,13 @@
       <category term="openstack" scheme="https://zerosun.top/categories/openstack/"/>
     
     
-      <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
-    
-      <category term="Kolla" scheme="https://zerosun.top/tags/Kolla/"/>
-    
       <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
     
+      <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
+    
       <category term="tools" scheme="https://zerosun.top/tags/tools/"/>
+    
+      <category term="Kolla" scheme="https://zerosun.top/tags/Kolla/"/>
     
   </entry>
   
@@ -61,9 +61,9 @@
     
       <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
     
-      <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
-    
       <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
+    
+      <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
     
   </entry>
   
@@ -83,9 +83,9 @@
       <category term="openstack" scheme="https://zerosun.top/categories/openstack/"/>
     
     
-      <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
-    
       <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
+    
+      <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
     
       <category term="tools" scheme="https://zerosun.top/tags/tools/"/>
     
