@@ -129,7 +129,7 @@
 <meta property="og:site_name" content="北岸冷若冰霜">
 <meta property="og:description" content="待更新。。。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-21T09:06:28.229Z">
+<meta property="og:updated_time" content="2019-08-22T06:45:07.869Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Kolla-Ansible 部署OpenStack">
 <meta name="twitter:description" content="待更新。。。">
@@ -443,12 +443,24 @@
                 
               
 
-              <time title="创建时间：2019-08-21 13:47:04 / 修改时间：17:06:28" itemprop="dateCreated datePublished" datetime="2019-08-21T13:47:04+08:00">2019-08-21</time>
+              <time title="创建时间：2019-08-21 13:47:04" itemprop="dateCreated datePublished" datetime="2019-08-21T13:47:04+08:00">2019-08-21</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-08-22 14:45:07" itemprop="dateModified" datetime="2019-08-22T14:45:07+08:00">2019-08-22</time>
               
             
           </span>
@@ -511,7 +523,64 @@
 <p>选择R版<br><a href="https://docs.openstack.org/rocky/index.html" target="_blank" rel="noopener">https://docs.openstack.org/rocky/index.html</a></p>
 <p><a href="https://docs.openstack.org/rocky/deploy/" target="_blank" rel="noopener">https://docs.openstack.org/rocky/deploy/</a></p>
 <p><a href="https://docs.openstack.org/project-deploy-guide/kolla-ansible/rocky/" target="_blank" rel="noopener">https://docs.openstack.org/project-deploy-guide/kolla-ansible/rocky/</a></p>
-<p>操作环境<br>系统：Ubuntu server 16.04.2 LTS 64位</p>
+<h1 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h1><p>参考链接<br><a href="https://docs.openstack.org/project-deploy-guide/kolla-ansible/rocky/quickstart.html" target="_blank" rel="noopener">https://docs.openstack.org/project-deploy-guide/kolla-ansible/rocky/quickstart.html</a></p>
+<h2 id="主机环境"><a href="#主机环境" class="headerlink" title="主机环境"></a>主机环境</h2><ul>
+<li>系统：VMware Workstation ，Ubuntu server 16.04.2 LTS 64位</li>
+<li>网口：2个，1个桥接，1个NAT</li>
+<li>内存：2G</li>
+<li>硬盘：64G<br>另，所有操作过程是在root账户下直接进行的，目录亦是/root/<h2 id="安装依赖项"><a href="#安装依赖项" class="headerlink" title="安装依赖项"></a>安装依赖项</h2></li>
+</ul>
+<ol>
+<li><p>升级pip</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">apt-get install python-pip</span><br><span class="line">pip install -U pip</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装依赖包</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install python-dev libffi-dev gcc libssl-dev python-selinux python-setuptools git vim -y</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装Ansible</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install ansible</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>(可选)使用pip安装或升级Ansible到最新版本：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -U ansible</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>（可选）将以下选项添加到ansible配置文件中 /etc/ansible/ansible.cfg：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[defaults]</span><br><span class="line">host_key_checking=False</span><br><span class="line">pipelining=True</span><br><span class="line">forks=100</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="安装Kolla-ansible"><a href="#安装Kolla-ansible" class="headerlink" title="安装Kolla-ansible"></a>安装Kolla-ansible</h2><h3 id="安装Kolla-ansible-for-deployment-or-evaluation"><a href="#安装Kolla-ansible-for-deployment-or-evaluation" class="headerlink" title="安装Kolla-ansible for deployment or evaluation"></a>安装Kolla-ansible for deployment or evaluation</h3><ol>
+<li>使用安装kolla-ansible及其依赖项pip。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install kolla-ansible</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>国内加速<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -i https://mirrors.aliyun.com/pypi/simple/ kolla-ansible</span><br></pre></td></tr></table></figure></p>
+<p>排错记录<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -U --ignore-installed PyYAML</span><br></pre></td></tr></table></figure></p>
+<ol start="2">
+<li><p>复制globals.yml和passwords.yml到/etc/kolla目录。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp -r /usr/local/share/kolla-ansible/etc_examples/kolla /etc/</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将文件复制all-in-one和multinode库文件到当前目录。<br>本次记录当前路径为/root/</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp /usr/local/share/kolla-ansible/ansible/inventory/* .</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="安装-Kolla-for-development"><a href="#安装-Kolla-for-development" class="headerlink" title="安装 Kolla for development"></a>安装 Kolla for development</h3><ol>
+<li><p>从GitHub克隆kolla 和 kolla-ansible 仓库</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/openstack/kolla</span><br><span class="line">git clone https://github.com/openstack/kolla-ansible</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装kolla 和 kolla-ansible依赖</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install -r kolla/requirements.txt</span><br><span class="line">pip install -r kolla-ansible/requirements.txt</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将配置文件复制到/etc/kolla目录下<br>kolla-ansible在etc/kolla目录下保存配置文件globals.yml 和 passwords.yml。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /etc/kolla</span><br><span class="line">cp -r kolla-ansible/etc/kolla/* /etc/kolla</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>复制库文件到当前目录<br>kolla-ansible在ansible/inventory目录下保存库文件all-in-one 和 multinode</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp kolla-ansible/ansible/inventory/* .</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="准备初始配置"><a href="#准备初始配置" class="headerlink" title="准备初始配置"></a>准备初始配置</h2><h3 id="库文件"><a href="#库文件" class="headerlink" title="库文件"></a>库文件</h3><p>下一步是准备我们的inventory库存文件。Inventory是一个ansible文件，我们在其中指定节点角色和访问凭据。<br>Kolla-Ansible配备all-in-one和multinode例子 inventory库文件，它们之间的区别在于：</p>
+<ul>
+<li>前者all-in-one已准备好在localhost上部署单节点OpenStack。</li>
+<li>multinode例子，如果您需要使用单独的主机或多个节点，请编辑multinode库文件，multinode例子如下：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">  [control]</span><br><span class="line">10.0.0.[10:12] ansible_user=ubuntu ansible_password=foobar ansible_become=true</span><br><span class="line"><span class="meta">#</span><span class="bash"> Ansible supports syntax like [10:12] - that means 10, 11 and 12.</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Become clause means <span class="string">"use sudo"</span>.</span></span><br><span class="line"></span><br><span class="line">[network:children]</span><br><span class="line">control</span><br><span class="line"><span class="meta">#</span><span class="bash"> when you specify group_name:children, it will use contents of group specified.</span></span><br><span class="line"></span><br><span class="line">[compute]</span><br><span class="line">10.0.0.[13:14] ansible_user=ubuntu ansible_password=foobar ansible_become=true</span><br><span class="line"></span><br><span class="line">[monitoring]</span><br><span class="line">10.0.0.10</span><br><span class="line"><span class="meta">#</span><span class="bash"> This group is <span class="keyword">for</span> monitoring node.</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Fill it with one of the controllers<span class="string">' IP address or some others.</span></span></span><br><span class="line"></span><br><span class="line">[storage:children]</span><br><span class="line">compute</span><br><span class="line"></span><br><span class="line">[deployment]</span><br><span class="line">localhost       ansible_connection=local become=true</span><br><span class="line"><span class="meta">#</span><span class="bash"> use localhost and sudo</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
 
       
     </div>
@@ -697,8 +766,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -906,6 +984,22 @@ show_date_time();
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#快速开始"><span class="nav-number">1.</span> <span class="nav-text">快速开始</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#主机环境"><span class="nav-number">1.1.</span> <span class="nav-text">主机环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装依赖项"><span class="nav-number">1.2.</span> <span class="nav-text">安装依赖项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Kolla-ansible"><span class="nav-number">1.3.</span> <span class="nav-text">安装Kolla-ansible</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Kolla-ansible-for-deployment-or-evaluation"><span class="nav-number">1.3.1.</span> <span class="nav-text">安装Kolla-ansible for deployment or evaluation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Kolla-for-development"><span class="nav-number">1.3.2.</span> <span class="nav-text">安装 Kolla for development</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备初始配置"><span class="nav-number">1.4.</span> <span class="nav-text">准备初始配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#库文件"><span class="nav-number">1.4.1.</span> <span class="nav-text">库文件</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
