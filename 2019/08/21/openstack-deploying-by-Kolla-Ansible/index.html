@@ -122,14 +122,14 @@
 
 
   <meta name="description" content="待更新。。。">
-<meta name="keywords" content="OpenStack,Ansible,tools,Kolla">
+<meta name="keywords" content="Ansible,OpenStack,tools,Kolla">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Kolla-Ansible 部署OpenStack">
 <meta property="og:url" content="https://zerosun.top/2019/08/21/openstack-deploying-by-Kolla-Ansible/index.html">
 <meta property="og:site_name" content="北岸冷若冰霜">
 <meta property="og:description" content="待更新。。。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-22T07:40:09.072Z">
+<meta property="og:updated_time" content="2019-08-22T07:59:05.226Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Kolla-Ansible 部署OpenStack">
 <meta name="twitter:description" content="待更新。。。">
@@ -460,7 +460,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-08-22 15:40:09" itemprop="dateModified" datetime="2019-08-22T15:40:09+08:00">2019-08-22</time>
+                <time title="修改时间：2019-08-22 15:59:05" itemprop="dateModified" datetime="2019-08-22T15:59:05+08:00">2019-08-22</time>
               
             
           </span>
@@ -586,7 +586,7 @@
 <li>编辑multinode文件的第一部分，包含multinode使用环境的连接信息。</li>
 </ol>
 <p>配置对应节点的服务的主机名称。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">[control]</span><br><span class="line">10.0.0.[10:12] ansible_user=ubuntu ansible_password=foobar ansible_become=true</span><br><span class="line"><span class="meta">#</span><span class="bash"> Ansible supports syntax like [10:12] - that means 10, 11 and 12.</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Become clause means <span class="string">"use sudo"</span>.</span></span><br><span class="line"></span><br><span class="line">[network:children]</span><br><span class="line">control</span><br><span class="line"><span class="meta">#</span><span class="bash"> when you specify group_name:children, it will use contents of group specified.</span></span><br><span class="line"></span><br><span class="line">[compute]</span><br><span class="line">10.0.0.[13:14] ansible_user=ubuntu ansible_password=foobar ansible_become=true</span><br><span class="line"></span><br><span class="line">[monitoring]</span><br><span class="line">10.0.0.10</span><br><span class="line"><span class="meta">#</span><span class="bash"> This group is <span class="keyword">for</span> monitoring node.</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Fill it with one of the controllers<span class="string">' IP address or some others.</span></span></span><br><span class="line"></span><br><span class="line">[storage:children]</span><br><span class="line">compute</span><br><span class="line"></span><br><span class="line">[deployment]</span><br><span class="line">localhost       ansible_connection=local become=true</span><br><span class="line"><span class="meta">#</span><span class="bash"> use localhost and sudo</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">[control]</span><br><span class="line">10.0.0.[10:12] ansible_user=ubuntu ansible_password=foobar ansible_become=true</span><br><span class="line"><span class="meta">#</span> Ansible supports syntax like [10:12] - that means 10, 11 and 12.</span><br><span class="line"><span class="meta">#</span> Become clause means "use sudo".</span><br><span class="line"></span><br><span class="line">[network:children]</span><br><span class="line">control</span><br><span class="line"><span class="meta">#</span> when you specify group_name:children, it will use contents of group specified.</span><br><span class="line"></span><br><span class="line">[compute]</span><br><span class="line">10.0.0.[13:14] ansible_user=ubuntu ansible_password=foobar ansible_become=true</span><br><span class="line"></span><br><span class="line">[monitoring]</span><br><span class="line">10.0.0.10</span><br><span class="line"><span class="meta">#</span> This group is for monitoring node.</span><br><span class="line"><span class="meta">#</span> Fill it with one of the controllers' IP address or some others.</span><br><span class="line"></span><br><span class="line">[storage:children]</span><br><span class="line">compute</span><br><span class="line"></span><br><span class="line">[deployment]</span><br><span class="line">localhost       ansible_connection=local become=true</span><br><span class="line"><span class="meta">#</span> use localhost and sudo</span><br></pre></td></tr></table></figure>
 <p>另，To learn more about inventory files, 打开 <a href="http://docs.ansible.com/ansible/latest/intro_inventory.html" target="_blank" rel="noopener">Ansible documentation</a>.</p>
 <ol start="2">
 <li><p>检查库文件配置是否正确</p>
@@ -621,11 +621,27 @@
 <p> 使用与kolla-ansible相同版本的镜像非常重要。这意味着如果pip用于安装kolla-ansible，这意味着它是最新的稳定版本，所以<strong>openstack_release</strong>应该设置为rocky。如果git与master分支一起使用，DockerHub也提供了master分支的每日构建（标记为<strong>master</strong>）：</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openstack_release: &quot;master&quot;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>Networking</p>
+<li><p>Networking<br>Kolla-Ansible需要设置一些网络选项。我们需要设置OpenStack使用的网络接口.</p>
+<ul>
+<li><p>(1)设置的第一个接口是<strong>network_interface</strong>。这是多个管理类型网络的默认接口.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">network_interface: &quot;eth0&quot;</span><br></pre></td></tr></table></figure>
 </li>
-<li>Enable additional services</li>
+<li><p>(2)所需的第二个接口专用于Neutron外部（或公共）网络，可以是vlan或flat，取决于网络的创建方式。此接口应在没有IP地址的情况下处于活动,如果不是，实例将无法访问外部网络。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">neutron_external_interface: &quot;eth1&quot;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>另，要了解更多有关网络配置，请参阅网络概览<a href="https://docs.openstack.org/kolla-ansible/latest/admin/production-architecture-guide.html#network-configuration" target="_blank" rel="noopener">Network overview</a></p>
+<ul>
+<li>(3)接下来，我们需要为管理流量提供浮动IP。此IP将由keepalived管理以提供高可用性，并应设置为 未连接到我们的管理网络中的地址 network_interface。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kolla_internal_vip_address: &quot;10.1.0.250&quot;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>Enable additional services<br>默认情况下，Kolla-Ansible提供了一个裸计算工具包，但它确实为大量附加服务提供支持。要启用它们，请设置 <strong>enable_*</strong>为“<strong>yes</strong>”。例如，要启用块存储服务：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enable_cinder: &quot;yes&quot;</span><br></pre></td></tr></table></figure>
+<p>另，Kolla现在支持许多OpenStack服务，有 一个可用服务列表<a href="https://github.com/openstack/kolla-ansible/blob/master/README.rst#openstack-services" target="_blank" rel="noopener"> a list of available services</a>。有关服务配置的详细信息，请参阅服务参考指南<a href="https://docs.openstack.org/kolla-ansible/latest/reference/index.html" target="_blank" rel="noopener"> Services Reference Guide</a></p>
+</li>
 </ol>
-
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2>
       
     </div>
 
@@ -716,9 +732,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/OpenStack/" rel="tag"><i class="fa fa-tag"></i> OpenStack</a>
-          
             <a href="/tags/Ansible/" rel="tag"><i class="fa fa-tag"></i> Ansible</a>
+          
+            <a href="/tags/OpenStack/" rel="tag"><i class="fa fa-tag"></i> OpenStack</a>
           
             <a href="/tags/tools/" rel="tag"><i class="fa fa-tag"></i> tools</a>
           
@@ -1038,7 +1054,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#快速开始"><span class="nav-number">1.</span> <span class="nav-text">快速开始</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#主机环境"><span class="nav-number">1.1.</span> <span class="nav-text">主机环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装依赖项"><span class="nav-number">1.2.</span> <span class="nav-text">安装依赖项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Kolla-ansible"><span class="nav-number">1.3.</span> <span class="nav-text">安装Kolla-ansible</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Kolla-ansible-for-deployment-or-evaluation"><span class="nav-number">1.3.1.</span> <span class="nav-text">安装Kolla-ansible for deployment or evaluation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Kolla-for-development"><span class="nav-number">1.3.2.</span> <span class="nav-text">安装 Kolla for development</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备初始配置"><span class="nav-number">1.4.</span> <span class="nav-text">准备初始配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#库文件"><span class="nav-number">1.4.1.</span> <span class="nav-text">库文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Kolla-密码"><span class="nav-number">1.4.2.</span> <span class="nav-text">Kolla 密码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Kolla-globals-yml"><span class="nav-number">1.4.3.</span> <span class="nav-text">Kolla globals.yml</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#快速开始"><span class="nav-number">1.</span> <span class="nav-text">快速开始</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#主机环境"><span class="nav-number">1.1.</span> <span class="nav-text">主机环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装依赖项"><span class="nav-number">1.2.</span> <span class="nav-text">安装依赖项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Kolla-ansible"><span class="nav-number">1.3.</span> <span class="nav-text">安装Kolla-ansible</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Kolla-ansible-for-deployment-or-evaluation"><span class="nav-number">1.3.1.</span> <span class="nav-text">安装Kolla-ansible for deployment or evaluation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Kolla-for-development"><span class="nav-number">1.3.2.</span> <span class="nav-text">安装 Kolla for development</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备初始配置"><span class="nav-number">1.4.</span> <span class="nav-text">准备初始配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#库文件"><span class="nav-number">1.4.1.</span> <span class="nav-text">库文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Kolla-密码"><span class="nav-number">1.4.2.</span> <span class="nav-text">Kolla 密码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Kolla-globals-yml"><span class="nav-number">1.4.3.</span> <span class="nav-text">Kolla globals.yml</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署"><span class="nav-number">1.5.</span> <span class="nav-text">部署</span></a></li></ol></li></ol></div>
             
 
           </div>
