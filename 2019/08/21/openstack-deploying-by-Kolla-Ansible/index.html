@@ -129,7 +129,7 @@
 <meta property="og:site_name" content="北岸冷若冰霜">
 <meta property="og:description" content="待更新。。。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-22T06:52:40.358Z">
+<meta property="og:updated_time" content="2019-08-22T07:09:22.373Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Kolla-Ansible 部署OpenStack">
 <meta name="twitter:description" content="待更新。。。">
@@ -460,7 +460,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-08-22 14:52:40" itemprop="dateModified" datetime="2019-08-22T14:52:40+08:00">2019-08-22</time>
+                <time title="修改时间：2019-08-22 15:09:22" itemprop="dateModified" datetime="2019-08-22T15:09:22+08:00">2019-08-22</time>
               
             
           </span>
@@ -528,9 +528,9 @@
 <li>系统：VMware Workstation ，Ubuntu server 16.04.2 LTS 64位</li>
 <li>网口：2个，1个桥接，1个NAT</li>
 <li>内存：2G</li>
-<li>硬盘：64G<br>另，所有操作过程是在root账户下直接进行的，目录亦是/root/<h2 id="安装依赖项"><a href="#安装依赖项" class="headerlink" title="安装依赖项"></a>安装依赖项</h2></li>
+<li>硬盘：64G<br>另，所有操作过程是在root账户下直接进行的，目录亦是/root/</li>
 </ul>
-<ol>
+<h2 id="安装依赖项"><a href="#安装依赖项" class="headerlink" title="安装依赖项"></a>安装依赖项</h2><ol>
 <li><p>升级pip</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">apt-get install python-pip</span><br><span class="line">pip install -U pip</span><br></pre></td></tr></table></figure>
 </li>
@@ -548,12 +548,13 @@
 </li>
 </ol>
 <h2 id="安装Kolla-ansible"><a href="#安装Kolla-ansible" class="headerlink" title="安装Kolla-ansible"></a>安装Kolla-ansible</h2><h3 id="安装Kolla-ansible-for-deployment-or-evaluation"><a href="#安装Kolla-ansible-for-deployment-or-evaluation" class="headerlink" title="安装Kolla-ansible for deployment or evaluation"></a>安装Kolla-ansible for deployment or evaluation</h3><ol>
-<li>使用安装kolla-ansible及其依赖项pip。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install kolla-ansible</span><br></pre></td></tr></table></figure>
+<li><p>使用安装kolla-ansible及其依赖项pip。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install kolla-ansible</span><br></pre></td></tr></table></figure>
+<p>国内加速</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -i https://mirrors.aliyun.com/pypi/simple/ kolla-ansible</span><br></pre></td></tr></table></figure>
+<p>排错记录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -U --ignore-installed PyYAML</span><br></pre></td></tr></table></figure>
 </li>
-</ol>
-<p>国内加速<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -i https://mirrors.aliyun.com/pypi/simple/ kolla-ansible</span><br></pre></td></tr></table></figure></p>
-<p>排错记录<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -U --ignore-installed PyYAML</span><br></pre></td></tr></table></figure></p>
-<ol start="2">
 <li><p>复制globals.yml和passwords.yml到/etc/kolla目录。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp -r /usr/local/share/kolla-ansible/etc_examples/kolla /etc/</span><br></pre></td></tr></table></figure>
 </li>
@@ -583,7 +584,7 @@
 <ol>
 <li>编辑multinode文件的第一部分，包含multinode使用环境的连接信息。</li>
 </ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">  [control]</span><br><span class="line">10.0.0.[10:12] ansible_user=ubuntu ansible_password=foobar ansible_become=true</span><br><span class="line"><span class="meta">#</span><span class="bash"> Ansible supports syntax like [10:12] - that means 10, 11 and 12.</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Become clause means <span class="string">"use sudo"</span>.</span></span><br><span class="line"></span><br><span class="line">[network:children]</span><br><span class="line">control</span><br><span class="line"><span class="meta">#</span><span class="bash"> when you specify group_name:children, it will use contents of group specified.</span></span><br><span class="line"></span><br><span class="line">[compute]</span><br><span class="line">10.0.0.[13:14] ansible_user=ubuntu ansible_password=foobar ansible_become=true</span><br><span class="line"></span><br><span class="line">[monitoring]</span><br><span class="line">10.0.0.10</span><br><span class="line"><span class="meta">#</span><span class="bash"> This group is <span class="keyword">for</span> monitoring node.</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Fill it with one of the controllers<span class="string">' IP address or some others.</span></span></span><br><span class="line"></span><br><span class="line">[storage:children]</span><br><span class="line">compute</span><br><span class="line"></span><br><span class="line">[deployment]</span><br><span class="line">localhost       ansible_connection=local become=true</span><br><span class="line"><span class="meta">#</span><span class="bash"> use localhost and sudo</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">  [control]</span><br><span class="line">10.0.0.[10:12] ansible_user=ubuntu ansible_password=foobar ansible_become=true</span><br><span class="line"><span class="meta">#</span> Ansible supports syntax like [10:12] - that means 10, 11 and 12.</span><br><span class="line"><span class="meta">#</span> Become clause means "use sudo".</span><br><span class="line"></span><br><span class="line">[network:children]</span><br><span class="line">control</span><br><span class="line"><span class="meta">#</span> when you specify group_name:children, it will use contents of group specified.</span><br><span class="line"></span><br><span class="line">[compute]</span><br><span class="line">10.0.0.[13:14] ansible_user=ubuntu ansible_password=foobar ansible_become=true</span><br><span class="line"></span><br><span class="line">[monitoring]</span><br><span class="line">10.0.0.10</span><br><span class="line"><span class="meta">#</span> This group is for monitoring node.</span><br><span class="line"><span class="meta">#</span> Fill it with one of the controllers' IP address or some others.</span><br><span class="line"></span><br><span class="line">[storage:children]</span><br><span class="line">compute</span><br><span class="line"></span><br><span class="line">[deployment]</span><br><span class="line">localhost       ansible_connection=local become=true</span><br><span class="line"><span class="meta">#</span> use localhost and sudo</span><br></pre></td></tr></table></figure>
 <p>另，To learn more about inventory files, 打开 <a href="http://docs.ansible.com/ansible/latest/intro_inventory.html" target="_blank" rel="noopener">Ansible documentation</a>.</p>
 <ol start="2">
 <li><p>检查库文件配置是否正确</p>
@@ -592,7 +593,27 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ansible -i multinode all -m raw -a &quot;apt-get -y install python-dev&quot;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h3 id="Kolla-密码"><a href="#Kolla-密码" class="headerlink" title="Kolla 密码"></a>Kolla 密码</h3>
+<h3 id="Kolla-密码"><a href="#Kolla-密码" class="headerlink" title="Kolla 密码"></a>Kolla 密码</h3><p>部署过程中使用到的密码存储在/etc/kolla/passwords.yml文件中。<br>此文件中的所有密码都是空白的，必须手动填写或运行随机密码生成器：</p>
+<ul>
+<li><p>对于for deployment or evaluation，请运行命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kolla-genpwd</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>对于development，请运行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd kolla-ansible/tools</span><br><span class="line">./generate_passwords.py</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="Kolla-globals-yml"><a href="#Kolla-globals-yml" class="headerlink" title="Kolla globals.yml"></a>Kolla globals.yml</h3><p>globals.yml是Kolla-Ansible的主要配置文件。部署Kolla-Ansible需要一些选项，具体可打开globals.yml文件查看，下面会对：</p>
+<ul>
+<li>镜像：Image options</li>
+<li>网络：Networking</li>
+<li>启用其他服务：Enable additional services<br>进行简介。</li>
+</ul>
+<ol>
+<li>Image options</li>
+<li>Networking</li>
+<li>Enable additional services</li>
+</ol>
+
       
     </div>
 
@@ -1005,7 +1026,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#快速开始"><span class="nav-number">1.</span> <span class="nav-text">快速开始</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#主机环境"><span class="nav-number">1.1.</span> <span class="nav-text">主机环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装依赖项"><span class="nav-number">1.2.</span> <span class="nav-text">安装依赖项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Kolla-ansible"><span class="nav-number">1.3.</span> <span class="nav-text">安装Kolla-ansible</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Kolla-ansible-for-deployment-or-evaluation"><span class="nav-number">1.3.1.</span> <span class="nav-text">安装Kolla-ansible for deployment or evaluation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Kolla-for-development"><span class="nav-number">1.3.2.</span> <span class="nav-text">安装 Kolla for development</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备初始配置"><span class="nav-number">1.4.</span> <span class="nav-text">准备初始配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#库文件"><span class="nav-number">1.4.1.</span> <span class="nav-text">库文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Kolla-密码"><span class="nav-number">1.4.2.</span> <span class="nav-text">Kolla 密码</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#快速开始"><span class="nav-number">1.</span> <span class="nav-text">快速开始</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#主机环境"><span class="nav-number">1.1.</span> <span class="nav-text">主机环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装依赖项"><span class="nav-number">1.2.</span> <span class="nav-text">安装依赖项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Kolla-ansible"><span class="nav-number">1.3.</span> <span class="nav-text">安装Kolla-ansible</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Kolla-ansible-for-deployment-or-evaluation"><span class="nav-number">1.3.1.</span> <span class="nav-text">安装Kolla-ansible for deployment or evaluation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Kolla-for-development"><span class="nav-number">1.3.2.</span> <span class="nav-text">安装 Kolla for development</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备初始配置"><span class="nav-number">1.4.</span> <span class="nav-text">准备初始配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#库文件"><span class="nav-number">1.4.1.</span> <span class="nav-text">库文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Kolla-密码"><span class="nav-number">1.4.2.</span> <span class="nav-text">Kolla 密码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Kolla-globals-yml"><span class="nav-number">1.4.3.</span> <span class="nav-text">Kolla globals.yml</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
