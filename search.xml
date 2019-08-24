@@ -8,10 +8,10 @@
         <category>openstack</category>
       </categories>
       <tags>
-        <tag>OpenStack</tag>
         <tag>Ansible</tag>
-        <tag>tools</tag>
         <tag>Kolla</tag>
+        <tag>OpenStack</tag>
+        <tag>tools</tag>
       </tags>
   </entry>
   <entry>
@@ -23,8 +23,8 @@
       </categories>
       <tags>
         <tag>Tools</tag>
-        <tag>OpenStack</tag>
         <tag>Ansible</tag>
+        <tag>OpenStack</tag>
       </tags>
   </entry>
   <entry>
@@ -35,8 +35,8 @@
         <category>openstack</category>
       </categories>
       <tags>
-        <tag>OpenStack</tag>
         <tag>Ansible</tag>
+        <tag>OpenStack</tag>
         <tag>tools</tag>
       </tags>
   </entry>

@@ -2,6 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <!-- <loc>https://zerosun.top/2017/03/26/GlitterGloss/</loc> -->
+    <loc>https://zerosun.top/2017/03/26/GlitterGloss/</loc>
+    
+    <lastmod>2019-08-24T05:57:01.812Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <!-- <loc>https://zerosun.top/2018/08/30/Hello-world/</loc> -->
+    <loc>https://zerosun.top/2018/08/30/Hello-world/</loc>
+    
+    <lastmod>2019-08-24T05:22:39.759Z</lastmod>
+    
+  </url>
+  
+  <url>
     <!-- <loc>https://zerosun.top/2019/08/21/openstack-deploying-by-Kolla-Ansible/</loc> -->
     <loc>https://zerosun.top/2019/08/21/openstack-deploying-by-Kolla-Ansible/</loc>
     
@@ -78,14 +94,6 @@
     <loc>https://zerosun.top/2019/07/20/BurningImage4Raspberry/</loc>
     
     <lastmod>2019-08-02T02:35:29.524Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <!-- <loc>https://zerosun.top/2017/03/26/GlitterGloss/</loc> -->
-    <loc>https://zerosun.top/2017/03/26/GlitterGloss/</loc>
-    
-    <lastmod>2019-08-01T07:36:35.093Z</lastmod>
     
   </url>
   
@@ -190,14 +198,6 @@
     <loc>https://zerosun.top/link/index.html</loc>
     
     <lastmod>2019-05-12T06:02:03.350Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <!-- <loc>https://zerosun.top/2018/08/30/Hello-world/</loc> -->
-    <loc>https://zerosun.top/2018/08/30/Hello-world/</loc>
-    
-    <lastmod>2019-05-03T03:48:02.781Z</lastmod>
     
   </url>
   
