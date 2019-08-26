@@ -34,11 +34,11 @@
     
       <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
     
-      <category term="Kolla" scheme="https://zerosun.top/tags/Kolla/"/>
-    
       <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
     
       <category term="tools" scheme="https://zerosun.top/tags/tools/"/>
+    
+      <category term="Kolla" scheme="https://zerosun.top/tags/Kolla/"/>
     
   </entry>
   

@@ -9,9 +9,9 @@
       </categories>
       <tags>
         <tag>Ansible</tag>
-        <tag>Kolla</tag>
         <tag>OpenStack</tag>
         <tag>tools</tag>
+        <tag>Kolla</tag>
       </tags>
   </entry>
   <entry>
@@ -300,7 +300,7 @@
   <entry>
     <title><![CDATA[Glitter&Gloss]]></title>
     <url>%2F2017%2F03%2F26%2FGlitterGloss%2F</url>
-    <content type="text"><![CDATA[需要科学上网。]]></content>
+    <content type="text"><![CDATA[]]></content>
       <tags>
         <tag>MV</tag>
       </tags>
