@@ -155,8 +155,8 @@
         <category>favorites</category>
       </categories>
       <tags>
-        <tag>Tools</tag>
         <tag>RSS</tag>
+        <tag>Tools</tag>
       </tags>
   </entry>
   <entry>
@@ -229,8 +229,8 @@
         <category>blockchain</category>
       </categories>
       <tags>
-        <tag>Ethereum</tag>
         <tag>BlockChain</tag>
+        <tag>Ethereum</tag>
         <tag>SmartContract</tag>
       </tags>
   </entry>
@@ -265,9 +265,9 @@
         <category>blockchain</category>
       </categories>
       <tags>
+        <tag>BlockChain</tag>
         <tag>Ethereum</tag>
         <tag>MIST</tag>
-        <tag>BlockChain</tag>
       </tags>
   </entry>
   <entry>

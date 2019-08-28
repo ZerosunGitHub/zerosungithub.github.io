@@ -2,6 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <!-- <loc>https://zerosun.top/2019/08/12/openstack-deploying-by-OSA/</loc> -->
+    <loc>https://zerosun.top/2019/08/12/openstack-deploying-by-OSA/</loc>
+    
+    <lastmod>2019-08-28T09:29:48.562Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <!-- <loc>https://zerosun.top/2019/08/12/openstack-Ansible-intro/</loc> -->
+    <loc>https://zerosun.top/2019/08/12/openstack-Ansible-intro/</loc>
+    
+    <lastmod>2019-08-28T09:29:09.436Z</lastmod>
+    
+  </url>
+  
+  <url>
     <!-- <loc>https://zerosun.top/2016/11/10/book2016-TheUnlikelyPilgrimage-of-HaroldFry-by-RachelJoyce-end/</loc> -->
     <loc>https://zerosun.top/2016/11/10/book2016-TheUnlikelyPilgrimage-of-HaroldFry-by-RachelJoyce-end/</loc>
     
@@ -30,22 +46,6 @@
     <loc>https://zerosun.top/2019/08/21/openstack-deploying-by-Kolla-Ansible/</loc>
     
     <lastmod>2019-08-23T00:35:58.969Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <!-- <loc>https://zerosun.top/2019/08/12/openstack-deploying-by-OSA/</loc> -->
-    <loc>https://zerosun.top/2019/08/12/openstack-deploying-by-OSA/</loc>
-    
-    <lastmod>2019-08-21T07:46:21.258Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <!-- <loc>https://zerosun.top/2019/08/12/openstack-Ansible-intro/</loc> -->
-    <loc>https://zerosun.top/2019/08/12/openstack-Ansible-intro/</loc>
-    
-    <lastmod>2019-08-21T05:46:07.855Z</lastmod>
     
   </url>
   
