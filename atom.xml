@@ -32,13 +32,13 @@
       <category term="openstack" scheme="https://zerosun.top/categories/openstack/"/>
     
     
-      <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
-    
       <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
     
-      <category term="Kolla" scheme="https://zerosun.top/tags/Kolla/"/>
+      <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
     
       <category term="tools" scheme="https://zerosun.top/tags/tools/"/>
+    
+      <category term="Kolla" scheme="https://zerosun.top/tags/Kolla/"/>
     
   </entry>
   
@@ -61,9 +61,9 @@
     
       <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
     
-      <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
-    
       <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
+    
+      <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
     
   </entry>
   
@@ -83,9 +83,9 @@
       <category term="openstack" scheme="https://zerosun.top/categories/openstack/"/>
     
     
-      <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
-    
       <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
+    
+      <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
     
       <category term="tools" scheme="https://zerosun.top/tags/tools/"/>
     
