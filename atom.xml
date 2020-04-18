@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2020-04-18T10:46:21.015Z</updated>
+  <updated>2020-04-18T10:51:20.862Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -21,14 +21,11 @@
     <link href="https://zerosun.top/2020/04/18/localyum4deployopenstack/"/>
     <id>https://zerosun.top/2020/04/18/localyum4deployopenstack/</id>
     <published>2020-04-18T10:22:58.000Z</published>
-    <updated>2020-04-18T10:46:21.015Z</updated>
+    <updated>2020-04-18T10:51:20.862Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;OpenStack离线安装之yum源制作&quot;&gt;&lt;a href=&quot;#OpenStack离线安装之yum源制作&quot; class=&quot;headerlink&quot; title=&quot;OpenStack离线安装之yum源制作&quot;&gt;&lt;/a&gt;OpenStack离线安装之yum源制作&lt;/h1&gt;&lt;
-      
+      &lt;p&gt;如果采用离线源代码安装，则通常需要配置本地 pip 源；如果采用离线软件安装包的形式安装，则通常需要配置本地 yum 源。&lt;br&gt;
     
     </summary>
     
@@ -57,11 +54,11 @@
       <category term="openstack" scheme="https://zerosun.top/categories/openstack/"/>
     
     
+      <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
+    
       <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
     
       <category term="tools" scheme="https://zerosun.top/tags/tools/"/>
-    
-      <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
     
       <category term="Kolla" scheme="https://zerosun.top/tags/Kolla/"/>
     
@@ -86,9 +83,9 @@
     
       <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
     
-      <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
-    
       <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
+    
+      <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
     
   </entry>
   
@@ -108,11 +105,11 @@
       <category term="openstack" scheme="https://zerosun.top/categories/openstack/"/>
     
     
+      <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
+    
       <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
     
       <category term="tools" scheme="https://zerosun.top/tags/tools/"/>
-    
-      <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
     
   </entry>
   

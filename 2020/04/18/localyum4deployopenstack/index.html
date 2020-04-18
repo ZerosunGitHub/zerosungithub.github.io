@@ -121,18 +121,18 @@
 
 
 
-  <meta name="description" content="OpenStack离线安装之yum源制作如果采用离线源代码安装，则通常需要配置本地 pip 源；如果采用离线软件安装包的形式安装，则通常需要配置本地 yum 源。   环境说明系统：Centos7版本：CentOS-7-x86_64-Minimal-1908ISO下载链接：http://mirrors.aliyun.com/centos/7/isos/x86_64/CentOS-7-x86_64-">
+  <meta name="description" content="如果采用离线源代码安装，则通常需要配置本地 pip 源；如果采用离线软件安装包的形式安装，则通常需要配置本地 yum 源。">
 <meta name="keywords" content="OpenStack,tools">
 <meta property="og:type" content="article">
 <meta property="og:title" content="OpenStack离线安装之yum源制作">
 <meta property="og:url" content="https://zerosun.top/2020/04/18/localyum4deployopenstack/index.html">
 <meta property="og:site_name" content="北岸冷若冰霜">
-<meta property="og:description" content="OpenStack离线安装之yum源制作如果采用离线源代码安装，则通常需要配置本地 pip 源；如果采用离线软件安装包的形式安装，则通常需要配置本地 yum 源。   环境说明系统：Centos7版本：CentOS-7-x86_64-Minimal-1908ISO下载链接：http://mirrors.aliyun.com/centos/7/isos/x86_64/CentOS-7-x86_64-">
+<meta property="og:description" content="如果采用离线源代码安装，则通常需要配置本地 pip 源；如果采用离线软件安装包的形式安装，则通常需要配置本地 yum 源。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-04-18T10:46:21.015Z">
+<meta property="og:updated_time" content="2020-04-18T10:51:20.862Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OpenStack离线安装之yum源制作">
-<meta name="twitter:description" content="OpenStack离线安装之yum源制作如果采用离线源代码安装，则通常需要配置本地 pip 源；如果采用离线软件安装包的形式安装，则通常需要配置本地 yum 源。   环境说明系统：Centos7版本：CentOS-7-x86_64-Minimal-1908ISO下载链接：http://mirrors.aliyun.com/centos/7/isos/x86_64/CentOS-7-x86_64-">
+<meta name="twitter:description" content="如果采用离线源代码安装，则通常需要配置本地 pip 源；如果采用离线软件安装包的形式安装，则通常需要配置本地 yum 源。">
 
 
 
@@ -443,7 +443,7 @@
                 
               
 
-              <time title="创建时间：2020-04-18 18:22:58 / 修改时间：18:46:21" itemprop="dateCreated datePublished" datetime="2020-04-18T18:22:58+08:00">2020-04-18</time>
+              <time title="创建时间：2020-04-18 18:22:58 / 修改时间：18:51:20" itemprop="dateCreated datePublished" datetime="2020-04-18T18:22:58+08:00">2020-04-18</time>
             
 
             
@@ -507,8 +507,8 @@
       
 
       
-        <h1 id="OpenStack离线安装之yum源制作"><a href="#OpenStack离线安装之yum源制作" class="headerlink" title="OpenStack离线安装之yum源制作"></a>OpenStack离线安装之yum源制作</h1><p>如果采用离线源代码安装，则通常需要配置本地 pip 源；如果采用离线软件安装包的形式安装，则通常需要配置本地 yum 源。  </p>
-<h2 id="环境说明"><a href="#环境说明" class="headerlink" title="环境说明"></a>环境说明</h2><p>系统：Centos7<br>版本：CentOS-7-x86_64-Minimal-1908<br>ISO下载链接：<a href="http://mirrors.aliyun.com/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1908.iso" target="_blank" rel="noopener">http://mirrors.aliyun.com/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1908.iso</a>  </p>
+        <p>如果采用离线源代码安装，则通常需要配置本地 pip 源；如果采用离线软件安装包的形式安装，则通常需要配置本地 yum 源。<br><a id="more"></a></p>
+<h1 id="OpenStack离线安装之yum源制作"><a href="#OpenStack离线安装之yum源制作" class="headerlink" title="OpenStack离线安装之yum源制作"></a>OpenStack离线安装之yum源制作</h1><h2 id="环境说明"><a href="#环境说明" class="headerlink" title="环境说明"></a>环境说明</h2><p>系统：Centos7<br>版本：CentOS-7-x86_64-Minimal-1908<br>ISO下载链接：<a href="http://mirrors.aliyun.com/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1908.iso" target="_blank" rel="noopener">http://mirrors.aliyun.com/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1908.iso</a>  </p>
 <p>OpenStack版本：Stein、Tain  </p>
 <h2 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h2><p>1.完成Centos7的系统安装后，先安装以下软件。<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">yum clean all</span><br><span class="line">yum makecache</span><br><span class="line">yum -y install vim reposync createrepo yum-utils httpd net-tools</span><br><span class="line"></span><br><span class="line">yum install centos-release-openstack-stein centos-release-openstack-train</span><br><span class="line">ls -1 /etc/yum.repos.d/</span><br><span class="line">yum repolist</span><br></pre></td></tr></table></figure></p>
 <p>2.查看本机repolist<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">[root@host-192-168-2-123 ~]# yum repolist</span><br><span class="line">Failed to set locale, defaulting to C</span><br><span class="line">Loaded plugins: fastestmirror</span><br><span class="line">Loading mirror speeds from cached hostfile</span><br><span class="line"> * base: mirrors.aliyun.com</span><br><span class="line"> * centos-ceph-nautilus: mirrors.aliyun.com</span><br><span class="line"> * centos-nfs-ganesha28: mirrors.aliyun.com</span><br><span class="line"> * centos-openstack-stein: mirrors.aliyun.com</span><br><span class="line"> * centos-openstack-train: mirrors.aliyun.com</span><br><span class="line"> * centos-qemu-ev: mirrors.aliyun.com</span><br><span class="line"> * extras: mirrors.aliyun.com</span><br><span class="line"> * updates: mirrors.aliyun.com</span><br><span class="line">repo id                                     repo name                   status</span><br><span class="line">base/7/x86_64                               CentOS-7 - Base             10097</span><br><span class="line">centos-ceph-nautilus/7/x86_64               CentOS-7 - Ceph Nautilus    224</span><br><span class="line">centos-nfs-ganesha28/7/x86_64               CentOS-7 - NFS Ganesha 2.8  140</span><br><span class="line">centos-openstack-stein/7/x86_64             CentOS-7 - OpenStack stein  2415+2</span><br><span class="line">centos-openstack-train/7/x86_64             CentOS-7 - OpenStack train  2323+2</span><br><span class="line">centos-qemu-ev/7/x86_64                     CentOS-7 - QEMU EV          87</span><br><span class="line">extras/7/x86_64                             CentOS-7 - Extras           341</span><br><span class="line">updates/7/x86_64                            CentOS-7 - Updates          1787</span><br><span class="line">repolist: 17414</span><br></pre></td></tr></table></figure></p>
