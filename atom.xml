@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2019-08-23T00:35:58.969Z</updated>
+  <updated>2020-04-18T10:46:21.015Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>OpenStack离线安装之yum源制作</title>
+    <link href="https://zerosun.top/2020/04/18/localyum4deployopenstack/"/>
+    <id>https://zerosun.top/2020/04/18/localyum4deployopenstack/</id>
+    <published>2020-04-18T10:22:58.000Z</published>
+    <updated>2020-04-18T10:46:21.015Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;OpenStack离线安装之yum源制作&quot;&gt;&lt;a href=&quot;#OpenStack离线安装之yum源制作&quot; class=&quot;headerlink&quot; title=&quot;OpenStack离线安装之yum源制作&quot;&gt;&lt;/a&gt;OpenStack离线安装之yum源制作&lt;/h1&gt;&lt;
+      
+    
+    </summary>
+    
+      <category term="openstack" scheme="https://zerosun.top/categories/openstack/"/>
+    
+    
+      <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
+    
+      <category term="tools" scheme="https://zerosun.top/tags/tools/"/>
+    
+  </entry>
   
   <entry>
     <title>Kolla-Ansible 部署OpenStack</title>
@@ -32,11 +57,11 @@
       <category term="openstack" scheme="https://zerosun.top/categories/openstack/"/>
     
     
-      <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
-    
       <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
     
       <category term="tools" scheme="https://zerosun.top/tags/tools/"/>
+    
+      <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
     
       <category term="Kolla" scheme="https://zerosun.top/tags/Kolla/"/>
     
@@ -61,9 +86,9 @@
     
       <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
     
-      <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
-    
       <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
+    
+      <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
     
   </entry>
   
@@ -83,11 +108,11 @@
       <category term="openstack" scheme="https://zerosun.top/categories/openstack/"/>
     
     
-      <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
-    
       <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
     
       <category term="tools" scheme="https://zerosun.top/tags/tools/"/>
+    
+      <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
     
   </entry>
   
@@ -413,26 +438,6 @@
     
     
       <category term="Github" scheme="https://zerosun.top/tags/Github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Xmanager远程Ubuntu1604LTS</title>
-    <link href="https://zerosun.top/2018/09/19/connect-xmanager2ubuntu1604lts/"/>
-    <id>https://zerosun.top/2018/09/19/connect-xmanager2ubuntu1604lts/</id>
-    <published>2018-09-19T06:40:52.000Z</published>
-    <updated>2018-11-08T09:03:18.833Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;简述：&lt;br&gt;ubuntu1604：xmanager+xdmcp+lightdm+xubuntu(xfce)桌面环境&lt;br&gt;
-    
-    </summary>
-    
-      <category term="tools" scheme="https://zerosun.top/categories/tools/"/>
-    
-    
-      <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
     
   </entry>
   
