@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zerosun.top/"/>
-  <updated>2020-04-18T10:51:20.862Z</updated>
+  <updated>2020-04-18T10:52:30.480Z</updated>
   <id>https://zerosun.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zerosun.top/2020/04/18/localyum4deployopenstack/"/>
     <id>https://zerosun.top/2020/04/18/localyum4deployopenstack/</id>
     <published>2020-04-18T10:22:58.000Z</published>
-    <updated>2020-04-18T10:51:20.862Z</updated>
+    <updated>2020-04-18T10:52:30.480Z</updated>
     
     <summary type="html">
     
@@ -35,57 +35,6 @@
       <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
     
       <category term="tools" scheme="https://zerosun.top/tags/tools/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Kolla-Ansible 部署OpenStack</title>
-    <link href="https://zerosun.top/2019/08/21/openstack-deploying-by-Kolla-Ansible/"/>
-    <id>https://zerosun.top/2019/08/21/openstack-deploying-by-Kolla-Ansible/</id>
-    <published>2019-08-21T05:47:04.000Z</published>
-    <updated>2019-08-23T00:35:58.969Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;持续更新。。。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="openstack" scheme="https://zerosun.top/categories/openstack/"/>
-    
-    
-      <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
-    
-      <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
-    
-      <category term="tools" scheme="https://zerosun.top/tags/tools/"/>
-    
-      <category term="Kolla" scheme="https://zerosun.top/tags/Kolla/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>OpenStack Ansible部署OpenStack</title>
-    <link href="https://zerosun.top/2019/08/12/openstack-deploying-by-OSA/"/>
-    <id>https://zerosun.top/2019/08/12/openstack-deploying-by-OSA/</id>
-    <published>2019-08-12T02:22:01.000Z</published>
-    <updated>2019-08-28T09:29:48.562Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;OpenStack Ansible（OSA）时一个正式的OpenStack大帐篷项目。聚焦于提供多个角色（role）和playbook，用于部署可扩展的、可立即投入生产的OpenStack环境。&lt;/p&gt;
-&lt;p&gt;持续更新中。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="openstack" scheme="https://zerosun.top/categories/openstack/"/>
-    
-    
-      <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
-    
-      <category term="Ansible" scheme="https://zerosun.top/tags/Ansible/"/>
-    
-      <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
     
   </entry>
   
@@ -188,26 +137,6 @@
     
     
       <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>OpenStack镜像制作</title>
-    <link href="https://zerosun.top/2019/07/08/openstack-image-making/"/>
-    <id>https://zerosun.top/2019/07/08/openstack-image-making/</id>
-    <published>2019-07-08T14:01:33.000Z</published>
-    <updated>2019-08-20T08:51:54.639Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;系统：Ubuntu16.04.2 Desktop 64位&lt;br&gt;环境：qemu-kvm libvirt-bin virtinst&lt;br&gt;镜像：&lt;br&gt;软件：vnc-viewer、VMware Workstation Pro&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="openstack" scheme="https://zerosun.top/categories/openstack/"/>
-    
-    
-      <category term="OpenStack" scheme="https://zerosun.top/tags/OpenStack/"/>
     
   </entry>
   
@@ -435,6 +364,72 @@
     
     
       <category term="Github" scheme="https://zerosun.top/tags/Github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Xmanager远程Ubuntu1604LTS</title>
+    <link href="https://zerosun.top/2018/09/19/connect-xmanager2ubuntu1604lts/"/>
+    <id>https://zerosun.top/2018/09/19/connect-xmanager2ubuntu1604lts/</id>
+    <published>2018-09-19T06:40:52.000Z</published>
+    <updated>2018-11-08T09:03:18.833Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;简述：&lt;br&gt;ubuntu1604：xmanager+xdmcp+lightdm+xubuntu(xfce)桌面环境&lt;br&gt;
+    
+    </summary>
+    
+      <category term="tools" scheme="https://zerosun.top/categories/tools/"/>
+    
+    
+      <category term="Tools" scheme="https://zerosun.top/tags/Tools/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>以太坊智能合约-环境搭建</title>
+    <link href="https://zerosun.top/2018/09/18/Ethereum-SmartContract-setup-env/"/>
+    <id>https://zerosun.top/2018/09/18/Ethereum-SmartContract-setup-env/</id>
+    <published>2018-09-18T07:55:54.000Z</published>
+    <updated>2018-11-08T08:54:09.800Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;智能合约开发环境搭建&quot;&gt;&lt;a href=&quot;#智能合约开发环境搭建&quot; class=&quot;headerlink&quot; title=&quot;智能合约开发环境搭建&quot;&gt;&lt;/a&gt;智能合约开发环境搭建&lt;/h1&gt;&lt;p&gt;进行智能合约开发环境搭建前，建议自行搭建一遍以太坊私有链&lt;br&gt;
+    
+    </summary>
+    
+      <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
+    
+    
+      <category term="Ethereum" scheme="https://zerosun.top/tags/Ethereum/"/>
+    
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
+    
+      <category term="SmartContract" scheme="https://zerosun.top/tags/SmartContract/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>区块链基础：区块链简介</title>
+    <link href="https://zerosun.top/2018/09/11/BlockChain-Basis-simple-intro/"/>
+    <id>https://zerosun.top/2018/09/11/BlockChain-Basis-simple-intro/</id>
+    <published>2018-09-11T09:06:31.000Z</published>
+    <updated>2019-07-18T01:26:48.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;区块链作为目前最为火热的计算机相关技术之一，收到越来越多人的关注，互联网巨头们纷纷入场，区块链创业公司也不停涌现，这里对区块链相关基础知识做一个系统介绍，旨在普及区块链基础知识点。不涉及项目推广投资，单纯的对区块链相关基础知识概念作一个说明讲解。涉及相关内容如理解有误，也请及时指正。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="blockchain" scheme="https://zerosun.top/categories/blockchain/"/>
+    
+    
+      <category term="BlockChain" scheme="https://zerosun.top/tags/BlockChain/"/>
+    
+      <category term="Hash" scheme="https://zerosun.top/tags/Hash/"/>
     
   </entry>
   
